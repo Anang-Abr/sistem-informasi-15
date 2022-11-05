@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    border-top-right-radius: 10px;
+    border-left: 5px solid black;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(240, 242, 242);
+    transition: 0.3s;
+    box-sizing: initial;
+    box-shadow: 2px 0px 5px grey;
+    overflow-x: hidden;
+}
+
+.title {
+    visibility: hidden;
+}
+
+.title.__active {
+    visibility: visible;
+    transition: visibility 0.1s;
+    transition-delay: 0.1s;
+}
+
+.sidebar.__active {
+    width: 300px;
+}
+
+.sidebar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sidebar ul li:hover {
+    background-color: rgb(213, 216, 222);
+}
+
+.sidebar ul li.__active {
+    background: blue;
+}
+
+.sidebar ul li.__active a {
+    color: white;
+}
+
+.sidebar ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar ul li a .icon {
+    position: relative;
+    display: block;
+    height: 60px;
+    min-width: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.sidebar ul li a .icon ion-icon {
+    font-size: 1.5em;
+}
+
+.sidebar ul li a .title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-button:hover {
+    filter: brightness(300%);
+}
+
+.toggle-button.__active {
+    background: red;
+}
+
+.toggle-button ion-icon {
+    font-size: 32px;
+    position: absolute;
+    color: white;
+}
+
+
+.toggle-button ion-icon.toggle-button-open,
+.toggle-button.__active ion-icon.toggle-button-close {
+    display: block;
+}
+
+.toggle-button.__active ion-icon.toggle-button-open,
+.toggle-button ion-icon.toggle-button-close {
+    display: none;
+}
+
+.main {
+    margin-left: 100px;
+}
