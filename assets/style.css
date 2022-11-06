@@ -137,7 +137,7 @@
     display: none;
 }
 
-.main {
+main {
     margin-left: 100px;
 }
 
@@ -158,6 +158,48 @@
 
 /* Anang's section start */
 
-/* code here */
+.dashboard{
+    padding: 2rem 2rem;
+}
+
+.dashboard__title{
+    padding: 1rem;
+    border-bottom: 2px solid #666
+}
+
+.dashboard__cards{
+    padding: 2rem 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr) ;
+}
+
+.dashboard__card{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    height: 8rem;
+    box-shadow: 0 0 5px #666;
+}
+
+.dashboard__stats{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(5, 1fr);
+    padding:1rem;
+}
+
+.dashboard__stats>div{
+    height: 20rem;
+}
+
+.dashboard__card_1{
+    grid-column: span 3;
+}
+
+.dashboard__card_2{
+    grid-column: span 2;
+}
+
 
 /* Anang's section end */
