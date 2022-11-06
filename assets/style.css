@@ -193,6 +193,19 @@ main {
     height: 20rem;
 }
 
+.dashboard__card>h3{
+    margin: 0.5rem 1.5rem;
+    text-align: right;
+}
+
+.dashboard__card>p{
+    font-size: 1.5em;
+    font-weight: 500;
+    width: 15rem;
+    margin: 1.5rem;
+    text-align: right;
+}
+
 .dashboard__card_1{
     grid-column: span 3;
 }
@@ -200,6 +213,7 @@ main {
 .dashboard__card_2{
     grid-column: span 2;
 }
+
 
 
 /* Anang's section end */
