@@ -152,7 +152,9 @@ main {
 
 /* Firman's section start */
 
-/* code here */
+.invoice-background {
+    background-color: aliceblue;
+}
 
 /* Firman's section end */
 
