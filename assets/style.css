@@ -143,25 +143,159 @@ main {
 
 /* alex's section end */
 
-/* Reynaldi's section start */
+/* Raynaldy's section start */
 
-/* code here */
+.supply{
+    display: flex;
+    align-items: center;
+}
 
-/* Reynaldi's section end */
+.supply__title{
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    margin: 100px 0 0 0;
+}
+
+.infobox{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infobox > section{
+   
+    margin: 20px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.TotalOrder{
+    position: relative;
+    background-color:paleturquoise;
+    
+}
+
+.TotalOrder div, .TotalProfit div, .TotalSale div{
+    display: flex;
+    align-items: center;
+}
+
+
+.TotalOrder__title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.TotalOrder__number{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.TotalOrder__UpIcon{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    background: #8FDACB;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.TotalOrder__desc{
+    font-size: 12px;
+}
+
+
+.TotalSale{
+    position: relative;
+    background-color:paleturquoise;
+    
+}
+
+.TotalProfit{
+    position: relative;
+    background-color:paleturquoise;
+    
+}
+
+
+
+
+/* Raynaldy's section end */
 
 
 /* Firman's section start */
 
 .invoice-background {
+    display: flex;
     background-color: aliceblue;
+    margin: auto;
+    width: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.invoice-table1, th, td {
+    border: 0px;
+    padding: 4px 60px;
+}
+
+.btn-all {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.btn-all-add {
+    background-color: green;
+    color: white;
+    padding: 4px 16px;
+    border: 2px green;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-all-remove {
+    background-color: red;
+    color: white;
+    padding: 4px 16px;
+    border: 2px red;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 /* Firman's section end */
 
 /* Anang's section start */
 
+nav{
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
+    height: 6rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+}
+
+nav h3{
+    margin-left: 100px;
+    /* border: 1px solid red; */
+}
+
 .dashboard{
     padding: 2rem 2rem;
+    height: 200vh;
 }
 
 .dashboard__title{
@@ -183,6 +317,25 @@ main {
     height: 8rem;
     box-shadow: 0 0 5px #666;
 }
+
+.dashboard__cards .dashboard__card {
+    gap:4rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.dashboard__cards>.dashboard__card>div>*{
+    text-align: right;
+    width: 80%;
+    font-weight: 600;
+}
+
+
+.dashboard__card ion-icon{
+    font-size:3rem;
+}
+
 
 .dashboard__stats{
     display: grid;

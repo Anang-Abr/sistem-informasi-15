@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 
 <body>
-    <nav>
+      <nav>
         <h3>MYSALES Dashboard</h3>
-    </nav>
+      </nav>
     <div class="sidebar">
         <ul>
-            <li class="sidebar-list __active">
-                <a href="index.html">
+            <li class="sidebar-list">
+                <a href="/index.html">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -24,15 +24,15 @@
                 </a>
             </li>
             <li class="sidebar-list">
-                <a href="pages/sales.html">
+                <a href="/pages/sales.html">
                     <span class="icon">
                         <ion-icon name="document-text-outline"></ion-icon>
                     </span>
                     <span class="title">Sales Center</span>
                 </a>
             </li>
-            <li class="sidebar-list">
-                <a href="/pages/supply.html">
+            <li class="sidebar-list __active">
+                <a href="#">
                     <span class="icon">
                         <ion-icon name="card-outline"></ion-icon>
                     </span>
@@ -58,64 +58,62 @@
         </ul>
     </div>
 
+
+
+
     <div class="toggle-button">
         <ion-icon name="menu-outline" class="toggle-button-open"></ion-icon>
         <ion-icon name="close-outline" class="toggle-button-close"></ion-icon>
     </div>
 
     <main>
-        <section class="dashboard">
-            <h1 class="dashboard__title">Dashboard</h1>
-            <div class="dashboard__cards">
-                <div class="dashboard__card">
-                    <ion-icon name="people-circle-outline"></ion-icon>
-                    <div>
-                    <h3>ALL REQUESTATIONS</h3>
-                    <p>500</p>
-                    </div>
-                </div>
-                <div class="dashboard__card">
-                    <ion-icon name="checkmark-done-outline"></ion-icon>
-                    <div>
-                    <h3>ALL RECEIVED QUOTATIONS</h3>
-                    <p>500</p>
-                    </div>
-                </div>
-                <div class="dashboard__card">
-                    <ion-icon name="logo-buffer"></ion-icon>
-                    <div>
-                    <h3>ALL PURCHASE ORDERS</h3>
-                    <p>46%</p>
-                    </div>
-                </div>
-                <div class="dashboard__card">
-                    <ion-icon name="stopwatch-outline"></ion-icon>
-                    <div>
-                    <h3>PENDING REQUEST</h3>
-                    <p>13</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__stats">
-                <div class="dashboard__card dashboard__card_1">
-                    <h4>Earnings Overview</h4>
-                    <div>
-                        <canvas id="myChart" width="300" height="250"></canvas>
-                    </div>
-                </div>
-                <div class="dashboard__card dashboard__card_2">
-                    <h4>Revenue Sources</h4>
-                    <div height=>
-                        <canvas id="myChart2"></canvas>
-                    </div>
-                </div>
-            </div>
+
+        <section class="supply">
+            <div class="supply__title">Supply Center</div>
         </section>
+        
+        <section class="infobox">
+            <section class="TotalOrder">
+                <div class="TotalOrder__title">Total Order</div>
+                <div class="TotalOrder__number">2,000</div>
+                <div>
+                <span class="TotalOrder__UpIcon"><ion-icon name="arrow-up"></ion-icon></span>
+                <span class="TotalOrder__desc">Compared to last week</span>
+                </div>
+            </section>
+
+            <section class="TotalSale">
+                <div class="TotalSale__title">Total Sale</div>
+                <div class="TotalOrder__number">5,000</div>
+                <div>
+                <span class="TotalOrder__UpIcon"><ion-icon name="arrow-up"></ion-icon></span>
+                <span class="TotalOrder__desc">Compared to last week</span>
+                </div>
+            </section>
+
+            <section class="TotalProfit">
+                <div class="TotalProfit__title">Total Profit</div>
+                <div class="TotalOrder__number">123,000</div>
+                <div>
+                <span class="TotalOrder__UpIcon"><ion-icon name="arrow-up"></ion-icon></span>
+                <span class="TotalOrder__desc">Compared to last week</span>
+                </div>
+            </section>
+
+            
+        </section>
+   
+        
     </main>
+
+
+
+
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/main.js"></script>
+    <script src="../assets/main.js"></script>
 </body>
 
 </html>

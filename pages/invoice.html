@@ -10,10 +10,13 @@
 </head>
 
 <body>
+    <nav>
+        <h3>MYSALES Dashboard</h3>
+      </nav>
     <div class="sidebar">
         <ul>
             <li class="sidebar-list">
-                <a href="../index.html">
+                <a href="/index.html">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -21,7 +24,7 @@
                 </a>
             </li>
             <li class="sidebar-list">
-                <a href="./sales.html">
+                <a href="/pages/sales.html">
                     <span class="icon">
                         <ion-icon name="document-text-outline"></ion-icon>
                     </span>
@@ -29,7 +32,7 @@
                 </a>
             </li>
             <li class="sidebar-list">
-                <a href="#">
+                <a href="/pages/supply.html">
                     <span class="icon">
                         <ion-icon name="card-outline"></ion-icon>
                     </span>
@@ -66,17 +69,18 @@
             <!-- kolom pertama -->
             <div class="invoice-background">
                 <div>
-                    <h3>
-                        Ini nanti ada 2 tombol "Add Invoice"
-                    </h3>
-                    <table border="1">
-                        <thead>
+                    <div class="btn-all">
+                        <a class="btn-all-remove" href="">Remove All</a>
+                        <a class="btn-all-add" href="">Add All</a>
+                    </div>
+                    <table border="1" class="invoice-table1">
+                        <div>
                             <th>#</th>
                             <th>Date</th>
                             <th>Buyer Name</th>
                             <th>Action</th>
-                        </thead>
-                        <tbody>
+                        </div>
+                        <div>
                             <tr>
                                 <td>1</td>
                                 <td>9-November-2022</td>
@@ -97,15 +101,15 @@
                                 <td>25-November-2022</td>
                                 <td>Uzumaki Saburo</td>
                             </tr>
-                        </tbody>
+                        </div>
                     </table>
                 </div>
 
                 <!-- kolom ke 2 -->
-                <h3>
+                <!-- <h3>
                     Ini nanti tombol "View all Invoices"
-                </h3>
-                <div>
+                </h3> -->
+                <!-- <div>
                     <table border="1">
                         <thead>
                             <th>#</th>
@@ -136,7 +140,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
