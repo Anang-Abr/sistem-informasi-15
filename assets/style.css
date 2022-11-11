@@ -141,61 +141,101 @@ main {
     margin-left: 100px;
 }
 
+
+.sales__header {
+    width: 85%;
+    margin: 30px auto 0 auto;
+}
+
+.sales-table {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+    width: 85%;
+    margin: 30px auto 0 auto;
+    overflow-y: scroll;
+}
+
+.sales-table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.sales-table th,
+.sales-table td {
+    text-align: center;
+    padding: 16px;
+}
+
+.sales-table th {
+    background-color: grey;
+    color: white;
+}
+
+.sales-table tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+
 /* alex's section end */
 
 /* Raynaldy's section start */
 
-.supply{
+.supply {
     display: flex;
     align-items: center;
 }
 
-.supply__title{
+.supply__title {
     font-size: 24px;
     font-weight: 500;
     color: black;
     margin: 100px 0 0 0;
 }
 
-.infobox{
-    
+.infobox {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.infobox > section{
-   
+.infobox>section {
+
     margin: 20px;
     padding: 30px;
     border-radius: 12px;
 }
 
-.TotalOrder{
+.TotalOrder {
     position: relative;
-    background-color:paleturquoise;
-    
+    background-color: paleturquoise;
+
 }
 
-.TotalOrder div, .TotalProfit div, .TotalSale div{
+.TotalOrder div,
+.TotalProfit div,
+.TotalSale div {
     display: flex;
     align-items: center;
 }
 
 
-.TotalOrder__title{
+.TotalOrder__title {
     font-size: 20px;
     font-weight: 500;
 }
 
-.TotalOrder__number{
+.TotalOrder__number {
     font-size: 35px;
     font-weight: 500;
     margin-top: -5px;
     display: inline-block;
 }
 
-.TotalOrder__UpIcon{
+.TotalOrder__UpIcon {
     display: flex;
     align-items: center;
     height: 20px;
@@ -208,21 +248,21 @@ main {
     margin-right: 5px;
 }
 
-.TotalOrder__desc{
+.TotalOrder__desc {
     font-size: 12px;
 }
 
 
-.TotalSale{
+.TotalSale {
     position: relative;
-    background-color:paleturquoise;
-    
+    background-color: paleturquoise;
+
 }
 
-.TotalProfit{
+.TotalProfit {
     position: relative;
-    background-color:paleturquoise;
-    
+    background-color: paleturquoise;
+
 }
 
 
@@ -243,7 +283,9 @@ main {
     justify-content: center;
 }
 
-.invoice-table1, th, td {
+.invoice-table1,
+th,
+td {
     border: 0px;
     padding: 4px 60px;
 }
@@ -276,9 +318,9 @@ main {
 
 /* Anang's section start */
 
-nav{
+nav {
     background-color: white;
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
     height: 6rem;
     left: 0;
     right: 0;
@@ -288,29 +330,29 @@ nav{
     align-items: center;
 }
 
-nav h3{
+nav h3 {
     margin-left: 100px;
     /* border: 1px solid red; */
 }
 
-.dashboard{
+.dashboard {
     padding: 2rem 2rem;
     height: 200vh;
 }
 
-.dashboard__title{
+.dashboard__title {
     padding: 1rem;
     border-bottom: 2px solid #666
 }
 
-.dashboard__cards{
+.dashboard__cards {
     padding: 2rem 1rem;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.dashboard__card{
+.dashboard__card {
     border-radius: 10px;
     cursor: pointer;
     padding: 1rem;
@@ -319,41 +361,41 @@ nav h3{
 }
 
 .dashboard__cards .dashboard__card {
-    gap:4rem;
+    gap: 4rem;
     display: flex;
     justify-content: center;
     padding: 1.5rem;
 }
 
-.dashboard__cards>.dashboard__card>div>*{
+.dashboard__cards>.dashboard__card>div>* {
     text-align: right;
     width: 80%;
     font-weight: 600;
 }
 
 
-.dashboard__card ion-icon{
-    font-size:3rem;
+.dashboard__card ion-icon {
+    font-size: 3rem;
 }
 
 
-.dashboard__stats{
+.dashboard__stats {
     display: grid;
-    gap:1rem;
+    gap: 1rem;
     grid-template-columns: repeat(5, 1fr);
-    padding:1rem;
+    padding: 1rem;
 }
 
-.dashboard__stats>div{
+.dashboard__stats>div {
     height: 20rem;
 }
 
-.dashboard__card>h3{
+.dashboard__card>h3 {
     margin: 0.5rem 1.5rem;
     text-align: right;
 }
 
-.dashboard__card>p{
+.dashboard__card>p {
     font-size: 1.5em;
     font-weight: 500;
     width: 15rem;
@@ -361,11 +403,11 @@ nav h3{
     text-align: right;
 }
 
-.dashboard__card_1{
+.dashboard__card_1 {
     grid-column: span 3;
 }
 
-.dashboard__card_2{
+.dashboard__card_2 {
     grid-column: span 2;
 }
 
