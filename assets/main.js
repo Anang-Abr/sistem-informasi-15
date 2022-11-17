@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			list[i].className = "sidebar-list __active";
 		});
 	}
+
+	const navAccount = document.querySelector(".nav__account");
+
+	navAccount.addEventListener("click", () => {
+		const navAccountMenu = document.querySelector(".nav__account_menu");
+		navAccountMenu.classList.toggle("nav__account_menu_active");
+	});
 })
 
 const labels = ["January", "February", "March", "April", "May", "June"];

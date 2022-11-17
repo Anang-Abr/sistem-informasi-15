@@ -7,6 +7,11 @@
 	font-family: "Roboto", sans-serif;
 }
 
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
 /* alex's section start */
 
 .sidebar {
@@ -100,53 +105,6 @@
 	height: 60px;
 	line-height: 60px;
 	white-space: normal;
-}
-
-.toggle-button {
-	position: fixed;
-	width: 1000px;
-	background: blue;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 20px;
-}
-
-.sidebar.__active .toggle-button {
-	left: 75%;
-	background-color: #ff0000;
-}
-.sidebar .toggle-button {
-	left: 5px;
-	width: 50px;
-	height: 50px;
-}
-
-.toggle-button.__active:hover {
-	filter: brightness(300%);
-}
-
-.toggle-button.__active {
-	width: 50px;
-	height: 50px;
-	border-radius: 20px;
-}
-
-.toggle-button ion-icon {
-	font-size: 32px;
-	position: absolute;
-	color: white;
-}
-
-.toggle-button ion-icon.toggle-button-open,
-.toggle-button.__active ion-icon.toggle-button-close {
-	display: block;
-}
-
-.toggle-button.__active ion-icon.toggle-button-open,
-.toggle-button ion-icon.toggle-button-close {
-	display: none;
 }
 
 main {
@@ -369,17 +327,46 @@ nav {
 
 nav > h3 {
 	margin-left: 100px;
-	/* border: 1px solid red; */
 }
 
 .nav__account {
 	margin-right: 100px;
 	position: relative;
+	padding: 5px 10px;
+	border-radius: 5px;
+
+}
+.nav__account:hover{
+	background-color: #eee;
 }
 
-.nav__account > ul {
+.nav__account > h3 {
+	cursor: pointer;
+}
+
+.nav__account_menu {
 	display: none;
-	/* position: absolute; */
+	list-style-type: none;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 200px;
+	padding: 10px 1px;
+}
+
+.nav__account_menu >li{
+	padding: 3px 8px;
+}
+.nav__account_menu >li:hover{
+	width: full;
+	background-color:#eee;
+}
+
+.nav__account_menu_active{
+	display: flex;
+	flex-direction: column;
+	right:0;
+	top:40px;
 }
 
 .dashboard {
