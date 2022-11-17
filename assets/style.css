@@ -137,7 +137,7 @@ main {
 
 .sales__button--add:hover,
 .sales__button--del:hover {
-	filter: brightness(150%);
+  filter: brightness(125%)
 }
 
 .sales__button--add {
