@@ -1,212 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
 }
 
 /* alex's section start */
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 70px;
-    border-top-right-radius: 10px;
-    border-left: 5px solid black;
-    border-bottom-right-radius: 10px;
-    background-color: rgb(240, 242, 242);
-    transition: 0.3s;
-    box-sizing: initial;
-    box-shadow: 2px 0px 5px;
-    z-index: 6;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 70px;
+	border-top-right-radius: 10px;
+	border-left: 5px solid black;
+	border-bottom-right-radius: 10px;
+	background-color: rgb(240, 242, 242);
+	transition: 0.3s;
+	box-sizing: initial;
+	box-shadow: 2px 0px 5px;
+	overflow-x: hidden;
+	z-index: 10;
 }
 
 .title {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 .title.__active {
-    visibility: visible;
-    transition: visibility 0.1s;
-    transition-delay: 0.1s;
+	visibility: visible;
+	transition: visibility 0.1s;
+	transition-delay: 0.1s;
 }
 
 .sidebar.__active {
-    width: 300px;
+	width: 300px;
 }
 
 .sidebar ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 5px;
-    padding-top: 40px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 40px;
 }
 
 .sidebar ul li {
-    position: relative;
-    list-style: none;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+	position: relative;
+	list-style: none;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 .sidebar ul li:hover {
-    background-color: rgb(213, 216, 222);
+	background-color: rgb(213, 216, 222);
 }
 
 .sidebar ul li.__active {
-    background: blue;
+	background: blue;
 }
 
 .sidebar ul li.__active a {
-    color: white;
+	color: white;
 }
 
 .sidebar ul li a {
-    position: relative;
-    display: block;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    color: black;
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: black;
 }
 
 .sidebar ul li a .icon {
-    position: relative;
-    display: block;
-    height: 60px;
-    min-width: 60px;
-    line-height: 70px;
-    text-align: center;
+	position: relative;
+	display: block;
+	height: 60px;
+	min-width: 60px;
+	line-height: 70px;
+	text-align: center;
 }
 
 .sidebar ul li a .icon ion-icon {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 .sidebar ul li a .title {
-    position: relative;
-    display: block;
-    padding-left: 10px;
-    height: 60px;
-    line-height: 60px;
-    white-space: normal;
-}
-
-.toggle-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: blue;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.toggle-button:hover {
-    filter: brightness(300%);
-}
-
-.toggle-button.__active {
-    background: red;
-}
-
-.toggle-button ion-icon {
-    font-size: 32px;
-    position: absolute;
-    color: white;
-}
-
-
-.toggle-button ion-icon.toggle-button-open,
-.toggle-button.__active ion-icon.toggle-button-close {
-    display: block;
-}
-
-.toggle-button.__active ion-icon.toggle-button-open,
-.toggle-button ion-icon.toggle-button-close {
-    display: none;
+	position: relative;
+	display: block;
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
+	white-space: normal;
 }
 
 main {
-    margin-left: 100px;
+	margin-left: 100px;
 }
 
 .sales__header {
-    width: 85%;
-    margin: 30px auto 0 auto;
+	width: 85%;
+	margin: 30px auto 0 auto;
 }
 
 .sales__buttons {
-    display: flex;
-    width: 85%;
-    margin: 30px auto 0 auto;
-    justify-content: flex-end;
+	display: flex;
+	width: 85%;
+	margin: 30px auto 0 auto;
+	justify-content: flex-end;
 }
 
 .sales__button--add,
 .sales__button--del {
-    width: 10%;
-    padding: 10px;
-    text-align: center;
-    margin: 0 5px 0 5px;
-    border-radius: 20px;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 10%;
+	padding: 10px;
+	text-align: center;
+	margin: 0 5px 0 5px;
+	border-radius: 20px;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .sales__button--add:hover,
 .sales__button--del:hover {
-    filter: brightness(125%)
+  filter: brightness(125%)
 }
 
 .sales__button--add {
-    background: green;
+	background: green;
 }
 
 .sales__button--del {
-    background: #8a0101;
+	background: #8a0101;
 }
 
 .sales-table {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 30px;
-    width: 85%;
-    margin: 20px auto 0 auto;
-    overflow-y: scroll;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 30px;
+	width: 85%;
+	margin: 20px auto 0 auto;
+	overflow-y: scroll;
 }
 
 .sales-table table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
 }
 
 .sales-table th,
 .sales-table td {
-    text-align: center;
-    padding: 16px;
+	text-align: center;
+	padding: 16px;
 }
 
 .sales-table th {
-    background-color: grey;
-    color: white;
+	background-color: grey;
+	color: white;
 }
 
 .sales-table tr:nth-child(even) {
-    background-color: #d2d2d2;
+	background-color: #d2d2d2;
 }
 
 /* alex's section end */
@@ -214,138 +184,127 @@ main {
 /* Raynaldy's section start */
 
 .supply {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .supply__title {
-    font-size: 24px;
-    font-weight: 500;
-    color: black;
-    margin: 100px 0 0 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: black;
+	margin: 100px 0 0 0;
 }
 
 .infobox {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.infobox>section {
-
-    margin: 20px;
-    padding: 30px;
-    border-radius: 12px;
+.infobox > section {
+	margin: 20px;
+	padding: 30px;
+	border-radius: 12px;
 }
 
 .TotalOrder {
-    position: relative;
-    background-color: paleturquoise;
-
+	position: relative;
+	background-color: paleturquoise;
 }
 
 .TotalOrder div,
 .TotalProfit div,
 .TotalSale div {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
-
 .TotalOrder__title {
-    font-size: 20px;
-    font-weight: 500;
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .TotalOrder__number {
-    font-size: 35px;
-    font-weight: 500;
-    margin-top: -5px;
-    display: inline-block;
+	font-size: 35px;
+	font-weight: 500;
+	margin-top: -5px;
+	display: inline-block;
 }
 
 .TotalOrder__UpIcon {
-    display: flex;
-    align-items: center;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-    background: #8FDACB;
-    color: white;
-    border-radius: 50%;
-    font-size: 20px;
-    margin-right: 5px;
+	display: flex;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	background: #8fdacb;
+	color: white;
+	border-radius: 50%;
+	font-size: 20px;
+	margin-right: 5px;
 }
 
 .TotalOrder__desc {
-    font-size: 12px;
+	font-size: 12px;
 }
 
-
 .TotalSale {
-    position: relative;
-    background-color: paleturquoise;
-
+	position: relative;
+	background-color: paleturquoise;
 }
 
 .TotalProfit {
-    position: relative;
-    background-color: paleturquoise;
-
+	position: relative;
+	background-color: paleturquoise;
 }
 
-
-
-
 /* Raynaldy's section end */
-
 
 /* Firman's section start */
 
 .invoice-title {
-    margin: 12px 12px;
+	margin: 12px 12px;
 }
 
 .invoice-background {
-    display: flex;
-    background-color: #F0F8FF;
-    margin: auto;
-    width: 90%;
-    padding: 6px;
-    border-radius: 12px;
-    justify-content: center;
+	display: flex;
+	background-color: #f0f8ff;
+	margin: auto;
+	width: 90%;
+	padding: 6px;
+	border-radius: 12px;
+	justify-content: center;
 }
 
 .invoice-table1,
 th,
 td {
-    border: 0px;
-    padding: 4px 72px;
+	border: 0px;
+	padding: 4px 72px;
 }
 
 .btn-all {
-    display: flex;
-    justify-content: right;
-    gap: 12px;
+	display: flex;
+	justify-content: right;
+	gap: 12px;
 }
 
 .btn-all-add {
-    background-color: #228B22;
-    color: #ffffff;
-    padding: 4px 16px;
-    border: 2px #228B22;
-    border-radius: 4px;
-    text-decoration: none;
+	background-color: #228b22;
+	color: #ffffff;
+	padding: 4px 16px;
+	border: 2px #228b22;
+	border-radius: 4px;
+	text-decoration: none;
 }
 
 .btn-all-remove {
-    background-color: #FF0000;
-    color: #ffffff;
-    padding: 4px 16px;
-    border: 2px #FF0000;
-    border-radius: 4px;
-    text-decoration: none;
+	background-color: #ff0000;
+	color: #ffffff;
+	padding: 4px 16px;
+	border: 2px #ff0000;
+	border-radius: 4px;
+	text-decoration: none;
 }
 
 /* Firman's section end */
@@ -353,98 +312,135 @@ td {
 /* Anang's section start */
 
 nav {
-    background-color: white;
-    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
-    height: 6rem;
-    left: 0;
-    right: 0;
-    top: 0;
-    position: sticky;
-    display: flex;
-    align-items: center;
+	background-color: white;
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+	height: 6rem;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
 }
 
-nav h3 {
-    margin-left: 100px;
-    /* border: 1px solid red; */
+nav > h3 {
+	margin-left: 100px;
+}
+
+.nav__account {
+	margin-right: 100px;
+	position: relative;
+	padding: 5px 10px;
+	border-radius: 5px;
+
+}
+.nav__account:hover{
+	background-color: #eee;
+}
+
+.nav__account > h3 {
+	cursor: pointer;
+}
+
+.nav__account_menu {
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 200px;
+	padding: 10px 1px;
+}
+
+.nav__account_menu >li{
+	padding: 3px 8px;
+}
+.nav__account_menu >li:hover{
+	width: full;
+	background-color:#eee;
+}
+
+.nav__account_menu_active{
+	display: flex;
+	flex-direction: column;
+	right:0;
+	top:40px;
 }
 
 .dashboard {
-    padding: 2rem 2rem;
-    height: 200vh;
+	padding: 2rem 2rem;
+	height: 200vh;
 }
 
 .dashboard__title {
-    padding: 1rem;
-    border-bottom: 2px solid #666
+	padding: 1rem;
+	border-bottom: 2px solid #666;
 }
 
 .dashboard__cards {
-    padding: 2rem 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+	padding: 2rem 1rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .dashboard__card {
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 1rem;
-    height: 8rem;
-    box-shadow: 0 0 5px #666;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 1rem;
+	height: 8rem;
+	box-shadow: 0 0 5px #666;
 }
 
 .dashboard__cards .dashboard__card {
-    gap: 4rem;
-    display: flex;
-    justify-content: center;
-    padding: 1.5rem;
+	gap: 4rem;
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem;
 }
 
-.dashboard__cards>.dashboard__card>div>* {
-    text-align: right;
-    width: 80%;
-    font-weight: 600;
+.dashboard__cards > .dashboard__card > div > * {
+	text-align: right;
+	width: 80%;
+	font-weight: 600;
 }
-
 
 .dashboard__card ion-icon {
-    font-size: 3rem;
+	font-size: 3rem;
 }
-
 
 .dashboard__stats {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 1rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(5, 1fr);
+	padding: 1rem;
 }
 
-.dashboard__stats>div {
-    height: 20rem;
+.dashboard__stats > div {
+	height: 20rem;
 }
 
-.dashboard__card>h3 {
-    margin: 0.5rem 1.5rem;
-    text-align: right;
+.dashboard__card > h3 {
+	margin: 0.5rem 1.5rem;
+	text-align: right;
 }
 
-.dashboard__card>p {
-    font-size: 1.5em;
-    font-weight: 500;
-    width: 15rem;
-    margin: 1.5rem;
-    text-align: right;
+.dashboard__card > p {
+	font-size: 1.5em;
+	font-weight: 500;
+	width: 15rem;
+	margin: 1.5rem;
+	text-align: right;
 }
 
 .dashboard__card_1 {
-    grid-column: span 3;
+	grid-column: span 3;
 }
 
 .dashboard__card_2 {
-    grid-column: span 2;
+	grid-column: span 2;
 }
-
-
 
 /* Anang's section end */
