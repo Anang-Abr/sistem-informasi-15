@@ -20,8 +20,8 @@
     background-color: rgb(240, 242, 242);
     transition: 0.3s;
     box-sizing: initial;
-    box-shadow: 2px 0px 5px grey;
-    overflow-x: hidden;
+    box-shadow: 2px 0px 5px;
+    z-index: 6;
 }
 
 .title {
@@ -147,13 +147,44 @@ main {
     margin: 30px auto 0 auto;
 }
 
+.sales__buttons {
+    display: flex;
+    width: 85%;
+    margin: 30px auto 0 auto;
+    justify-content: flex-end;
+}
+
+.sales__button--add,
+.sales__button--del {
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 5px 0 5px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sales__button--add:hover,
+.sales__button--del:hover {
+    filter: brightness(150%)
+}
+
+.sales__button--add {
+    background: green;
+}
+
+.sales__button--del {
+    background: #8a0101;
+}
+
 .sales-table {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 30px;
-    margin-top: 20px;
     width: 85%;
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
     overflow-y: scroll;
 }
 
@@ -301,7 +332,7 @@ td {
 }
 
 .btn-all-add {
-    background-color:#228B22;
+    background-color: #228B22;
     color: #ffffff;
     padding: 4px 16px;
     border: 2px #228B22;
