@@ -15,9 +15,9 @@
     bottom: 0;
     width: 70px;
     border-top-right-radius: 10px;
-    border-left: 5px solid black;
+    border-left: 5px solid #000000;
     border-bottom-right-radius: 10px;
-    background-color: rgb(240, 242, 242);
+    background-color: #F2F2F0;
     transition: 0.3s;
     box-sizing: initial;
     box-shadow: 2px 0px 5px;
@@ -56,15 +56,15 @@
 }
 
 .sidebar ul li:hover {
-    background-color: rgb(213, 216, 222);
+    background-color: #CCCCCC;
 }
 
 .sidebar ul li.__active {
-    background: blue;
+    background: #0000ff;
 }
 
 .sidebar ul li.__active a {
-    color: white;
+    color: #ffffff;
 }
 
 .sidebar ul li a {
@@ -73,7 +73,7 @@
     width: 100%;
     display: flex;
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .sidebar ul li a .icon {
@@ -104,7 +104,7 @@
     right: 20px;
     width: 50px;
     height: 50px;
-    background: blue;
+    background: #0000ff;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -117,13 +117,13 @@
 }
 
 .toggle-button.__active {
-    background: red;
+    background: #ff0000;
 }
 
 .toggle-button ion-icon {
     font-size: 32px;
     position: absolute;
-    color: white;
+    color: #ffffff;
 }
 
 
@@ -160,9 +160,9 @@ main {
     text-align: center;
     margin: 0 5px 0 5px;
     border-radius: 20px;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #00000033;
 }
 
 .sales__button--add:hover,
@@ -171,7 +171,7 @@ main {
 }
 
 .sales__button--add {
-    background: green;
+    background: #008000;
 }
 
 .sales__button--del {
@@ -179,7 +179,7 @@ main {
 }
 
 .sales-table {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #00000033;
     border-radius: 5px;
     padding: 30px;
     width: 85%;
@@ -191,7 +191,7 @@ main {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
 }
 
 .sales-table th,
@@ -201,8 +201,8 @@ main {
 }
 
 .sales-table th {
-    background-color: grey;
-    color: white;
+    background-color: #808080;
+    color: #ffffff;
 }
 
 .sales-table tr:nth-child(even) {
@@ -219,10 +219,10 @@ main {
 }
 
 .supply__title {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 500;
-    color: black;
-    margin: 100px 0 0 0;
+    color: #000000;
+    margin: 100px 0 0 25px;
 }
 
 .infobox {
@@ -234,14 +234,14 @@ main {
 
 .infobox>section {
 
-    margin: 20px;
+    margin: 20px 60px 20px 20px;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 .TotalOrder {
     position: relative;
-    background-color: paleturquoise;
+    background-color: #afeeee;
 
 }
 
@@ -272,27 +272,85 @@ main {
     width: 20px;
     line-height: 20px;
     background: #8FDACB;
-    color: white;
+    color: #ffffff;
     border-radius: 50%;
     font-size: 20px;
     margin-right: 5px;
 }
 
 .TotalOrder__desc {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 
 .TotalSale {
     position: relative;
-    background-color: paleturquoise;
+    background-color: #afeeee;
 
 }
 
+.TotalSale__title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.TotalSale__number{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.TotalSale__DownIcon{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    background: #ff4e4e;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.TotalSale__desc{
+    font-size: 15px;
+}
+
+
 .TotalProfit {
     position: relative;
-    background-color: paleturquoise;
+    background-color: #afeeee;
+}
 
+.TotalProfit__title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.TotalProfit__number{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.TotalProfit__UpIcon{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    background: #8FDACB;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.TotalProfit__desc{
+    font-size: 15px;
 }
 
 
@@ -353,8 +411,8 @@ td {
 /* Anang's section start */
 
 nav {
-    background-color: white;
-    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 2px #0000001a;
     height: 6rem;
     left: 0;
     right: 0;
