@@ -22,6 +22,7 @@
     box-sizing: initial;
     box-shadow: 2px 0px 5px grey;
     overflow-x: hidden;
+    z-index: 10;
 }
 
 .title {
@@ -40,6 +41,9 @@
 
 .sidebar ul {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
     top: 0;
     left: 0;
     width: 100%;
@@ -100,24 +104,33 @@
 
 .toggle-button {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 1000px;
     background: blue;
-    border-radius: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 
-.toggle-button:hover {
+.sidebar.__active .toggle-button{
+    left:75%;
+    background-color: #ff0000;
+}
+.sidebar .toggle-button{
+    left:5px;
+    width: 50px;
+    height: 50px;
+}
+
+.toggle-button.__active:hover {
     filter: brightness(300%);
 }
 
 .toggle-button.__active {
-    background: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
 }
 
 .toggle-button ion-icon {
@@ -331,12 +344,24 @@ nav {
     top: 0;
     position: sticky;
     display: flex;
+    justify-content:space-between;
     align-items: center;
+    z-index: 5;
 }
 
-nav h3 {
+nav>h3 {
     margin-left: 100px;
     /* border: 1px solid red; */
+}
+
+.nav__account{
+    margin-right: 100px;
+    position: relative;
+}
+
+.nav__account>ul{
+    display:none;
+    /* position: absolute; */
 }
 
 .dashboard {
@@ -414,6 +439,7 @@ nav h3 {
 .dashboard__card_2 {
     grid-column: span 2;
 }
+
 
 
 
