@@ -152,32 +152,31 @@ main {
 
 /* Firman's section start */
 
-.invoice-title {
-    margin: 12px 12px;
+.Invoice__title {
+    margin: 12px 48px;
 }
 
-.invoice-background {
+.Invoice__table {
     display: flex;
     background-color: #F0F8FF;
-    margin: auto;
-    width: 90%;
     padding: 6px;
+    margin: 24px 48px;
     border-radius: 12px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.invoice-table1, th, td {
+.Invoice__TableData, th, td {
     border: 0px;
-    padding: 4px 72px;
+    padding: 6px 48px;
 }
 
-.btn-all {
+.Table__button {
     display: flex;
     justify-content: right;
     gap: 12px;
 }
 
-.btn-all-add {
+.Table__button--add {
     background-color:#228B22;
     color: #ffffff;
     padding: 4px 16px;
@@ -186,7 +185,7 @@ main {
     text-decoration: none;
 }
 
-.btn-all-remove {
+.Table__button--remove {
     background-color: #FF0000;
     color: #ffffff;
     padding: 4px 16px;
