@@ -152,42 +152,46 @@ main {
 
 /* Firman's section start */
 
+.invoice-title {
+    margin: 12px 12px;
+}
+
 .invoice-background {
     display: flex;
-    background-color: aliceblue;
+    background-color: #F0F8FF;
     margin: auto;
     width: 90%;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 6px;
+    border-radius: 12px;
     justify-content: center;
 }
 
 .invoice-table1, th, td {
     border: 0px;
-    padding: 4px 60px;
+    padding: 4px 72px;
 }
 
 .btn-all {
     display: flex;
     justify-content: right;
-    gap: 10px;
+    gap: 12px;
 }
 
 .btn-all-add {
-    background-color: green;
-    color: white;
+    background-color:#228B22;
+    color: #ffffff;
     padding: 4px 16px;
-    border: 2px green;
-    border-radius: 5px;
+    border: 2px #228B22;
+    border-radius: 4px;
     text-decoration: none;
 }
 
 .btn-all-remove {
-    background-color: red;
-    color: white;
+    background-color: #FF0000;
+    color: #ffffff;
     padding: 4px 16px;
-    border: 2px red;
-    border-radius: 5px;
+    border: 2px #FF0000;
+    border-radius: 4px;
     text-decoration: none;
 }
 
