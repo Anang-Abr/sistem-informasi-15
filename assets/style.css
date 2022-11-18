@@ -20,14 +20,13 @@ a {
 	bottom: 0;
 	width: 70px;
 	border-top-right-radius: 10px;
-	border-left: 5px solid black;
+	border-left: 5px #000000;
 	border-bottom-right-radius: 10px;
-	background-color: rgb(240, 242, 242);
+	background-color: #f2f2f0;
 	transition: 0.3s;
 	box-sizing: initial;
 	box-shadow: 2px 0px 5px;
-	overflow-x: hidden;
-	z-index: 10;
+	z-index: 6;
 }
 
 .title {
@@ -65,15 +64,15 @@ a {
 }
 
 .sidebar ul li:hover {
-	background-color: rgb(213, 216, 222);
+	background-color: #cccccc;
 }
 
 .sidebar ul li.__active {
-	background: blue;
+	background: #0000ff;
 }
 
 .sidebar ul li.__active a {
-	color: white;
+	color: #ffffff;
 }
 
 .sidebar ul li a {
@@ -82,7 +81,7 @@ a {
 	width: 100%;
 	display: flex;
 	text-decoration: none;
-	color: black;
+	color: #000000;
 }
 
 .sidebar ul li a .icon {
@@ -105,6 +104,44 @@ a {
 	height: 60px;
 	line-height: 60px;
 	white-space: normal;
+}
+
+.toggle-button {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: #0000ff;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.toggle-button:hover {
+	filter: brightness(300%);
+}
+
+.toggle-button.__active {
+	background: #ff0000;
+}
+
+.toggle-button ion-icon {
+	font-size: 32px;
+	position: absolute;
+	color: #ffffff;
+}
+
+.toggle-button ion-icon.toggle-button-open,
+.toggle-button.__active ion-icon.toggle-button-close {
+	display: block;
+}
+
+.toggle-button.__active ion-icon.toggle-button-open,
+.toggle-button ion-icon.toggle-button-close {
+	display: none;
 }
 
 main {
@@ -130,18 +167,18 @@ main {
 	text-align: center;
 	margin: 0 5px 0 5px;
 	border-radius: 20px;
-	color: white;
+	color: #ffffff;
 	cursor: pointer;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 #00000033;
 }
 
 .sales__button--add:hover,
 .sales__button--del:hover {
-	filter: brightness(150%);
+	filter: brightness(125%);
 }
 
 .sales__button--add {
-	background: green;
+	background: #008000;
 }
 
 .sales__button--del {
@@ -149,7 +186,7 @@ main {
 }
 
 .sales-table {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 #00000033;
 	border-radius: 5px;
 	padding: 30px;
 	width: 85%;
@@ -161,7 +198,7 @@ main {
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
-	border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 .sales-table th,
@@ -171,8 +208,8 @@ main {
 }
 
 .sales-table th {
-	background-color: grey;
-	color: white;
+	background-color: #808080;
+	color: #ffffff;
 }
 
 .sales-table tr:nth-child(even) {
@@ -189,10 +226,10 @@ main {
 }
 
 .supply__title {
-	font-size: 24px;
+	font-size: 25px;
 	font-weight: 500;
-	color: black;
-	margin: 100px 0 0 0;
+	color: #000000;
+	margin: 100px 0 0 25px;
 }
 
 .infobox {
@@ -202,14 +239,14 @@ main {
 }
 
 .infobox > section {
-	margin: 20px;
+	margin: 20px 60px 20px 20px;
 	padding: 30px;
-	border-radius: 12px;
+	border-radius: 15px;
 }
 
 .TotalOrder {
 	position: relative;
-	background-color: paleturquoise;
+	background-color: #afeeee;
 }
 
 .TotalOrder div,
@@ -238,58 +275,115 @@ main {
 	width: 20px;
 	line-height: 20px;
 	background: #8fdacb;
-	color: white;
+	color: #ffffff;
 	border-radius: 50%;
 	font-size: 20px;
 	margin-right: 5px;
 }
 
 .TotalOrder__desc {
-	font-size: 12px;
+	font-size: 15px;
 }
 
 .TotalSale {
 	position: relative;
-	background-color: paleturquoise;
+	background-color: #afeeee;
+}
+
+.TotalSale__title {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.TotalSale__number {
+	font-size: 35px;
+	font-weight: 500;
+	margin-top: -5px;
+	display: inline-block;
+}
+
+.TotalSale__DownIcon {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	background: #ff4e4e;
+	color: #ffffff;
+	border-radius: 50%;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.TotalSale__desc {
+	font-size: 15px;
 }
 
 .TotalProfit {
 	position: relative;
-	background-color: paleturquoise;
+	background-color: #afeeee;
+}
+
+.TotalProfit__title {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.TotalProfit__number {
+	font-size: 35px;
+	font-weight: 500;
+	margin-top: -5px;
+	display: inline-block;
+}
+
+.TotalProfit__UpIcon {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	background: #8fdacb;
+	color: #ffffff;
+	border-radius: 50%;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.TotalProfit__desc {
+	font-size: 15px;
 }
 
 /* Raynaldy's section end */
 
 /* Firman's section start */
 
-.invoice-title {
-	margin: 12px 12px;
+.Invoice__title {
+	margin: 12px 48px;
 }
 
-.invoice-background {
+.Invoice__table {
 	display: flex;
 	background-color: #f0f8ff;
-	margin: auto;
-	width: 90%;
 	padding: 6px;
+	margin: 24px 48px;
 	border-radius: 12px;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
-.invoice-table1,
+.Invoice__TableData,
 th,
 td {
 	border: 0px;
-	padding: 4px 72px;
+	padding: 6px 48px;
 }
 
-.btn-all {
+.Table__button {
 	display: flex;
 	justify-content: right;
 	gap: 12px;
 }
 
-.btn-all-add {
+.Table__button--add {
 	background-color: #228b22;
 	color: #ffffff;
 	padding: 4px 16px;
@@ -298,7 +392,7 @@ td {
 	text-decoration: none;
 }
 
-.btn-all-remove {
+.Table__button--remove {
 	background-color: #ff0000;
 	color: #ffffff;
 	padding: 4px 16px;
@@ -312,8 +406,8 @@ td {
 /* Anang's section start */
 
 nav {
-	background-color: white;
-	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	box-shadow: 0px 0px 5px 2px #0000001a;
 	height: 6rem;
 	left: 0;
 	right: 0;
@@ -323,16 +417,6 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 5;
-	background-color: #ffffff;
-	box-shadow: 0px 0px 5px 2px #0000001a;
-	height: 6rem;
-	left: 0;
-	right: 0;
-	top: 0;
-	position: sticky;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 nav > h3 {
