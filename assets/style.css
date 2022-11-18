@@ -7,7 +7,7 @@
 	font-family: "Roboto", sans-serif;
 }
 
-a{
+a {
 	color: inherit;
 	text-decoration: none;
 }
@@ -15,18 +15,18 @@ a{
 /* alex's section start */
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 70px;
-    border-top-right-radius: 10px;
-    border-left: 5px #000000;
-    border-bottom-right-radius: 10px;
-    background-color: #F2F2F0;
-    transition: 0.3s;
-    box-sizing: initial;
-    box-shadow: 2px 0px 5px;
-    z-index: 6;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 70px;
+	border-top-right-radius: 10px;
+	border-left: 5px #000000;
+	border-bottom-right-radius: 10px;
+	background-color: #f2f2f0;
+	transition: 0.3s;
+	box-sizing: initial;
+	box-shadow: 2px 0px 5px;
+	z-index: 6;
 }
 
 .title {
@@ -64,24 +64,24 @@ a{
 }
 
 .sidebar ul li:hover {
-    background-color: #CCCCCC;
+	background-color: #cccccc;
 }
 
 .sidebar ul li.__active {
-    background: #0000ff;
+	background: #0000ff;
 }
 
 .sidebar ul li.__active a {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 .sidebar ul li a {
-    position: relative;
-    display: block;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    color: #000000;
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: #000000;
 }
 
 .sidebar ul li a .icon {
@@ -98,7 +98,7 @@ a{
 }
 
 .sidebar ul li a .title {
-    position: relative;
+	position: relative;
 	display: block;
 	padding-left: 10px;
 	height: 60px;
@@ -107,42 +107,41 @@ a{
 }
 
 .toggle-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: #0000ff;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: #0000ff;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .toggle-button:hover {
-    filter: brightness(300%);
+	filter: brightness(300%);
 }
 
 .toggle-button.__active {
-    background: #ff0000;
+	background: #ff0000;
 }
 
 .toggle-button ion-icon {
-    font-size: 32px;
-    position: absolute;
-    color: #ffffff;
+	font-size: 32px;
+	position: absolute;
+	color: #ffffff;
 }
-
 
 .toggle-button ion-icon.toggle-button-open,
 .toggle-button.__active ion-icon.toggle-button-close {
-    display: block;
+	display: block;
 }
 
 .toggle-button.__active ion-icon.toggle-button-open,
 .toggle-button ion-icon.toggle-button-close {
-    display: none;
+	display: none;
 }
 
 main {
@@ -163,27 +162,23 @@ main {
 
 .sales__button--add,
 .sales__button--del {
-
-    width: 10%;
-    padding: 10px;
-    text-align: center;
-    margin: 0 5px 0 5px;
-    border-radius: 20px;
-    color: #ffffff;
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 #00000033;
-
+	width: 10%;
+	padding: 10px;
+	text-align: center;
+	margin: 0 5px 0 5px;
+	border-radius: 20px;
+	color: #ffffff;
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 #00000033;
 }
 
 .sales__button--add:hover,
 .sales__button--del:hover {
-  filter: brightness(125%)
+	filter: brightness(125%);
 }
 
 .sales__button--add {
-
-    background: #008000;
-
+	background: #008000;
 }
 
 .sales__button--del {
@@ -191,19 +186,19 @@ main {
 }
 
 .sales-table {
-    box-shadow: 0 4px 8px 0 #00000033;
-    border-radius: 5px;
-    padding: 30px;
-    width: 85%;
-    margin: 20px auto 0 auto;
-    overflow-y: scroll;
+	box-shadow: 0 4px 8px 0 #00000033;
+	border-radius: 5px;
+	padding: 30px;
+	width: 85%;
+	margin: 20px auto 0 auto;
+	overflow-y: scroll;
 }
 
 .sales-table table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #dddddd;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #dddddd;
 }
 
 .sales-table th,
@@ -212,9 +207,9 @@ main {
 	padding: 16px;
 }
 
-.sales-table th{
-    background-color: #808080;
-    color: #ffffff;
+.sales-table th {
+	background-color: #808080;
+	color: #ffffff;
 }
 
 .sales-table tr:nth-child(even) {
@@ -231,10 +226,10 @@ main {
 }
 
 .supply__title {
-    font-size: 25px;
-    font-weight: 500;
-    color: #000000;
-    margin: 100px 0 0 25px;
+	font-size: 25px;
+	font-weight: 500;
+	color: #000000;
+	margin: 100px 0 0 25px;
 }
 
 .infobox {
@@ -243,18 +238,15 @@ main {
 	justify-content: space-between;
 }
 
-.infobox>section {
-
-    margin: 20px 60px 20px 20px;
-    padding: 30px;
-    border-radius: 15px;
+.infobox > section {
+	margin: 20px 60px 20px 20px;
+	padding: 30px;
+	border-radius: 15px;
 }
 
 .TotalOrder {
-    position: relative;
-    background-color: #afeeee;
-
-
+	position: relative;
+	background-color: #afeeee;
 }
 
 .TotalOrder div,
@@ -277,91 +269,88 @@ main {
 }
 
 .TotalOrder__UpIcon {
-    display: flex;
-    align-items: center;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-    background: #8FDACB;
-    color: #ffffff;
-    border-radius: 50%;
-    font-size: 20px;
-    margin-right: 5px;
+	display: flex;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	background: #8fdacb;
+	color: #ffffff;
+	border-radius: 50%;
+	font-size: 20px;
+	margin-right: 5px;
 }
 
 .TotalOrder__desc {
-    font-size: 15px;
-
+	font-size: 15px;
 }
 
 .TotalSale {
-    position: relative;
-    background-color: #afeeee;
-
+	position: relative;
+	background-color: #afeeee;
 }
 
-.TotalSale__title{
-    font-size: 20px;
-    font-weight: 500;
+.TotalSale__title {
+	font-size: 20px;
+	font-weight: 500;
 }
 
-.TotalSale__number{
-    font-size: 35px;
-    font-weight: 500;
-    margin-top: -5px;
-    display: inline-block;
+.TotalSale__number {
+	font-size: 35px;
+	font-weight: 500;
+	margin-top: -5px;
+	display: inline-block;
 }
 
-.TotalSale__DownIcon{
-    display: flex;
-    align-items: center;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-    background: #ff4e4e;
-    color: #ffffff;
-    border-radius: 50%;
-    font-size: 20px;
-    margin-right: 5px;
+.TotalSale__DownIcon {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	background: #ff4e4e;
+	color: #ffffff;
+	border-radius: 50%;
+	font-size: 20px;
+	margin-right: 5px;
 }
 
-.TotalSale__desc{
-    font-size: 15px;
+.TotalSale__desc {
+	font-size: 15px;
 }
-
 
 .TotalProfit {
-    position: relative;
-    background-color: #afeeee;
+	position: relative;
+	background-color: #afeeee;
 }
 
-.TotalProfit__title{
-    font-size: 20px;
-    font-weight: 500;
+.TotalProfit__title {
+	font-size: 20px;
+	font-weight: 500;
 }
 
-.TotalProfit__number{
-    font-size: 35px;
-    font-weight: 500;
-    margin-top: -5px;
-    display: inline-block;
+.TotalProfit__number {
+	font-size: 35px;
+	font-weight: 500;
+	margin-top: -5px;
+	display: inline-block;
 }
 
-.TotalProfit__UpIcon{
-    display: flex;
-    align-items: center;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-    background: #8FDACB;
-    color: #ffffff;
-    border-radius: 50%;
-    font-size: 20px;
-    margin-right: 5px;
+.TotalProfit__UpIcon {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	background: #8fdacb;
+	color: #ffffff;
+	border-radius: 50%;
+	font-size: 20px;
+	margin-right: 5px;
 }
 
-.TotalProfit__desc{
-    font-size: 15px;
+.TotalProfit__desc {
+	font-size: 15px;
 }
 
 /* Raynaldy's section end */
@@ -369,45 +358,47 @@ main {
 /* Firman's section start */
 
 .Invoice__title {
-    margin: 12px 48px;
+	margin: 12px 48px;
 }
 
 .Invoice__table {
-    display: flex;
-    background-color: #F0F8FF;
-    padding: 6px;
-    margin: 24px 48px;
-    border-radius: 12px;
-    justify-content: space-evenly;
+	display: flex;
+	background-color: #f0f8ff;
+	padding: 6px;
+	margin: 24px 48px;
+	border-radius: 12px;
+	justify-content: space-evenly;
 }
 
-.Invoice__TableData, th, td {
-    border: 0px;
-    padding: 6px 48px;
+.Invoice__TableData,
+th,
+td {
+	border: 0px;
+	padding: 6px 48px;
 }
 
 .Table__button {
-    display: flex;
-    justify-content: right;
-    gap: 12px;
+	display: flex;
+	justify-content: right;
+	gap: 12px;
 }
 
 .Table__button--add {
-    background-color:#228B22;
-    color: #ffffff;
-    padding: 4px 16px;
-    border: 2px #228B22;
-    border-radius: 4px;
-    text-decoration: none;
+	background-color: #228b22;
+	color: #ffffff;
+	padding: 4px 16px;
+	border: 2px #228b22;
+	border-radius: 4px;
+	text-decoration: none;
 }
 
 .Table__button--remove {
-    background-color: #FF0000;
-    color: #ffffff;
-    padding: 4px 16px;
-    border: 2px #FF0000;
-    border-radius: 4px;
-    text-decoration: none;
+	background-color: #ff0000;
+	color: #ffffff;
+	padding: 4px 16px;
+	border: 2px #ff0000;
+	border-radius: 4px;
+	text-decoration: none;
 }
 
 /* Firman's section end */
@@ -415,15 +406,17 @@ main {
 /* Anang's section start */
 
 nav {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 5px 2px #0000001a;
-    height: 6rem;
-    left: 0;
-    right: 0;
-    top: 0;
-    position: sticky;
-    display: flex;
-    align-items: center;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 5px 2px #0000001a;
+	height: 6rem;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
 }
 
 nav > h3 {
@@ -435,9 +428,8 @@ nav > h3 {
 	position: relative;
 	padding: 5px 10px;
 	border-radius: 5px;
-
 }
-.nav__account:hover{
+.nav__account:hover {
 	background-color: #eee;
 }
 
@@ -455,19 +447,19 @@ nav > h3 {
 	padding: 10px 1px;
 }
 
-.nav__account_menu >li{
+.nav__account_menu > li {
 	padding: 3px 8px;
 }
-.nav__account_menu >li:hover{
+.nav__account_menu > li:hover {
 	width: full;
-	background-color:#eee;
+	background-color: #eee;
 }
 
-.nav__account_menu_active{
+.nav__account_menu_active {
 	display: flex;
 	flex-direction: column;
-	right:0;
-	top:40px;
+	right: 0;
+	top: 40px;
 }
 
 .dashboard {
