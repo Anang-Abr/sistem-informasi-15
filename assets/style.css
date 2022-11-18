@@ -15,19 +15,18 @@ a{
 /* alex's section start */
 
 .sidebar {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 70px;
-	border-top-right-radius: 10px;
-	border-left: 5px solid black;
-	border-bottom-right-radius: 10px;
-	background-color: rgb(240, 242, 242);
-	transition: 0.3s;
-	box-sizing: initial;
-	box-shadow: 2px 0px 5px;
-	overflow-x: hidden;
-	z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    border-top-right-radius: 10px;
+    border-left: 5px #000000;
+    border-bottom-right-radius: 10px;
+    background-color: #F2F2F0;
+    transition: 0.3s;
+    box-sizing: initial;
+    box-shadow: 2px 0px 5px;
+    z-index: 6;
 }
 
 .title {
@@ -65,24 +64,24 @@ a{
 }
 
 .sidebar ul li:hover {
-	background-color: rgb(213, 216, 222);
+    background-color: #CCCCCC;
 }
 
 .sidebar ul li.__active {
-	background: blue;
+    background: #0000ff;
 }
 
 .sidebar ul li.__active a {
-	color: white;
+    color: #ffffff;
 }
 
 .sidebar ul li a {
-	position: relative;
-	display: block;
-	width: 100%;
-	display: flex;
-	text-decoration: none;
-	color: black;
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #000000;
 }
 
 .sidebar ul li a .icon {
@@ -99,12 +98,51 @@ a{
 }
 
 .sidebar ul li a .title {
-	position: relative;
+    position: relative;
 	display: block;
 	padding-left: 10px;
 	height: 60px;
 	line-height: 60px;
 	white-space: normal;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #0000ff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-button:hover {
+    filter: brightness(300%);
+}
+
+.toggle-button.__active {
+    background: #ff0000;
+}
+
+.toggle-button ion-icon {
+    font-size: 32px;
+    position: absolute;
+    color: #ffffff;
+}
+
+
+.toggle-button ion-icon.toggle-button-open,
+.toggle-button.__active ion-icon.toggle-button-close {
+    display: block;
+}
+
+.toggle-button.__active ion-icon.toggle-button-open,
+.toggle-button ion-icon.toggle-button-close {
+    display: none;
 }
 
 main {
@@ -125,14 +163,16 @@ main {
 
 .sales__button--add,
 .sales__button--del {
-	width: 10%;
-	padding: 10px;
-	text-align: center;
-	margin: 0 5px 0 5px;
-	border-radius: 20px;
-	color: white;
-	cursor: pointer;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 5px 0 5px;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #00000033;
+
 }
 
 .sales__button--add:hover,
@@ -141,7 +181,9 @@ main {
 }
 
 .sales__button--add {
-	background: green;
+
+    background: #008000;
+
 }
 
 .sales__button--del {
@@ -149,19 +191,19 @@ main {
 }
 
 .sales-table {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	border-radius: 5px;
-	padding: 30px;
-	width: 85%;
-	margin: 20px auto 0 auto;
-	overflow-y: scroll;
+    box-shadow: 0 4px 8px 0 #00000033;
+    border-radius: 5px;
+    padding: 30px;
+    width: 85%;
+    margin: 20px auto 0 auto;
+    overflow-y: scroll;
 }
 
 .sales-table table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #dddddd;
 }
 
 .sales-table th,
@@ -170,9 +212,9 @@ main {
 	padding: 16px;
 }
 
-.sales-table th {
-	background-color: grey;
-	color: white;
+.sales-table th{
+    background-color: #808080;
+    color: #ffffff;
 }
 
 .sales-table tr:nth-child(even) {
@@ -189,10 +231,10 @@ main {
 }
 
 .supply__title {
-	font-size: 24px;
-	font-weight: 500;
-	color: black;
-	margin: 100px 0 0 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    margin: 100px 0 0 25px;
 }
 
 .infobox {
@@ -201,15 +243,18 @@ main {
 	justify-content: space-between;
 }
 
-.infobox > section {
-	margin: 20px;
-	padding: 30px;
-	border-radius: 12px;
+.infobox>section {
+
+    margin: 20px 60px 20px 20px;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .TotalOrder {
-	position: relative;
-	background-color: paleturquoise;
+    position: relative;
+    background-color: #afeeee;
+
+
 }
 
 .TotalOrder div,
@@ -232,30 +277,91 @@ main {
 }
 
 .TotalOrder__UpIcon {
-	display: flex;
-	align-items: center;
-	height: 20px;
-	width: 20px;
-	line-height: 20px;
-	background: #8fdacb;
-	color: white;
-	border-radius: 50%;
-	font-size: 20px;
-	margin-right: 5px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    background: #8FDACB;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 .TotalOrder__desc {
-	font-size: 12px;
+    font-size: 15px;
+
 }
 
 .TotalSale {
-	position: relative;
-	background-color: paleturquoise;
+    position: relative;
+    background-color: #afeeee;
+
 }
 
+.TotalSale__title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.TotalSale__number{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.TotalSale__DownIcon{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    background: #ff4e4e;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.TotalSale__desc{
+    font-size: 15px;
+}
+
+
 .TotalProfit {
-	position: relative;
-	background-color: paleturquoise;
+    position: relative;
+    background-color: #afeeee;
+}
+
+.TotalProfit__title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.TotalProfit__number{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.TotalProfit__UpIcon{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    background: #8FDACB;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.TotalProfit__desc{
+    font-size: 15px;
 }
 
 /* Raynaldy's section end */
@@ -312,17 +418,15 @@ td {
 /* Anang's section start */
 
 nav {
-	background-color: white;
-	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
-	height: 6rem;
-	left: 0;
-	right: 0;
-	top: 0;
-	position: sticky;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 5;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 2px #0000001a;
+    height: 6rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
 }
 
 nav > h3 {
