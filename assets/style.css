@@ -223,30 +223,31 @@ main {
 .supply {
 	display: flex;
 	align-items: center;
+	margin-left: 90px;
 }
 
 .supply__title {
 	font-size: 25px;
-	font-weight: 500;
+	font-weight: 1000;
 	color: #000000;
-	margin: 100px 0 0 25px;
+	margin: 100px 0 25px 25px;
 }
 
 .infobox {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content:space-evenly;
 }
 
 .infobox > section {
 	margin: 20px 60px 20px 20px;
-	padding: 30px;
+	padding: 20px;
 	border-radius: 15px;
 }
 
 .TotalOrder {
 	position: relative;
-	background-color: #afeeee;
+	background-color: #caffff;
 }
 
 .TotalOrder div,
@@ -274,7 +275,7 @@ main {
 	height: 20px;
 	width: 20px;
 	line-height: 20px;
-	background: #8fdacb;
+	background: #96e637;
 	color: #ffffff;
 	border-radius: 50%;
 	font-size: 20px;
@@ -287,7 +288,7 @@ main {
 
 .TotalSale {
 	position: relative;
-	background-color: #afeeee;
+	background-color: #F8E5FF;
 }
 
 .TotalSale__title {
@@ -321,7 +322,7 @@ main {
 
 .TotalProfit {
 	position: relative;
-	background-color: #afeeee;
+	background-color: #e9ee83;
 }
 
 .TotalProfit__title {
@@ -342,7 +343,7 @@ main {
 	height: 20px;
 	width: 20px;
 	line-height: 20px;
-	background: #8fdacb;
+	background: #96e637;
 	color: #ffffff;
 	border-radius: 50%;
 	font-size: 20px;
@@ -351,6 +352,37 @@ main {
 
 .TotalProfit__desc {
 	font-size: 15px;
+}
+
+.SupplyTable {
+	box-shadow: 0 4px 8px 0 #00000033;
+	border-radius: 5px;
+	padding: 30px;
+	width: 85%;
+	margin: 20px auto 0 auto;
+	overflow-y: scroll;
+}
+
+.SupplyTable table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #dddddd;
+}
+
+.SupplyTable th,
+.SupplyTable td {
+	text-align: center;
+	padding: 16px;
+}
+
+.SupplyTable th {
+	background-color: #808080;
+	color: #ffffff;
+}
+
+.SupplyTable tr:nth-child(even) {
+	background-color: #d2d2d2;
 }
 
 /* Raynaldy's section end */
