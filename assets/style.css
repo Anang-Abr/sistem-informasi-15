@@ -357,48 +357,52 @@ main {
 
 /* Firman's section start */
 
-.Invoice__title {
-	margin: 12px 48px;
+.invoice-header {
+	font-size: 24px;
+	margin: 24px;
 }
 
-.Invoice__table {
-	display: flex;
-	background-color: #f0f8ff;
-	padding: 6px;
-	margin: 24px 48px;
-	border-radius: 12px;
-	justify-content: space-evenly;
+.invoice-Box {
+	margin-top: 64px;
+	margin-right: 64px;
 }
 
-.Invoice__TableData,
-th,
-td {
-	border: 0px;
-	padding: 6px 48px;
+.invoice-Box h6 {
+	margin-left: 90px;
+	font-size: 18px;
 }
 
-.Table__button {
-	display: flex;
-	justify-content: right;
-	gap: 12px;
-}
-
-.Table__button--add {
-	background-color: #228b22;
-	color: #ffffff;
-	padding: 4px 16px;
-	border: 2px #228b22;
-	border-radius: 4px;
+.invoice-table-button button {
+	
+	padding: 8px 12px;
+	text-align: center;
 	text-decoration: none;
+	font-size: 8px;
+	cursor: pointer;
 }
 
-.Table__button--remove {
-	background-color: #ff0000;
+.invoice-table {
+	border-radius: 24px;
+	width: 85%;
+	margin: auto;
+}
+
+.invoice-table table {
+	border-radius: 8px;
+	border-spacing: 0;
+	width: 100%;
+	border: 2px solid #808080;
+}
+
+.invoice-table th,
+.invoice-table td {
+	text-align: center;
+	padding: 16px;
+}
+
+.invoice-table th {
+	background-color: #808080;
 	color: #ffffff;
-	padding: 4px 16px;
-	border: 2px #ff0000;
-	border-radius: 4px;
-	text-decoration: none;
 }
 
 /* Firman's section end */
