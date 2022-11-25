@@ -34,6 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
 		const navAccountMenu = document.querySelector(".nav__account_menu");
 		navAccountMenu.classList.toggle("nav__account_menu_active");
 	});
+
+	const salesAddBtn = document.querySelector(".sales__button--add");
+	const salesFormPopup = document.querySelector(".addsales_form_container");
+	salesAddBtn.addEventListener("click", () => {
+		salesFormPopup.classList.toggle("addsales_form_container_active");
+	});
+
+	// document.addEventListener("click", () => {
+	// 	salesFormPopup.classList.remove("addsales_form_container_active");
+	// });
 })
 
 const labels = ["January", "February", "March", "April", "May", "June"];

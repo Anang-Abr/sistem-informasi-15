@@ -572,4 +572,57 @@ nav > h3 {
 	grid-column: span 2;
 }
 
+.addsales_form_container{
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+	background-color: #000000bb;
+	display: none;
+}
+
+.addsales_form_container_active{
+	display: block;
+}
+
+.addsales_form_container>div{
+	width: fit-content;
+	margin: 20% auto;
+	background-color: #ffffff;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+.addsales_form>div{
+ display: grid;
+ margin:1rem 0;
+ grid-template-columns: 8rem 10px 1fr;
+ justify-content:space-start ;
+ grid-gap: 1rem;
+}
+
+.form_button_container{
+	display: flex;
+	justify-content:space-evenly;
+	gap: 1rem;
+}
+
+.form_button{
+	padding: 0.5rem 1rem;
+	text-align:center;
+	width: 10rem;
+	border-radius: 20px;
+	color: #ffffff;
+}
+
+.button_cancel{
+	background-color: #8a0101;
+}
+.button_submit{
+	background-color: #008000;
+}
+
+
 /* Anang's section end */
