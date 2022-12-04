@@ -10,59 +10,54 @@
             </div>
         </section>
 
-        <section class="infobox">
-            <section class="TotalOrder">
-                <div class="TotalOrder__title">
-                    Total Order
+        <section class="HomeSection">
+        <div class="HomeContent">
+          <div class="Boxes">
+            <div class="Boxes__box">
+              <div class="Boxes__RightSide">
+                <div class="Boxes__title">Total Order</div>
+                <div class="Boxes__number">40,876</div>
+                <div class="Boxes__icon">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="Boxes__text">Up from yesterday</span>
                 </div>
-                <div class="TotalOrder__number">
-                    2,000
+              </div>
+              <i class='bx bx-cart-alt cart'></i>
+            </div>
+            <div class="Boxes__box">
+              <div class="Boxes__RightSide">
+                <div class="Boxes__title">Total Sales</div>
+                <div class="Boxes__number">38,876</div>
+                <div class="Boxes__icon">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="Boxes__text">Up from yesterday</span>
                 </div>
-                <div>
-                    <span class="TotalOrder__UpIcon">
-                        <ion-icon name="arrow-up"></ion-icon>
-                    </span>
-                    <span class="TotalOrder__desc">
-                        Compared to last week
-                    </span>
+              </div>
+              <i class='bx bxs-cart-add cart two' ></i>
+            </div>
+            <div class="Boxes__box">
+              <div class="Boxes__RightSide">
+                <div class="Boxes__title">Total Profit</div>
+                <div class="Boxes__number">$12,876</div>
+                <div class="Boxes__icon">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="Boxes__text">Up from yesterday</span>
                 </div>
-            </section>
-
-            <section class="TotalSale">
-                <div class="TotalSale__title">
-                    Total Sale
+              </div>
+              <i class='bx bx-cart cart three' ></i>
+            </div>
+            <div class="Boxes__box">
+              <div class="Boxes__RightSide">
+                <div class="Boxes__title">Total Return</div>
+                <div class="Boxes__number">11,086</div>
+                <div class="Boxes__icon">
+                  <i class='bx bx-down-arrow-alt down'></i>
+                  <span class="Boxes__text">Down From Today</span>
                 </div>
-                <div class="TotalSale__number">
-                    5,000
-                </div>
-                <div>
-                    <span class="TotalSale__DownIcon">
-                        <ion-icon name="arrow-down-outline"></ion-icon>
-                    </span>
-                    <span class="TotalSale__desc">
-                        Compared to last week
-                    </span>
-                </div>
-            </section>
-
-            <section class="TotalProfit">
-                <div class="TotalProfit__title">
-                    Total Profit
-                </div>
-                <div class="TotalProfit__number">
-                    123,000
-                </div>
-                <div>
-                    <span class="TotalProfit__UpIcon">
-                        <ion-icon name="arrow-up"></ion-icon>
-                    </span>
-                    <span class="TotalProfit__desc">
-                        Compared to last week
-                    </span>
-                </div>
-            </section>
-
-
+              </div>
+              <i class='bx bxs-cart-download cart four' ></i>
+            </div>
+          </div>
         </section>
 
         <div class="SupplyTable">
