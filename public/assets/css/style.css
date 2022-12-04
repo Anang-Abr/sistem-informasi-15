@@ -400,30 +400,52 @@ main {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin: 64px 6px;
+	gap: 24px;
 }
 
 .invoiceInfoBox__RecentlyBox {
 	display: flex;
 	text-align: center;
-	background-color: #ffa500;
-	border-radius: 6px;
+	align-items: center;
+	background-color: #59d859;
+	border-radius: 16px;
+	width: 330px;
+	height: 200px;
+	justify-content: space-around;
+    gap: 12px
+}
+
+.invoiceInfoBox__RecentlyBoxIcon {
+	font-size: 96px;
 }
 
 .invoiceInfoBox__RecentlyBoxText {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+	text-align: center;
+	font-size: 24px;
+}
 
-	align-items: center;
+.invoiceInfoBox__RecentlyBoxTextTitle {
+	font-size: 36px;
 }
 
 .invoiceInfoBox__AllBox {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+    gap: 24px;
 	text-align: center;
 	background-color: #ffa500;
-	border-radius: 6px;
+	border-radius: 16px;
+	width: 330px;
+	height: 200px;
 }
 
 .invoiceInfoBox__AllBoxNumber {
-	font-size: 64px;
+	font-size: 96px;
 }
 
 .invoiceInfoBox__AllBoxText {

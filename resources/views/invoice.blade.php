@@ -13,11 +13,11 @@
 
             <section class="invoiceInfoBox">
                 <div class="invoiceInfoBox__RecentlyBox" >
-                    <div>
-                        <h6>(Icon)</h6>
+                    <div class="invoiceInfoBox__RecentlyBoxIcon">
+                        <ion-icon name="caret-down-circle"></ion-icon>
                     </div>
                     <div class="invoiceInfoBox__RecentlyBoxText">
-                        <div>
+                        <div class="invoiceInfoBox__RecentlyBoxTextTitle">
                             <h2>3</h2>
                         </div>
                         <div>
