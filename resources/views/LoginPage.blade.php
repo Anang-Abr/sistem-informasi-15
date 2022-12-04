@@ -3,7 +3,7 @@
 <div class="login-container">
     <div class="login-wrapper">
          <div class="login-title">
-            Login Form
+            Welcome !
          </div>
          <form class="login-form" action="#">
             <div class="login-input-field">

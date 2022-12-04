@@ -1,29 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="Add-backgound">
-        <div class="Add-form-wrapper">
-            <form action="">
-                <div class="Add-field">
-                    <label for="nama">Nama</label>
-                    <input type="text" id="nama">
+@extends('components.main')
+@section('content')
+<div class="add-body">
+    <div class="add-container">
+        <div class="add-header">Customer Information</div>
+        <form class="add-form" action="#">
+            <div class="add-form-row">
+                <div class="add-form-input-data">
+                    <input class="add-data" type="text" required>
+                    <div class="add-underline"></div>
+                    <label for="">First Name</label>
                 </div>
-                <div class="Add-field">
-                    <label for="alamat">Alamat</label>
-                    <input type="text" id="alamat">
+                <div class="add-form-input-data">
+                    <input class="add-data" type="text" required>
+                    <div class="add-underline"></div>
+                    <label for="">Last Name</label>
                 </div>
-                <div class="Add-field">
-                    <label for="nama">Nomor Telepon</label>
-                    <input type="text" id="nama">
+            </div>
+            <div class="add-form-row">
+                <div class="add-form-input-data">
+                    <input class="add-data" type="text" required>
+                    <div class="add-underline"></div>
+                    <label for="">Email Address</label>
                 </div>
-            </form>
-        </div>
+                <div class="add-form-input-data">
+                    <input class="add-data" type="text" required>
+                    <div class="add-underline"></div>
+                    <label for="">Phone Number</label>
+                </div>
+            </div>
+            <div class="add-form-row">
+                <div class="add-form-input-data textarea">
+                    <textarea class="add-data" rows="8" cols="80" required></textarea>
+                    <br />
+                    <div class="add-underline"></div>
+                    <label for="">Address</label>
+                    <br />
+                    <div class="add-form-row submit-btn" id="add-submit-btn">
+                        <div class="add-form-input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-</body>
-</html>
+</div>
+@endsection
