@@ -38,3 +38,11 @@ Route::get('/test', function (){
         'supply' => $dataInvoice[0]->supply
     ]);
 });
+
+Route::get('/Add', function () {
+    return view('Add');
+});
+Route::get('/Login', function () {
+    return view('LoginPage');
+});
+
