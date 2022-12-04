@@ -233,129 +233,90 @@ main {
 	margin: 100px 0 25px 25px;
 }
 
-.infobox {
+.HomeSection .HomeContent{
+	position: relative;
+	padding-top: 30px;
+}
+  .HomeContent .Boxes{
 	display: flex;
 	align-items: center;
-	justify-content:space-evenly;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 20px;
+	margin-bottom: 25px;
 }
-
-.infobox > section {
-	margin: 20px 60px 20px 20px;
-	padding: 20px;
+  .Boxes .Boxes__box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% / 4 - 15px);
+	background: #fff;
+	padding: 15px 15px;
 	border-radius: 15px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-
-.TotalOrder {
-	position: relative;
-	background-color: #caffff;
-}
-
-.TotalOrder div,
-.TotalProfit div,
-.TotalSale div {
-	display: flex;
-	align-items: center;
-}
-
-.TotalOrder__title {
+  .Boxes .Boxes__Title{
 	font-size: 20px;
 	font-weight: 500;
 }
-
-.TotalOrder__number {
-	font-size: 35px;
-	font-weight: 500;
-	margin-top: -5px;
+  .HomeContent .Boxes__box .Boxes__number{
 	display: inline-block;
+	font-size: 35px;
+	margin-top: -5px;
+	font-weight: 500;
 }
-
-.TotalOrder__UpIcon {
+  .HomeContent .Boxes__box .Boxes__icon{
 	display: flex;
 	align-items: center;
+}
+  .HomeContent .Boxes__box .Boxes__icon i{
 	height: 20px;
 	width: 20px;
+	background: #8FDACB;
 	line-height: 20px;
-	background: #96e637;
-	color: #ffffff;
+	text-align: center;
 	border-radius: 50%;
+	color: #fff;
 	font-size: 20px;
 	margin-right: 5px;
 }
-
-.TotalOrder__desc {
+  .Boxes__box .Boxes__icon i.down{
+	background: #e87d88;
+}
+  .HomeContent .Boxes__box .Boxes__icon .Boxes__text{
 	font-size: 15px;
 }
-
-.TotalSale {
-	position: relative;
-	background-color: #F8E5FF;
-}
-
-.TotalSale__title {
-	font-size: 20px;
-	font-weight: 500;
-}
-
-.TotalSale__number {
-	font-size: 35px;
-	font-weight: 500;
-	margin-top: -5px;
+  .HomeContent .Boxes__box .cart{
 	display: inline-block;
+	font-size: 32px;
+	height: 50px;
+	width: 50px;
+	background: #cce5ff;
+	line-height: 50px;
+	text-align: center;
+	color: #66b0ff;
+	border-radius: 15px;
+	margin: -15px 0 0 6px;
 }
-
-.TotalSale__DownIcon {
-	display: flex;
-	align-items: center;
-	height: 20px;
-	width: 20px;
-	line-height: 20px;
-	background: #ff4e4e;
-	color: #ffffff;
-	border-radius: 50%;
-	font-size: 20px;
-	margin-right: 5px;
+  .HomeContent .Boxes__box .cart.two{
+	 color: #2BD47D;
+	 background: #C0F2D8;
 }
-
-.TotalSale__desc {
-	font-size: 15px;
+  .HomeContent .Boxes__box .cart.three{
+	 color: #ffc233;
+	 background: #ffe8b3;
 }
-
-.TotalProfit {
-	position: relative;
-	background-color: #e9ee83;
+  .HomeContent .Boxes__box .cart.four{
+	 color: #e05260;
+	 background: #f7d4d7;
 }
-
-.TotalProfit__title {
+  .HomeContent .total-order{
 	font-size: 20px;
 	font-weight: 500;
-}
-
-.TotalProfit__number {
-	font-size: 35px;
-	font-weight: 500;
-	margin-top: -5px;
-	display: inline-block;
-}
-
-.TotalProfit__UpIcon {
-	display: flex;
-	align-items: center;
-	height: 20px;
-	width: 20px;
-	line-height: 20px;
-	background: #96e637;
-	color: #ffffff;
-	border-radius: 50%;
-	font-size: 20px;
-	margin-right: 5px;
-}
-
-.TotalProfit__desc {
-	font-size: 15px;
 }
 
 .SupplyTable {
-	box-shadow: 0 4px 8px 0 #00000033;
+	box-shadow: 0 5px 10px 0 #00000033;
 	border-radius: 5px;
 	padding: 30px;
 	width: 85%;
@@ -373,7 +334,7 @@ main {
 .SupplyTable th,
 .SupplyTable td {
 	text-align: center;
-	padding: 16px;
+	padding: 15px;
 }
 
 .SupplyTable th {
