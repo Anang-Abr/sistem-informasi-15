@@ -31,8 +31,10 @@
             <div class="add-form-row">
                 <div class="add-form-input-data textarea">
                     <textarea class="add-data" rows="8" cols="80" required></textarea>
+                    <br />
                     <div class="add-underline"></div>
                     <label for="">Address</label>
+                    <br />
                     <div class="add-form-row submit-btn" id="add-submit-btn">
                         <div class="add-form-input-data">
                         <div class="inner"></div>

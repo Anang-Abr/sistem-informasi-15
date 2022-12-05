@@ -14,9 +14,7 @@ class SupplyController extends Controller
      */
     public function index()
     {
-        $dataSupply = Supply::get();
-        // dd($dataSupply);
-        return view('supply', array('dataSupply' => $dataSupply));
+        return view('supply');
     }
 
     /**
