@@ -223,21 +223,21 @@ main {
 .supply {
 	display: flex;
 	align-items: center;
-	margin-left: 90px;
+	margin-left: 30px;
 }
 
 .supply__title {
 	font-size: 25px;
 	font-weight: 1000;
 	color: #000000;
-	margin: 100px 0 25px 25px;
+	margin: 100px 0 10px 10px;
 }
 
 .HomeSection .HomeContent{
 	position: relative;
 	padding-top: 30px;
 }
-  .HomeContent .Boxes{
+.HomeContent .Boxes{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -245,7 +245,7 @@ main {
 	padding: 0 20px;
 	margin-bottom: 25px;
 }
-  .Boxes .Boxes__box{
+.Boxes .Boxes__box{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -255,21 +255,21 @@ main {
 	border-radius: 15px;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-  .Boxes .Boxes__Title{
+.Boxes .Boxes__Title{
 	font-size: 20px;
 	font-weight: 500;
 }
-  .HomeContent .Boxes__box .Boxes__number{
+.HomeContent .Boxes__box .Boxes__number{
 	display: inline-block;
 	font-size: 35px;
 	margin-top: -5px;
 	font-weight: 500;
 }
-  .HomeContent .Boxes__box .Boxes__icon{
+.HomeContent .Boxes__box .Boxes__icon{
 	display: flex;
 	align-items: center;
 }
-  .HomeContent .Boxes__box .Boxes__icon ion-icon{
+.HomeContent .Boxes__box .Boxes__icon ion-icon{
 	height: 20px;
 	width: 20px;
 	background: #8FDACB;
@@ -280,10 +280,10 @@ main {
 	font-size: 20px;
 	margin-right: 5px;
 }
-  .Boxes__box .Boxes__icon .Boxes__iconDown ion-icon{
+.Boxes__box .Boxes__icon .Boxes__iconDown ion-icon{
 	background: #e87d88;
 }
-  .HomeContent .Boxes__box .Boxes__icon .Boxes__text{
+.HomeContent .Boxes__box .Boxes__icon .Boxes__text{
 	font-size: 15px;
 }
 
@@ -291,7 +291,7 @@ main {
 	margin-top: 10px;
 }
 
-  .HomeContent .Boxes__box .Boxes__iconCart {
+.HomeContent .Boxes__box .Boxes__iconCart {
 	display: inline-block;
 	font-size: 32px;
 	height: 50px;
@@ -304,11 +304,11 @@ main {
 	margin: -15px 0 0 6px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconCart2 ion-icon{
+.HomeContent .Boxes__box .Boxes__iconSales ion-icon{
 	margin-top: 10px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconCart2 {
+.HomeContent .Boxes__box .Boxes__iconSales {
 	display: inline-block;
 	font-size: 32px;
 	height: 50px;
@@ -321,11 +321,11 @@ main {
 	margin: -15px 0 0 6px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconCart3 ion-icon{
+.HomeContent .Boxes__box .Boxes__iconProfit ion-icon{
 	margin-top: 10px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconCart3 {
+.HomeContent .Boxes__box .Boxes__iconProfit {
 	display: inline-block;
 	font-size: 32px;
 	height: 50px;
@@ -338,11 +338,11 @@ main {
 	margin: -15px 0 0 6px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconCart4 ion-icon{
+.HomeContent .Boxes__box .Boxes__iconCustomer ion-icon{
 	margin-top: 10px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconCart4 {
+.HomeContent .Boxes__box .Boxes__iconCustomer {
 	display: inline-block;
 	font-size: 32px;
 	height: 50px;
@@ -355,41 +355,124 @@ main {
 	margin: -15px 0 0 6px;
 }
 
-  .HomeContent .total-order{
+.HomeContent .total-order{
 	font-size: 20px;
 	font-weight: 500;
 }
 
-.SupplyTable {
+.SupplyTable{
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 25px;
+	margin-top: 25px;
+	width: 100%;
+	color: var(--dark);
+}
+
+.SupplyTable > div{
+	border-radius: 20px;
+	background: var(--light);
+	padding: 24px;
+	overflow-x: auto;
+}
+
+.SupplyTable__stock {
+	flex-grow: 1;
+	flex-basis: 500px;
 	box-shadow: 0 5px 10px 0 #00000033;
 	border-radius: 5px;
 	padding: 30px;
-	width: 85%;
-	margin: 20px auto 0 auto;
+	width: 60%;
+	margin: 10px auto 0 auto;
 	overflow-y: scroll;
+	
 }
 
-.SupplyTable table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.SupplyTable__stock table {
 	width: 100%;
-	border: 1px solid #dddddd;
+	border-collapse: collapse;
 }
 
-.SupplyTable th,
-.SupplyTable td {
-	text-align: center;
-	padding: 15px;
+.SupplyTable__stock th {
+	padding-bottom: 12px;
+	font-size: 13px;
+	text-align: left;
+	border-bottom: 1px solid #808080;
 }
 
-.SupplyTable th {
-	background-color: #808080;
-	color: #ffffff;
+.SupplyTable__stock table td{
+	padding: 16px 0;
 }
 
-.SupplyTable tr:nth-child(even) {
-	background-color: #d2d2d2;
+.SupplyTable__stock table tr td:first-child{
+	display: flex;
+	align-items: center;
+	grid-gap: 12px;
+	padding-left: 6px;
 }
+
+.SupplyTable__stock table tbody tr:hover{
+	background: #808080;
+}
+
+
+.todo {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+.todo__title{
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 600;
+	
+}
+
+.todo__TopIcon{
+	align-items: center;
+	display: flex;
+	font-size: 25px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+}
+
+.todo__top{
+	display: flex;
+	justify-content: space-between;
+}
+
+.todo .todo-list {
+	width: 100%;
+}
+
+.todo .todo__list li {
+	width: 100%;
+	margin-bottom: 16px;
+	background: #f5f5f5;
+	border-radius: 10px;
+	padding: 14px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.todo .todo__list li.todo__Completed {
+	border-left: 10px solid #2525ff
+}
+.todo .todo__list li.todo__NotCompleted {
+	border-left: 10px solid #ffa500;
+}
+.todo .todo__list li:last-child {
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+
 
 /* Raynaldy's section end */
 
