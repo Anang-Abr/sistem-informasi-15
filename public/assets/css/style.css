@@ -709,7 +709,7 @@ main {
 .invoiceInfoBox {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	margin: 64px 6px;
 	gap: 24px;
 }
@@ -720,7 +720,7 @@ main {
 	align-items: center;
 	background-color: #59d859;
 	border-radius: 16px;
-	width: 330px;
+	width: 450px;
 	height: 200px;
 	justify-content: space-around;
 	gap: 12px
@@ -751,7 +751,7 @@ main {
 	text-align: center;
 	background-color: #ffa500;
 	border-radius: 16px;
-	width: 330px;
+	width: 450px;
 	height: 200px;
 }
 
@@ -761,6 +761,54 @@ main {
 
 .invoiceInfoBox__AllBoxText {
 	font-size: 24px;
+}
+
+.invoiceInfoBox__Button {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.invoiceInfoBox__Button--Add {
+	background-color: #008000;
+	border-radius: 12px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+
+.invoiceInfoBox__Button--Add button {
+	background-color: #008000;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 12px;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.invoiceInfoBox__Button--Edit {
+	background-color: #96e637;
+	border-radius: 12px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+
+.invoiceInfoBox__Button--Edit button {
+	background-color: #96e637;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 12px;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
 }
 
 .invoiceBoxRecently {

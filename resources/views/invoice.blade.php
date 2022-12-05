@@ -34,6 +34,15 @@
                         <p>Total Invoice</p>
                     </div>
                 </div>
+
+                <div class="invoiceInfoBox__Button">
+                    <div class="invoiceInfoBox__Button--Add">
+                        <Button>Add Invoice</Button>
+                    </div>
+                    <div class="invoiceInfoBox__Button--Edit">
+                        <Button>Edit Invoice</Button>
+                    </div>
+                </div>
             </section>
 
             <section class="invoiceBoxRecently">
