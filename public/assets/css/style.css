@@ -217,7 +217,7 @@ main {
 	background-color: #d2d2d2;
 }
 
-.login-container {
+.login__body {
 	display: grid;
 	height: 100vh;
 	width: 100%;
@@ -231,14 +231,14 @@ main {
 	color: #fff;
 }
 
-.login-wrapper {
+.login__container {
 	width: 380px;
 	background: #fff;
 	border-radius: 15px;
 	box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
 }
 
-.login-wrapper .login-title {
+.login__container .login__title {
 	font-size: 35px;
 	font-weight: 600;
 	text-align: center;
@@ -248,18 +248,18 @@ main {
 	background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 
-.login-wrapper .login-form {
+.login__container .login__form {
 	padding: 10px 30px 50px 30px;
 }
 
-.login-wrapper .login-form .login-input-field {
+.login__container .login__form .login__input-field {
 	height: 50px;
 	width: 100%;
 	margin-top: 20px;
 	position: relative;
 }
 
-.login-wrapper .login-form .login-input-field input {
+.login__container .login__form .login__input-field input {
 	height: 100%;
 	width: 100%;
 	outline: none;
@@ -270,12 +270,12 @@ main {
 	transition: all 0.3s ease;
 }
 
-.login-wrapper .login-form .login-input-field input:focus,
-.login-form .login-input-field input:valid {
+.login__container .login__form .login__input-field input:focus,
+.login__form .login__input-field input:valid {
 	border-color: #4158d0;
 }
 
-.login-wrapper .login-form .login-input-field label {
+.login__container .login__form .login__input-field label {
 	position: absolute;
 	top: 50%;
 	left: 20px;
@@ -287,8 +287,8 @@ main {
 	transition: all 0.3s ease;
 }
 
-.login-form .login-input-field input:focus~label,
-.login-form .login-input-field input:valid~label {
+.login__form .login__input-field input:focus~label,
+.login__form .login__input-field input:valid~label {
 	top: 0%;
 	font-size: 16px;
 	color: #4158d0;
@@ -296,7 +296,7 @@ main {
 	transform: translateY(-50%);
 }
 
-.login-form .login-content {
+.login__form .login__content {
 	display: flex;
 	width: 100%;
 	height: 50px;
@@ -304,32 +304,32 @@ main {
 	justify-content: space-around;
 }
 
-.login-form {
+.login__form {
 	font-size: 16px;
 }
 
-.login-content {
+.login__content {
 	font-size: 13px;
 }
 
-.login-form .login-checkbox {
+.login__form .login__checkbox {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.login-form .login-content input {
+.login__form .login__content input {
 	width: 15px;
 	height: 15px;
 	background: red;
 }
 
-.login-form .login-content label {
+.login__form .login__content label {
 	color: #262626;
 	padding-left: 5px;
 }
 
-.login-form .login-input-field input[type="submit"] {
+.login__form .login__input-field input[type="submit"] {
 	color: #fff;
 	border: none;
 	padding-left: 0;
@@ -341,24 +341,24 @@ main {
 	transition: all 0.3s ease;
 }
 
-.login-form .login-input-field input[type="submit"]:active {
+.login__form .login__input-field input[type="submit"]:active {
 	transform: scale(0.95);
 }
 
-.login-form .login-pass-link a {
+.login__form .login__pass-link a {
 	color: #4158d0;
 	text-decoration: none;
 }
 
-.login-form .login-pass-link a:hover {
+.login__form .login__pass-link a:hover {
 	text-decoration: underline;
 }
 
-#login-submit:hover {
+#login__submit:hover {
 	filter: brightness(125%);
 }
 
-.add-body {
+.addCustomer__body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -367,7 +367,7 @@ main {
 	background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
 
-.add-container {
+.addCustomer__container {
 	max-width: 800px;
 	background: #fff;
 	width: 800px;
@@ -377,13 +377,13 @@ main {
 	border-radius: 10px;
 }
 
-.add-header {
+.addCustomer__header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.add-container .add-header {
+.addCustomer__container .addCustomer__header {
 	text-align: center;
 	font-size: 35px;
 	font-weight: 600;
@@ -392,27 +392,27 @@ main {
 	-webkit-text-fill-color: transparent;
 }
 
-.add-container .add-form {
+.addCustomer__container .addCustomer__form {
 	padding: 30px 0 0 0;
 }
 
-.add-container .add-form .add-form-row {
+.addCustomer__container .addCustomer__form .addCustomer__form-row {
 	display: flex;
 	margin: 32px 0;
 }
 
-.add-form .add-form-row .add-form-input-data {
+.addCustomer__form .addCustomer__form-row .addCustomer-form__input-data {
 	width: 100%;
 	height: 40px;
 	margin: 0 20px;
 	position: relative;
 }
 
-.add-form .add-form-row .textarea {
+.addCustomer__form .addCustomer__form-row .textarea {
 	height: 70px;
 }
 
-.add-form-input-data input,
+.addCustomer-form__input-data input,
 .textarea textarea {
 	display: block;
 	width: 100%;
@@ -422,9 +422,9 @@ main {
 	border-bottom: 2px solid rgba(0, 0, 0, 0.12);
 }
 
-.add-form-input-data input:focus~label,
+.addCustomer-form__input-data input:focus~label,
 .textarea textarea:focus~label,
-.add-form-input-data input:valid~label,
+.addCustomer-form__input-data input:valid~label,
 .textarea textarea:valid~label {
 	transform: translateY(-30px);
 	font-size: 14px;
@@ -436,7 +436,7 @@ main {
 	padding-top: 10px;
 }
 
-.add-form-input-data label {
+.addCustomer-form__input-data label {
 	position: absolute;
 	pointer-events: none;
 	bottom: 10px;
@@ -450,14 +450,14 @@ main {
 	background: #fff;
 }
 
-.add-form-input-data .add-underline {
+.addCustomer-form__input-data .addCustomer--underline {
 	position: absolute;
 	bottom: 0;
 	height: 2px;
 	width: 100%;
 }
 
-.add-form-input-data .add-underline:before {
+.addCustomer-form__input-data .addCustomer--underline:before {
 	position: absolute;
 	content: "";
 	height: 2px;
@@ -468,20 +468,20 @@ main {
 	transition: transform 0.3s ease;
 }
 
-.add-form-input-data input:focus~.add-underline:before,
-.add-form-input-data input:valid~.add-underline:before,
-.textarea textarea:focus~.add-underline:before,
-.textarea textarea:valid~.add-underline:before {
+.addCustomer-form__input-data input:focus~.addCustomer--underline:before,
+.addCustomer-form__input-data input:valid~.addCustomer--underline:before,
+.textarea textarea:focus~.addCustomer--underline:before,
+.textarea textarea:valid~.addCustomer--underline:before {
 	transform: scale(1);
 }
 
-.submit-btn .add-form-input-data {
+.addCustomer__submit-btn .addCustomer-form__input-data {
 	overflow: hidden;
 	height: 45px !important;
 	width: 25% !important;
 }
 
-.submit-btn .add-form-input-data .inner {
+.addCustomer__submit-btn .addCustomer-form__input-data .addCustomerinner {
 	height: 100%;
 	width: 300%;
 	position: absolute;
@@ -490,11 +490,11 @@ main {
 	transition: all 0.4s;
 }
 
-.submit-btn .add-form-input-data:hover .inner {
+.addCustomer__submit-btn .addCustomer-form__input-data:hover .addCustomerinner {
 	left: 0;
 }
 
-.submit-btn .add-form-input-data input {
+.addCustomer__submit-btn .addCustomer-form__input-data input {
 	background: none;
 	border: none;
 	color: #fff;
@@ -507,7 +507,7 @@ main {
 	z-index: 2;
 }
 
-#add-submit-btn {
+#addCustomer__submit-btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
