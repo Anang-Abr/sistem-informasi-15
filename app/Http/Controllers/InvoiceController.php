@@ -16,7 +16,8 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        return view('invoice');
+        $invoices = Invoice::get();
+        return view('invoice.index', array('invoices' => $invoices));
     }
 
     /**
