@@ -1,7 +1,7 @@
 <div class="sidebar">
         <ul>
             <li class="sidebar-list {{ (request()->segment(1) == "") ? "__active" : "" }}">
-                <a href="/">
+                <a href="{{ url('/') }}">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li class="sidebar-list {{ (request()->segment(1) == "customer") ? "__active" : "" }}">
-                <a href="/customer">
+                <a href="{{ url('/customer') }}">
                     <span class="icon">
                         <ion-icon name="document-text-outline"></ion-icon>
                     </span>
@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li class="sidebar-list {{ (request()->segment(1) == "supply") ? "__active" : "" }}">
-                <a href="/supply">
+                <a href="{{ url('/supply') }}">
                     <span class="icon">
                         <ion-icon name="card-outline"></ion-icon>
                     </span>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li class="sidebar-list {{ (request()->segment(1) == "invoice") ? "__active" : "" }}">
-                <a href="/invoice">
+                <a href="{{ url('/invoice') }}">
                     <span class="icon">
                         <ion-icon name="newspaper-outline"></ion-icon>
                     </span>
