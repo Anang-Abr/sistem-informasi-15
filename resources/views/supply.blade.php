@@ -82,27 +82,15 @@
                     </tr>
                 </thead>
                 <tbody class="SupplyTable__body">
+                  @foreach ( $dataSupply as $supply)
                     <tr>
-                        <td>1</td>
-                        <td>Oreo Rasa Mie Goreng</td>
-                        <td>300</td>
-                        <td>10.900</td>
-                        <td>153</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Baju "Okky" Merah</td>
-                        <td>243</td>
-                        <td>121.000</td>
-                        <td>72</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Deodorant Anti-BauBawang</td>
-                        <td>122</td>
-                        <td>69.000</td>
-                        <td>11</td>
-                    </tr>
+                        <td>{{ $supply->id }}</td>
+                        <td>{{ $supply->nama }}</td>
+                        <td>{{ $supply->stock }}</td>
+                        <td>{{ $supply->harga }}</td>
+                        <td><input type="range" id="points" name="points" min="1" max="{{ $supply->stock }}"></td>
+                    </tr>  
+                  @endforeach
                 </tbody>
             </table>
         </div>
