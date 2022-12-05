@@ -14,7 +14,7 @@ class SupplyController extends Controller
      */
     public function index()
     {
-        return view('supply');
+        return view('supply.index');
     }
 
     /**
