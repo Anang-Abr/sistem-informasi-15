@@ -58,6 +58,11 @@ class DatabaseSeeder extends Seeder
             'nama' => 'rahmat'
         ]);
         Customer::factory()->create([
+            'alamat' => 'Bone',
+            'no_telp' => '081234576825',
+            'nama' => 'Gojo'
+        ]);
+        Customer::factory()->create([
             'alamat' => 'Makassar',
             'no_telp' => '081234576824',
             'nama' => 'ruhul'
