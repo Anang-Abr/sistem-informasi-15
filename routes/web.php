@@ -20,7 +20,7 @@ use App\Models\Invoice;
 Route::get('/', function () {
     return view('index');
 });
-Route::resource('/customer', CustomerController::class)->name('ALL','invoice');
+//Route::resource('/customer', CustomerController::class)->name('ALL','invoice');
 Route::resource('/invoice', InvoiceController::class);
 Route::get('supply/search', [SupplyController::class, 'search']);
 Route::resource('/supply', SupplyController::class);
@@ -37,4 +37,14 @@ Route::get('/test', function (){
         'customer' => $dataInvoice[0]->customer,
         'supply' => $dataInvoice[0]->supply
     ]);
+});
+
+Route::get('/Add', function () {
+    return view('Add');
+});
+Route::get('/Login', function () {
+    return view('LoginPage');
+});
+Route::get('/customer', function () {
+    return view('customer');
 });
