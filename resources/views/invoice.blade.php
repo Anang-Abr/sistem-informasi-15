@@ -53,37 +53,45 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>Date</th>
-                                <th>Buyer Name</th>
+                                <th>Customer Name</th>
+                                <th>Product Name</th>
+                                <th>Total</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
                                 <td>18-November-2022</td>
                                 <td>Martin Router King</td>
-                                <td>
-                                    <div>
-                                        <button>View</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>12-November-2022</td>
-                                <td>Tuan Fredikson</td>
-                                <td>
-                                    <div>
-                                        <button>View</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
+                                <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
-                                <td>9-November-2022</td>
-                                <td>Uzumaki Saburo</td>
+                                <td>Paid</td>
+                                <td>
+                                    <div>
+                                        <button>View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18-November-2022</td>
+                                <td>Martin Router King</td>
+                                <td>Indomie Cabe Ijo</td>
+                                <td>3</td>
+                                <td>Paid</td>
+                                <td>
+                                    <div>
+                                        <button>View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18-November-2022</td>
+                                <td>Martin Router King</td>
+                                <td>Indomie Cabe Ijo</td>
+                                <td>3</td>
+                                <td>Paid</td>
                                 <td>
                                     <div>
                                         <button>View</button>
@@ -106,37 +114,21 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>Date</th>
-                                <th>Buyer Name</th>
+                                <th>Customer Name</th>
+                                <th>Product Name</th>
+                                <th>Total</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
                                 <td>18-November-2022</td>
                                 <td>Martin Router King</td>
-                                <td>
-                                    <div>
-                                        <button>View</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>12-November-2022</td>
-                                <td>Tuan Fredikson</td>
-                                <td>
-                                    <div>
-                                        <button>View</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
+                                <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
-                                <td>9-November-2022</td>
-                                <td>Uzumaki Saburo</td>
+                                <td>Paid</td>
                                 <td>
                                     <div>
                                         <button>View</button>
@@ -144,9 +136,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>4</td>
-                                <td>1-November-2022</td>
-                                <td>Nama1</td>
+                                <td>18-November-2022</td>
+                                <td>Martin Router King</td>
+                                <td>Indomie Cabe Ijo</td>
+                                <td>3</td>
+                                <td>Paid</td>
                                 <td>
                                     <div>
                                         <button>View</button>
@@ -154,9 +148,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>5</td>
-                                <td>1-November-2022</td>
-                                <td>Nama2</td>
+                                <td>18-November-2022</td>
+                                <td>Martin Router King</td>
+                                <td>Indomie Cabe Ijo</td>
+                                <td>3</td>
+                                <td>Paid</td>
                                 <td>
                                     <div>
                                         <button>View</button>
@@ -164,9 +160,35 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>6</td>
-                                <td>1-November-2022</td>
-                                <td>Nama3</td>
+                                <td>18-November-2022</td>
+                                <td>Martin Router King</td>
+                                <td>Indomie Cabe Ijo</td>
+                                <td>3</td>
+                                <td>Paid</td>
+                                <td>
+                                    <div>
+                                        <button>View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18-November-2022</td>
+                                <td>Martin Router King</td>
+                                <td>Indomie Cabe Ijo</td>
+                                <td>3</td>
+                                <td>Paid</td>
+                                <td>
+                                    <div>
+                                        <button>View</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18-November-2022</td>
+                                <td>Martin Router King</td>
+                                <td>Indomie Cabe Ijo</td>
+                                <td>3</td>
+                                <td>Paid</td>
                                 <td>
                                     <div>
                                         <button>View</button>
