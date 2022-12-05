@@ -78,27 +78,24 @@
                           <th>Name</th>
                           <th>Stock</th>
                           <th>Price</th>
-        
+                          <th>Update</th>
+                          <th>Delete</th>
                       </tr>
                   </thead>
                   <tbody class="SupplyTable__body">
-                      <tr>
-                          <td>1</td>
-                          <td>oreo</td>
-                          <td>300</td>
-                          <td>10.900</td>
-                          
-                      </tr>
-                      <tr>
-                          <td>2</td>
-                          <td>Baju "Okky" Merah</td>
-                          <td>243</td>
-                          <td>121.000</td>
-                          
-                      </tr>
-                      
+                    @foreach ($supplies as $supply)
+                    <tr>
+                      <td>{{ $loop->iteration }}</td>
+                      <td>{{ $supply->nama }}</td>
+                      <td>{{ $supply->stock }}</td>
+                      <td>{{ $supply->harga }}</td>
+                      <td><ion-icon name="add-circle-outline"></ion-icon></td>
+                      <td><ion-icon name="trash"></ion-icon></td>
+                    </tr>
+                    @endforeach 
                   </tbody>
               </table>
+              <div class="SupplyTable__Button--delete">Delete</div>
           </div>
           <div class="todo">
             <div class="todo__top">
