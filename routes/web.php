@@ -48,3 +48,6 @@ Route::get('/Login', function () {
 Route::get('/customer', function () {
     return view('customer');
 });
+Route::get('/addsupply', function () {
+    return view('supply/addsupply');
+});
