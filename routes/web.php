@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\CustomerController;
@@ -17,13 +18,22 @@ use App\Models\Invoice;
 |
 */
 
+Route::get('/register', function () {
+    return view('register');
+})->middleware('guest');
+Route::get('/login', function () {
+    return view('login');
+})->name('login')->middleware('guest');
 Route::get('/', function () {
     return view('index');
-});
-Route::resource('/customer', CustomerController::class);
-Route::resource('/invoice', InvoiceController::class);
-Route::resource('/supply', SupplyController::class);
-Route::get('supply/search', [SupplyController::class, 'search']);
+})->middleware('auth');
+Route::delete('/logout', [AuthController::class, 'logout']);
+Route::post('/register',[AuthController::class, 'register'])->middleware('guest');
+Route::post('/login', [AuthController::class, 'login'])->middleware('guest');
+Route::resource('/customer', CustomerController::class)->middleware('auth');
+Route::resource('/invoice', InvoiceController::class)->middleware('auth');
+Route::resource('/supply', SupplyController::class)->middleware('auth');
+Route::get('supply/search', [SupplyController::class, 'search'])->middleware('auth');
 
 Route::get('/test', function (){
     // $dataInvoice = Invoice::with(["customer", "supply"])->get();
@@ -47,11 +57,8 @@ Route::post('/test', function(){
 Route::get('/Add', function () {
     return view('Add');
 });
-Route::get('/Login', function () {
-    return view('LoginPage');
-});
-// // Route::get('/customer', function () {
-//     return view('customer/index');
+// Route::get('/login', function () {
+//     return view('LoginPage');
 // });
 Route::get('/addsupply', function () {
     return view('supply/addsupply');
