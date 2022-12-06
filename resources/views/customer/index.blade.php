@@ -5,7 +5,7 @@
 <main>
     <div class="sales__header">
         <h1>
-            Sales Center
+            Customer List
         </h1>
         <hr>
     </div>
@@ -36,24 +36,14 @@
                 </tr>
             </thead>
             <tbody class="sales-table__body">
+                @foreach($customers as $customer)
                 <tr>
-                    <td>1</td>
-                    <td>Ahmad</td>
-                    <td>08958765421</td>
-                    <td>Jl. Kelapa</td>
+                    <td>{{$customer->id}}</td>
+                    <td>{{$customer->nama}}</td>
+                    <td>{{$customer->no_telp}}</td>
+                    <td>{{$customer->alamat}}</td>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Budi</td>
-                    <td>089572361763</td>
-                    <td>Jl. Merpati</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Johan</td>
-                    <td>089772635213</td>
-                    <td>Jl. Index</td>
-                </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

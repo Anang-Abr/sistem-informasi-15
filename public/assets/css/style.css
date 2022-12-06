@@ -227,25 +227,27 @@ main {
 
 .sales-table .search-bar__container .search-bar #text {
 	font-size: 20px;
-	border: 3px solid #84acfa;
+	border-bottom: 3px solid #84acfa;
 	border-right: none;
+	border-top: none;
+	border-left: none;
 }
 
 .sales-table .search-bar__container .search-icon {
-	background: #4158d0;
 	width: 30px;
 	height: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-bottom: 3px solid #84acfa;
 }
 
 .sales-table .search-bar__container .search-icon #icon {
 	font-size: 20px;
 }
 
-.sales-table .search-bar__container .search-icon:hover {
-	background: #0338a1;
+.sales-table .search-bar__container .search-icon #icon:hover {
+	color: grey;
 }
 
 .login__body {
@@ -950,6 +952,25 @@ main {
 	justify-content: center;
 }
 
+.SupplyTable__Button {
+	padding: 30px;
+}
+
+.SupplyTable__Button .container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 2px;
+}
+
+.SupplyTable__Button .container .icon #icon {
+	font-size: 50px;
+	color: #3498db;
+}
+
+.SupplyTable__Button .container .icon #icon:hover {
+	filter: brightness(125%);
+}
 
 /* Raynaldy's section end */
 
@@ -1044,6 +1065,7 @@ main {
 }
 
 .invoiceBoxRecently__title {
+	display: flex;
 	margin-left: 90px;
 	font-size: 24px;
 }
@@ -1133,6 +1155,67 @@ main {
 	color: #ffffff;
 }
 
+
+.invoiceAdd__title {
+	text-align: center;
+	font-size: 18px;
+	margin: 36px 36px;
+	padding: 0px 24px;
+}
+
+.invoiceAdd__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 800px;
+	background: #fff;
+	width: 800px;
+	height: 67vh;
+	padding: 25px 40px 10px 40px;
+	box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.invoiceAdd__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 40px;
+	background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.invoiceAdd__table {
+	font-size: 18px;
+}
+
+.invoiceAdd__table td {
+	padding: 16px 32px;
+	text-align: left;
+}
+
+.invoiceAdd__table label {
+	font-size: 18px;
+}
+
+.invoiceAdd__table input,
+input[type="date"],
+select {
+	font-size: 18px;
+}
+
+.invoiceAdd__tableButton input[type="submit"] {
+	background-color: #04AA6D;
+	border: none;
+	border-radius: 16px;
+	color: #ffffff;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
 /* Firman's section end */
 
 /* Anang's section start */
@@ -1198,7 +1281,6 @@ nav>h3 {
 
 .dashboard {
 	padding: 2rem 2rem;
-	height: 200vh;
 }
 
 .dashboard__title {
@@ -1218,7 +1300,7 @@ nav>h3 {
 	cursor: pointer;
 	padding: 1rem;
 	height: 8rem;
-	box-shadow: 0 0 5px #666;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .dashboard__cards .dashboard__card {
@@ -1242,7 +1324,7 @@ nav>h3 {
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(5, 1fr);
-	padding: 1rem;
+	padding: 1rem 3rem;
 }
 
 .dashboard__stats>div {

@@ -25,7 +25,7 @@ class SupplyController extends Controller
      */
     public function create()
     {
-        return view('welcome');
+        return view('supply.create');
     }
 
     /**

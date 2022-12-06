@@ -13,7 +13,7 @@
                     <span class="icon">
                         <ion-icon name="document-text-outline"></ion-icon>
                     </span>
-                    <span class="title">Sales Center</span>
+                    <span class="title">Customer List</span>
                 </a>
             </li>
             <li class="sidebar-list {{ (request()->segment(1) == "supply") ? "__active" : "" }}">

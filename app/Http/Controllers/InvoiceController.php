@@ -6,6 +6,7 @@ use App\Models\Customer;
 use App\Models\Invoice;
 use App\Models\Supply;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class InvoiceController extends Controller
 {
@@ -16,7 +17,7 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        $invoices = Invoice::get();
+        $invoices = Invoice::get();  
         return view('invoice.index', array('invoices' => $invoices));
     }
 
@@ -26,8 +27,11 @@ class InvoiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
+    {   
+        $allSupply = Supply::all();
+        $customerData = session()->get('customerData');
+
+        return view('invoice.create',array('customerData' => $customerData, 'supplies' => $allSupply));
     }
 
     /**
@@ -44,18 +48,26 @@ class InvoiceController extends Controller
         $customerData = Customer::find($customerId);
         $jumlah = $request->jumlah;
         $total = $jumlah * $supplyData->harga;
+        $tanggal = $request->tanggal;
+        $status = $request->status;
+        if($supplyData->stock < $jumlah){
+            return Redirect::back()->with('msg', 'jumlah yang dibeli melebihi sisa stock');
+        }
 
-        Invoice::create(array(
+        $inputData = array(
             'customer_id' => $customerId,
             'supply_id' => $supplyId,
             'jumlah' => $jumlah,
             'total' => $total,
-            'status' => 'pending'
-        ));
-
-        Supply::find($supplyId)->update(['stock' => ($supplyData->stock - $jumlah)]);
+            'tanggal' => $tanggal,
+            'status' => $status
+        );
+        
+        Invoice::create($inputData);
+        $supplyData->update(['stock' => $supplyData->stock - $jumlah]);
 
         return response()->json([
+            'invoices' => $inputData,
             'supply' => $supplyData,
             'customer' => $customerData,
         ]);

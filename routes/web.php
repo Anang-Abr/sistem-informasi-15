@@ -20,23 +20,28 @@ use App\Models\Invoice;
 Route::get('/', function () {
     return view('index');
 });
-//Route::resource('/customer', CustomerController::class)->name('ALL','invoice');
+Route::resource('/customer', CustomerController::class);
 Route::resource('/invoice', InvoiceController::class);
-Route::get('supply/search', [SupplyController::class, 'search']);
 Route::resource('/supply', SupplyController::class);
+Route::get('supply/search', [SupplyController::class, 'search']);
 
 Route::get('/test', function (){
-    $dataInvoice = Invoice::with(["customer", "supply"])->get();
-    // dd([
+    // $dataInvoice = Invoice::with(["customer", "supply"])->get();
+    // // dd([
+    // //     'invoice' => $dataInvoice,
+    // //     'customer' => $dataInvoice[0]->Customer(),
+    // //     'supply' => $dataInvoice[0]->Supply(),
+    // // ]);
+    // return response()->json([
     //     'invoice' => $dataInvoice,
-    //     'customer' => $dataInvoice[0]->Customer(),
-    //     'supply' => $dataInvoice[0]->Supply(),
+    //     'customer' => $dataInvoice[0]->customer,
+    //     'supply' => $dataInvoice[0]->supply
     // ]);
-    return response()->json([
-        'invoice' => $dataInvoice,
-        'customer' => $dataInvoice[0]->customer,
-        'supply' => $dataInvoice[0]->supply
-    ]);
+    return view('welcome');
+});
+
+Route::post('/test', function(){
+    return response()->json(['tanggal' => request()->tanggal]);
 });
 
 Route::get('/Add', function () {
@@ -45,9 +50,9 @@ Route::get('/Add', function () {
 Route::get('/Login', function () {
     return view('LoginPage');
 });
-Route::get('/customer', function () {
-    return view('customer/index');
-});
+// // Route::get('/customer', function () {
+//     return view('customer/index');
+// });
 Route::get('/addsupply', function () {
     return view('supply/addsupply');
 });

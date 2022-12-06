@@ -3,13 +3,11 @@
  @include('components.navbar')
     @include('components.sidebar')
     <main>
-
         <section class="supply">
             <div class="supply__title">
                 Supply Center
             </div>
         </section>
-
         <section class="HomeSection">
         <div class="HomeContent">
           <div class="Boxes">
@@ -95,7 +93,13 @@
                     @endforeach 
                   </tbody>
               </table>
-              <div class="SupplyTable__Button--delete">Delete</div>
+              <div class="SupplyTable__Button">
+                <div class="container">
+                  <div class="icon">
+                    <ion-icon id="icon" name="add-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="todo">
             <div class="todo__top">
