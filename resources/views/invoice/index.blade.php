@@ -5,9 +5,9 @@
     <main>
     <div class="main">
             
-            <section class="invoice__title">
-                <div>
-                    <h1>Invoice Center</h1>
+            <section class="invoice">
+                <div class="invoice__title">
+                    Invoice Center
                 </div>
             </section>
 
@@ -21,7 +21,7 @@
                             <h2>3</h2>
                         </div>
                         <div>
-                            <p>newly added invoice</p>
+                            <p>Newly Added Invoice</p>
                         </div>
                     </div>
                 </div>

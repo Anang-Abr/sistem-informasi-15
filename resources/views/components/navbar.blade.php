@@ -1,5 +1,5 @@
 <nav>
-    <h3>MYSALES Dashboard</h3>
+    <h3 class="nav__header">MYSALES</h3>
     <div class="nav__account">
         <h3>
             <span>

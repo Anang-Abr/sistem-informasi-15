@@ -69,7 +69,7 @@ a {
 }
 
 .sidebar ul li.__active {
-	background: #0000ff;
+	background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
 
 .sidebar ul li.__active a {
@@ -154,6 +154,10 @@ main {
 	margin: 30px auto 0 auto;
 }
 
+.sales__header h1 {
+	font-size: 30px;
+}
+
 .sales__buttons {
 	display: flex;
 	width: 85%;
@@ -188,7 +192,7 @@ main {
 
 .sales-table {
 	box-shadow: 0 4px 8px 0 #00000033;
-	border-radius: 5px;
+	border-radius: 20px;
 	padding: 30px;
 	width: 85%;
 	margin: 20px auto 0 auto;
@@ -977,16 +981,17 @@ main {
 /* Firman's section start */
 
 .invoice__title {
-	font-size: 18px;
-	margin: 24px 36px;
+	font-size: 30px;
+	margin-left: 100px;
+	margin-top: 50px;
 	padding: 0px 24px;
+	font-weight: 800;
 }
 
 .invoiceInfoBox {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	justify-content: center;
+	justify-content: space-evenly;
 	margin: 64px 6px;
 	gap: 24px;
 }
@@ -1022,12 +1027,12 @@ main {
 .invoiceInfoBox__TotalBox {
 	display: flex;
 	align-items: center;
-	background-color: #59d859;
+	background: #ffe8b3;
 	border-radius: 16px;
 	width: 450px;
 	height: 200px;
-	justify-content: space-around;
-	gap: 12px
+	justify-content: space-evenly;
+	gap: 5px;
 }
 
 .invoiceInfoBox__TotalBoxIcon {
@@ -1050,7 +1055,7 @@ main {
 .invoiceInfoBox__Button {
 	display: flex;
 	align-items: center;
-	background-color: #0000bd;
+	background-color: #4158d0;
 	color: #ffffff;
 	border-radius: 16px;
 	margin: auto;
@@ -1077,16 +1082,14 @@ main {
 }
 
 .invoiceBoxRecently__table table {
-	border-radius: 8px;
 	border-spacing: 0;
 	width: 100%;
-	border: 2px solid #0000bd;
+
 }
 
 .invoiceBoxRecently__table--button button {
 	background-color: #4CAF50;
 	border: none;
-	border-radius: 16px;
 	color: white;
 	padding: 15px 32px;
 	text-align: center;
@@ -1095,6 +1098,7 @@ main {
 	font-size: 12px;
 	margin: 4px 2px;
 	cursor: pointer;
+	border-radius: 15px;
 }
 
 .invoiceBoxRecently__table th,
@@ -1104,8 +1108,16 @@ main {
 }
 
 .invoiceBoxRecently__table th {
-	background-color: #0000bd;
+	background-color: #4158d0;
 	color: #ffffff;
+}
+
+.invoiceBoxRecently__table--button {
+	border: 3px solid black;
+}
+
+.invoiceBoxAll__table--button {
+	border: 3px solid black;
 }
 
 .invoiceBoxAll {
@@ -1113,7 +1125,8 @@ main {
 }
 
 .invoiceBoxAll__title {
-	margin-left: 90px;
+	padding-bottom: 20px;
+	margin-left: 105px;
 	font-size: 24px;
 }
 
@@ -1124,10 +1137,8 @@ main {
 }
 
 .invoiceBoxAll__table table {
-	border-radius: 8px;
 	border-spacing: 0;
 	width: 100%;
-	border: 2px solid #0000bd;
 }
 
 .invoiceBoxAll__table--button button {
@@ -1151,7 +1162,7 @@ main {
 }
 
 .invoiceBoxAll__table th {
-	background-color: #0000bd;
+	background-color: #4158d0;
 	color: #ffffff;
 }
 
@@ -1221,8 +1232,8 @@ select {
 /* Anang's section start */
 
 nav {
-	background-color: #ffffff;
-	box-shadow: 0px 0px 5px 2px #0000001a;
+	background: #f5f5f5dd;
+	box-shadow: 0px 1px 2px 1px rgb(212, 209, 209);
 	height: 6rem;
 	left: 0;
 	right: 0;
@@ -1236,6 +1247,7 @@ nav {
 
 nav>h3 {
 	margin-left: 100px;
+	letter-spacing: 1px;
 }
 
 .nav__account {
@@ -1253,6 +1265,10 @@ nav>h3 {
 	cursor: pointer;
 }
 
+.nav__account h3 span {
+	color: black;
+}
+
 .nav__account_menu {
 	display: none;
 	list-style-type: none;
@@ -1267,10 +1283,10 @@ nav>h3 {
 	padding: 3px 8px;
 }
 
-.nav__account_menu>li:hover {
+/* .nav__account_menu>li:hover {
 	width: full;
-	background-color: #eee;
-}
+
+} */
 
 .nav__account_menu_active {
 	display: flex;
@@ -1285,7 +1301,7 @@ nav>h3 {
 
 .dashboard__title {
 	padding: 1rem;
-	border-bottom: 2px solid #666;
+	margin-left: 10px;
 }
 
 .dashboard__cards {
@@ -1361,14 +1377,6 @@ nav>h3 {
 	bottom: 0;
 	background-color: #000000bb;
 	display: none;
-}
-
-.addsales_form>div {
-	display: grid;
-	margin: 1rem 0;
-	grid-template-columns: 8rem 10px 1fr;
-	justify-content: space-start;
-	grid-gap: 1rem;
 }
 
 .form_button_container {

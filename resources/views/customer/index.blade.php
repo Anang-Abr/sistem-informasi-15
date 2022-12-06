@@ -7,7 +7,6 @@
         <h1>
             Customer List
         </h1>
-        <hr>
     </div>
     <!-- <div class="sales__buttons">
         <div class="sales__button--add">
