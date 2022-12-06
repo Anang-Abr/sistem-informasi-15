@@ -11,7 +11,7 @@
                 @method('delete')
                 @csrf
                 <li>
-                    <input type="submit" value="Log Out">
+                    <input id="logout" type="submit" value="Log Out">
                 </li>
             </form>
         </ul>
