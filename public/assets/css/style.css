@@ -1046,6 +1046,7 @@ main {
 }
 
 .invoiceBoxRecently__title {
+	display: flex;
 	margin-left: 90px;
 	font-size: 24px;
 }
