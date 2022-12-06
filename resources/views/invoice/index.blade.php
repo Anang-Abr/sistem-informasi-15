@@ -5,9 +5,9 @@
     <main>
     <div class="main">
             
-            <section class="invoice__title">
-                <div>
-                    <h1>Invoice Center</h1>
+            <section class="invoice">
+                <div class="invoice__title">
+                    Invoice Center
                 </div>
             </section>
 
@@ -21,7 +21,7 @@
                             <h2>3</h2>
                         </div>
                         <div>
-                            <p>newly added invoice</p>
+                            <p>Newly Added Invoice</p>
                         </div>
                     </div>
                 </div>
@@ -66,45 +66,47 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
-                                <td>
-                                    <div>
-                                        <button>Edit</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
-                                <td>
-                                    <div>
-                                        <button>Edit</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
-                                <td>
-                                    <div>
-                                        <button>Edit</button>
-                                    </div>
-                                </td>
-                            </tr>
+                            <div class="body">
+                                <tr>
+                                    <td>18-November-2022</td>
+                                    <td>Martin Router King</td>
+                                    <td>Indomie Cabe Ijo</td>
+                                    <td>3</td>
+                                    <td>Rp. 12.000,00</td>
+                                    <td>Paid</td>
+                                    <td>
+                                        <div>
+                                            <button>Edit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>18-November-2022</td>
+                                    <td>Martin Router King</td>
+                                    <td>Indomie Cabe Ijo</td>
+                                    <td>3</td>
+                                    <td>Rp. 12.000,00</td>
+                                    <td>Paid</td>
+                                    <td>
+                                        <div>
+                                            <button>Edit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>18-November-2022</td>
+                                    <td>Martin Router King</td>
+                                    <td>Indomie Cabe Ijo</td>
+                                    <td>3</td>
+                                    <td>Rp. 12.000,00</td>
+                                    <td>Paid</td>
+                                    <td>
+                                        <div>
+                                            <button>Edit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </div>
                         </tbody>
                     </table>
                 </div>
