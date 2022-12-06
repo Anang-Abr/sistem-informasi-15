@@ -5,7 +5,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family:  "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -209,12 +209,45 @@ main {
 }
 
 .sales-table th {
-	background-color: #808080;
+	background-color: #4158d0;
 	color: #ffffff;
 }
 
 .sales-table tr:nth-child(even) {
 	background-color: #d2d2d2;
+}
+
+.sales-table .search-bar__container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.sales-table .search-bar__container .search-bar #text {
+	font-size: 20px;
+	border-bottom: 3px solid #84acfa;
+	border-right: none;
+	border-top: none;
+	border-left: none;
+}
+
+.sales-table .search-bar__container .search-icon {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 3px solid #84acfa;
+}
+
+.sales-table .search-bar__container .search-icon #icon {
+	font-size: 20px;
+}
+
+.sales-table .search-bar__container .search-icon #icon:hover {
+	color: grey;
 }
 
 .login__body {
@@ -528,11 +561,12 @@ main {
 	margin: 40px 0 10px 10px;
 }
 
-.HomeSection .HomeContent{
+.HomeSection .HomeContent {
 	position: relative;
 	padding-top: 30px;
 }
-.HomeContent .Boxes{
+
+.HomeContent .Boxes {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -540,7 +574,8 @@ main {
 	padding: 0 20px;
 	margin-bottom: 25px;
 }
-.Boxes .Boxes__box{
+
+.Boxes .Boxes__box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -548,23 +583,27 @@ main {
 	background: #fff;
 	padding: 15px 15px;
 	border-radius: 15px;
-	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.Boxes .Boxes__Title{
+
+.Boxes .Boxes__Title {
 	font-size: 20px;
 	font-weight: 500;
 }
-.HomeContent .Boxes__box .Boxes__number{
+
+.HomeContent .Boxes__box .Boxes__number {
 	display: inline-block;
 	font-size: 35px;
 	margin-top: -5px;
 	font-weight: 500;
 }
-.HomeContent .Boxes__box .Boxes__icon{
+
+.HomeContent .Boxes__box .Boxes__icon {
 	display: flex;
 	align-items: center;
 }
-.HomeContent .Boxes__box .Boxes__icon ion-icon{
+
+.HomeContent .Boxes__box .Boxes__icon ion-icon {
 	height: 20px;
 	width: 20px;
 	background: #8FDACB;
@@ -575,14 +614,16 @@ main {
 	font-size: 20px;
 	margin-right: 5px;
 }
-.Boxes__box .Boxes__icon .Boxes__iconDown ion-icon{
+
+.Boxes__box .Boxes__icon .Boxes__iconDown ion-icon {
 	background: #e87d88;
 }
-.HomeContent .Boxes__box .Boxes__icon .Boxes__text{
+
+.HomeContent .Boxes__box .Boxes__icon .Boxes__text {
 	font-size: 15px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconCart ion-icon{
+.HomeContent .Boxes__box .Boxes__iconCart ion-icon {
 	margin-top: 10px;
 }
 
@@ -599,7 +640,7 @@ main {
 	margin: -15px 0 0 5px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconSales ion-icon{
+.HomeContent .Boxes__box .Boxes__iconSales ion-icon {
 	margin-top: 10px;
 }
 
@@ -616,7 +657,7 @@ main {
 	margin: -15px 0 0 5px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconProfit ion-icon{
+.HomeContent .Boxes__box .Boxes__iconProfit ion-icon {
 	margin-top: 10px;
 }
 
@@ -633,7 +674,7 @@ main {
 	margin: -15px 0 0 5px;
 }
 
-.HomeContent .Boxes__box .Boxes__iconCustomer ion-icon{
+.HomeContent .Boxes__box .Boxes__iconCustomer ion-icon {
 	margin-top: 10px;
 }
 
@@ -650,12 +691,12 @@ main {
 	margin: -15px 0 0 6px;
 }
 
-.HomeContent .total-order{
+.HomeContent .total-order {
 	font-size: 20px;
 	font-weight: 500;
 }
 
-.SupplyTable{
+.SupplyTable {
 	display: flex;
 	flex-wrap: wrap;
 	grid-gap: 25px;
@@ -664,7 +705,7 @@ main {
 	color: var(--dark);
 }
 
-.SupplyTable > div{
+.SupplyTable>div {
 	border-radius: 20px;
 	background: var(--light);
 	padding: 25px;
@@ -680,7 +721,7 @@ main {
 	width: 60%;
 	margin: 10px auto 0 auto;
 	overflow-y: scroll;
-	
+
 }
 
 .SupplyTable__stock table {
@@ -695,12 +736,12 @@ main {
 	border-bottom: 1px solid #808080;
 }
 
-.SupplyTable__stock table tbody tr td{
+.SupplyTable__stock table tbody tr td {
 	padding: 15px 0;
 	text-align: center;
 }
 
-.SupplyTable__body tr td ion-icon{
+.SupplyTable__body tr td ion-icon {
 	display: inline-block;
 	font-size: 30px;
 	color: #000000;
@@ -712,13 +753,13 @@ main {
 	margin: -10px auto 0 auto;
 }
 
-.SupplyTable__stock table tr td:first-child{
+.SupplyTable__stock table tr td:first-child {
 	align-items: center;
 	grid-gap: 15px;
 	padding-left: 5px;
 }
 
-.SupplyTable__stock table tbody tr:hover{
+.SupplyTable__stock table tbody tr:hover {
 	background: #808080;
 }
 
@@ -728,14 +769,14 @@ main {
 	flex-basis: 300px;
 }
 
-.todo__title{
+.todo__title {
 	display: inline-block;
 	font-size: 30px;
 	font-weight: 600;
-	
+
 }
 
-.todo__TopIcon{
+.todo__TopIcon {
 	align-items: center;
 	display: flex;
 	font-size: 25px;
@@ -744,7 +785,7 @@ main {
 	line-height: 50px;
 }
 
-.todo__top{
+.todo__top {
 	display: flex;
 	justify-content: space-between;
 }
@@ -767,14 +808,16 @@ main {
 .todo .todo__list li.todo__Completed {
 	border-left: 10px solid #2525ff
 }
+
 .todo .todo__list li.todo__NotCompleted {
 	border-left: 10px solid #ffa500;
 }
+
 .todo .todo__list li:last-child {
 	margin-bottom: 0;
 }
 
-.addSupply{
+.addSupply {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -946,9 +989,9 @@ main {
 
 .invoiceInfoBox__RecentlyBoxText {
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
 	text-align: center;
 	font-size: 24px;
 }
@@ -974,9 +1017,9 @@ main {
 
 .invoiceInfoBox__TotalBoxText {
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
 	text-align: center;
 	font-size: 24px;
 }
@@ -1092,6 +1135,7 @@ main {
 	color: #ffffff;
 }
 
+
 .invoiceAdd__title {
 	text-align: center;
 	font-size: 18px;
@@ -1121,7 +1165,6 @@ main {
 .invoiceAdd__table button {
 
 }
-
 /* Firman's section end */
 
 /* Anang's section start */
@@ -1140,7 +1183,7 @@ nav {
 	z-index: 5;
 }
 
-nav > h3 {
+nav>h3 {
 	margin-left: 100px;
 }
 
@@ -1150,11 +1193,12 @@ nav > h3 {
 	padding: 5px 10px;
 	border-radius: 5px;
 }
+
 .nav__account:hover {
 	background-color: #eee;
 }
 
-.nav__account > h3 {
+.nav__account>h3 {
 	cursor: pointer;
 }
 
@@ -1168,10 +1212,11 @@ nav > h3 {
 	padding: 10px 1px;
 }
 
-.nav__account_menu > li {
+.nav__account_menu>li {
 	padding: 3px 8px;
 }
-.nav__account_menu > li:hover {
+
+.nav__account_menu>li:hover {
 	width: full;
 	background-color: #eee;
 }
@@ -1215,7 +1260,7 @@ nav > h3 {
 	padding: 1.5rem;
 }
 
-.dashboard__cards > .dashboard__card > div > * {
+.dashboard__cards>.dashboard__card>div>* {
 	text-align: right;
 	width: 80%;
 	font-weight: 600;
@@ -1232,16 +1277,16 @@ nav > h3 {
 	padding: 1rem;
 }
 
-.dashboard__stats > div {
+.dashboard__stats>div {
 	height: 20rem;
 }
 
-.dashboard__card > h3 {
+.dashboard__card>h3 {
 	margin: 0.5rem 1.5rem;
 	text-align: right;
 }
 
-.dashboard__card > p {
+.dashboard__card>p {
 	font-size: 1.5em;
 	font-weight: 500;
 	width: 15rem;
@@ -1257,55 +1302,44 @@ nav > h3 {
 	grid-column: span 2;
 }
 
-.addsales_form_container{
+.addsales_form_container {
 	position: absolute;
 	z-index: 20;
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;	
+	bottom: 0;
 	background-color: #000000bb;
 	display: none;
 }
 
-.addsales_form_container_active{
-	display: block;
+.addsales_form>div {
+	display: grid;
+	margin: 1rem 0;
+	grid-template-columns: 8rem 10px 1fr;
+	justify-content: space-start;
+	grid-gap: 1rem;
 }
 
-.addsales_form_container>div{
-	width: fit-content;
-	margin: 20% auto;
-	background-color: #ffffff;
-	padding: 2rem;
-	border-radius: 1rem;
-}
-
-.addsales_form>div{
- display: grid;
- margin:1rem 0;
- grid-template-columns: 8rem 10px 1fr;
- justify-content:space-start ;
- grid-gap: 1rem;
-}
-
-.form_button_container{
+.form_button_container {
 	display: flex;
-	justify-content:space-evenly;
+	justify-content: space-evenly;
 	gap: 1rem;
 }
 
-.form_button{
+.form_button {
 	padding: 0.5rem 1rem;
-	text-align:center;
+	text-align: center;
 	width: 10rem;
 	border-radius: 20px;
 	color: #ffffff;
 }
 
-.button_cancel{
+.button_cancel {
 	background-color: #8a0101;
 }
-.button_submit{
+
+.button_submit {
 	background-color: #008000;
 }
 
