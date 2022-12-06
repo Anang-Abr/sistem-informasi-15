@@ -46,7 +46,7 @@ Route::get('/Login', function () {
     return view('LoginPage');
 });
 Route::get('/customer', function () {
-    return view('customer');
+    return view('customer/index');
 });
 Route::get('/addsupply', function () {
     return view('supply/addsupply');
