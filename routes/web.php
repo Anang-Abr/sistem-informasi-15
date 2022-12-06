@@ -20,10 +20,10 @@ use App\Models\Invoice;
 Route::get('/', function () {
     return view('index');
 });
-//Route::resource('/customer', CustomerController::class)->name('ALL','invoice');
+Route::resource('/customer', CustomerController::class);
 Route::resource('/invoice', InvoiceController::class);
-Route::get('supply/search', [SupplyController::class, 'search']);
 Route::resource('/supply', SupplyController::class);
+Route::get('supply/search', [SupplyController::class, 'search']);
 
 Route::get('/test', function (){
     $dataInvoice = Invoice::with(["customer", "supply"])->get();
