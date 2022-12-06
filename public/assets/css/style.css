@@ -1379,14 +1379,6 @@ nav>h3 {
 	display: none;
 }
 
-.addsales_form>div {
-	display: grid;
-	margin: 1rem 0;
-	grid-template-columns: 8rem 10px 1fr;
-	justify-content: space-start;
-	grid-gap: 1rem;
-}
-
 .form_button_container {
 	display: flex;
 	justify-content: space-evenly;
