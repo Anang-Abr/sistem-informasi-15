@@ -1401,5 +1401,21 @@ nav>h3 {
 	background-color: #008000;
 }
 
+.nav__account_menu form li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#logout {
+	font-size: 16px;
+	border: none;
+	background-color: white;
+}
+
+.nav__account_menu:hover {
+	filter: brightness(80%);
+}
+
 
 /* Anang's section end */
