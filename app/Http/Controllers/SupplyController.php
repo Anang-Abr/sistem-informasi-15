@@ -44,7 +44,7 @@ class SupplyController extends Controller
 
 
         $ret = Supply::create($validData);
-        return response()->json($ret);
+        return redirect('/supply');
     }
 
     /**

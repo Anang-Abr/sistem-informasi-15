@@ -3,24 +3,25 @@
 <div class="addSupply">
     <div class="addSupply__container">
         <div class="addSupply__header">Supply Addition</div>
-        <form class="addSupply__form" action="#">
+        <form class="addSupply__form" action="{{url('/supply')}}" method="post">
+            @csrf
             <div class="addSupply__form-row">
                 <div class="addSupply-form__input-data">
-                    <input class="addSupply__data" type="text" required>
+                    <input class="addSupply__data" type="text" name="nama"required>
                     <div class="addSupply--underline"></div>
                     <label for="">Product Name</label>
                 </div>
             </div>
             <div class="addSupply__form-row">
                 <div class="addSupply-form__input-data">
-                    <input class="Supply-data" type="text" required>
+                    <input class="Supply-data" type="text" name="stock" required>
                     <div class="addSupply--underline"></div>
                     <label for="">Stock Available</label>
                 </div>
             </div>
             <div class="addSupply__form-row">
                 <div class="addSupply-form__input-data">
-                    <input class="Supply-data" type="text" required>
+                    <input class="Supply-data" type="text" name="harga" required>
                     <div class="addSupply--underline"></div>
                     <label for="">Price/each</label>
                 </div>
