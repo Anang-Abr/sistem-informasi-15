@@ -227,25 +227,27 @@ main {
 
 .sales-table .search-bar__container .search-bar #text {
 	font-size: 20px;
-	border: 3px solid #84acfa;
+	border-bottom: 3px solid #84acfa;
 	border-right: none;
+	border-top: none;
+	border-left: none;
 }
 
 .sales-table .search-bar__container .search-icon {
-	background: #4158d0;
 	width: 30px;
 	height: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-bottom: 3px solid #84acfa;
 }
 
 .sales-table .search-bar__container .search-icon #icon {
 	font-size: 20px;
 }
 
-.sales-table .search-bar__container .search-icon:hover {
-	background: #0338a1;
+.sales-table .search-bar__container .search-icon #icon:hover {
+	color: grey;
 }
 
 .login__body {
