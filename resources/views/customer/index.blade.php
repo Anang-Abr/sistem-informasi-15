@@ -5,7 +5,7 @@
 <main>
     <div class="sales__header">
         <h1>
-            Sales Center
+            Customer List
         </h1>
         <hr>
     </div>

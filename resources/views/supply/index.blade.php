@@ -3,13 +3,11 @@
  @include('components.navbar')
     @include('components.sidebar')
     <main>
-
         <section class="supply">
             <div class="supply__title">
                 Supply Center
             </div>
         </section>
-
         <section class="HomeSection">
         <div class="HomeContent">
           <div class="Boxes">

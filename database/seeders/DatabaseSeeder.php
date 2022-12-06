@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Supply;
 use App\Models\Invoice;
 use App\Models\Customer;
+use Illuminate\Support\Carbon;
 
 class DatabaseSeeder extends Seeder
 {
@@ -78,6 +79,7 @@ class DatabaseSeeder extends Seeder
             'customer_id' => 2,
             'jumlah' => 3,
             'total' => 15000,
+            'tanggal' => Carbon::now(),
             'status' => 'done'
         ]);
         Invoice::factory()->create([
@@ -85,6 +87,7 @@ class DatabaseSeeder extends Seeder
             'customer_id' => 1,
             'jumlah' => 3,
             'total' => 12000,
+            'tanggal' => Carbon::now(),
             'status' => 'done'
         ]);
         Invoice::factory()->create([
@@ -92,6 +95,7 @@ class DatabaseSeeder extends Seeder
             'customer_id' => 3,
             'jumlah' => 3,
             'total' => 30000,
+            'tanggal' => Carbon::now(),
             'status' => 'done'
         ]);
     }
