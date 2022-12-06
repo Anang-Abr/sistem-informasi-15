@@ -952,6 +952,25 @@ main {
 	justify-content: center;
 }
 
+.SupplyTable__Button {
+	padding: 30px;
+}
+
+.SupplyTable__Button .container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 2px;
+}
+
+.SupplyTable__Button .container .icon #icon {
+	font-size: 50px;
+	color: #3498db;
+}
+
+.SupplyTable__Button .container .icon #icon:hover {
+	filter: brightness(125%);
+}
 
 /* Raynaldy's section end */
 
@@ -1179,7 +1198,9 @@ main {
 	font-size: 18px;
 }
 
-.invoiceAdd__table input, input[type="date"], select {
+.invoiceAdd__table input,
+input[type="date"],
+select {
 	font-size: 18px;
 }
 
@@ -1193,6 +1214,7 @@ main {
 	margin: 4px 2px;
 	cursor: pointer;
 }
+
 /* Firman's section end */
 
 /* Anang's section start */
