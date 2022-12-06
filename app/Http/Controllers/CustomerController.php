@@ -16,7 +16,7 @@ class CustomerController extends Controller
     public function index()
     {
         $customers = Customer::get();
-        return view('customer', array('customers' => $customers));
+        return view('customer.index', array('customers' => $customers));
     }
 
     /**
