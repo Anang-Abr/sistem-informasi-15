@@ -26,9 +26,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        $allSupply = Supply::all();
-        $customerData = session()->get('customerData');
-        return view('welcome',array('customerData' => $customerData, 'supplies' => $allSupply));
+        return view('customer.create');
     }
 
     /**
@@ -40,15 +38,19 @@ class CustomerController extends Controller
     public function store(Request $request)
     {
         $validData = $request->validate([
-            'nama' => 'required | max:56',
+            'first_name' => 'required | max:56',
+            'last_name' => 'required | max:56',
             'alamat' => 'required | max:512',
             'no_telp' => 'required | max:15',
         ]);
-
         $validData['no_telp'] = (int)$validData['no_telp'];
-       
-        $ret = Customer::create($validData);
-        return redirect()->route('customer.create')->with(['customerData' => $ret ]);
+        $dataInput = array(
+            'nama' => $validData['first_name'].$validData['last_name'],
+            'alamat' => $validData['alamat'],
+            'no_telp' => $validData['no_telp'],
+        );
+        $ret = Customer::create($dataInput);
+        return redirect()->route('invoice.create')->with(['customerData' => $ret ]);
     }
 
     /**

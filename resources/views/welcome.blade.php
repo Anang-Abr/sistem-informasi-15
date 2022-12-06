@@ -41,6 +41,11 @@
     </form>
     </div>
     @endif
+    <form action="/test" method="post">
+        @csrf
+        <input type="date" name="tanggal" id="">
+        <input type="submit" value="">
+    </form> 
     </main>  
     <script>
         

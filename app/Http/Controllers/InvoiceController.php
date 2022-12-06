@@ -17,7 +17,7 @@ class InvoiceController extends Controller
     public function index()
     {
         $invoices = Invoice::get();  
-        return view('customer', array('invoices' => $invoices));
+        return view('invoice.index', array('invoices' => $invoices));
     }
 
     /**
@@ -26,8 +26,10 @@ class InvoiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
+    {   
+        $allSupply = Supply::all();
+        $customerData = session()->get('customerData');
+        return view('invoice.addInvoice',array('customerData' => $customerData, 'supplies' => $allSupply));
     }
 
     /**

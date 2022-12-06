@@ -44,7 +44,7 @@
             <section>
                 <div class="invoiceInfoBox__Button">
                     <ion-icon name="add-circle"></ion-icon>
-                    <a href="">Add Invoice</a>
+                    <a href="{{ url('customer/create') }}">Add Invoice</a>
                 </div>
             </section>
 

@@ -9,6 +9,9 @@
                 <div>
                     <h1>Masukkan Data Invoice Baru</h1>
                 </div>
+                <div>
+                    {{ $customerData }}
+                </div>
             </section>
     </main>
 @endsection
