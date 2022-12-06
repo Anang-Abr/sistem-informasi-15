@@ -26,6 +26,8 @@
                     <label for="">Price/each</label>
                 </div>
             </div>
+            <br>
+            <br>
             <div class="addSupply__form-row addSupply__submit-btn" id="addSupply__submit-btn">
                 <div class="addSupply-form__input-data">
                 <div class="addSupplyinner"></div>
