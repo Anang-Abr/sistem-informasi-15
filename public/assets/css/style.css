@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto&display=swap");
 
 * {
+	outline: none;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
-	outline: none;
 }
 
 a {
@@ -209,12 +209,43 @@ main {
 }
 
 .sales-table th {
-	background-color: #808080;
+	background-color: #4158d0;
 	color: #ffffff;
 }
 
 .sales-table tr:nth-child(even) {
 	background-color: #d2d2d2;
+}
+
+.sales-table .search-bar__container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.sales-table .search-bar__container .search-bar #text {
+	font-size: 20px;
+	border: 3px solid #84acfa;
+	border-right: none;
+}
+
+.sales-table .search-bar__container .search-icon {
+	background: #4158d0;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sales-table .search-bar__container .search-icon #icon {
+	font-size: 20px;
+}
+
+.sales-table .search-bar__container .search-icon:hover {
+	background: #0338a1;
 }
 
 .login__body {
@@ -518,8 +549,6 @@ main {
 /* Raynaldy's section start */
 
 .supply {
-	display: flex;
-	align-items: center;
 	margin-left: 30px;
 }
 
@@ -527,14 +556,15 @@ main {
 	font-size: 25px;
 	font-weight: 1000;
 	color: #000000;
-	margin: 100px 0 10px 10px;
+	margin: 40px 0 10px 10px;
 }
 
 .HomeSection .HomeContent {
 	position: relative;
 	padding-top: 30px;
 }
-.HomeContent .Boxes{
+
+.HomeContent .Boxes {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -543,7 +573,7 @@ main {
 	margin-bottom: 25px;
 }
 
-.Boxes .Boxes__box{
+.Boxes .Boxes__box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -553,21 +583,25 @@ main {
 	border-radius: 15px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.Boxes .Boxes__Title{
+
+.Boxes .Boxes__Title {
 	font-size: 20px;
 	font-weight: 500;
 }
-.HomeContent .Boxes__box .Boxes__number{
+
+.HomeContent .Boxes__box .Boxes__number {
 	display: inline-block;
 	font-size: 35px;
 	margin-top: -5px;
 	font-weight: 500;
 }
-.HomeContent .Boxes__box .Boxes__icon{
+
+.HomeContent .Boxes__box .Boxes__icon {
 	display: flex;
 	align-items: center;
 }
-.HomeContent .Boxes__box .Boxes__icon ion-icon{
+
+.HomeContent .Boxes__box .Boxes__icon ion-icon {
 	height: 20px;
 	width: 20px;
 	background: #8FDACB;
@@ -579,10 +613,11 @@ main {
 	margin-right: 5px;
 }
 
-.Boxes__box .Boxes__icon .Boxes__iconDown ion-icon{
+.Boxes__box .Boxes__icon .Boxes__iconDown ion-icon {
 	background: #e87d88;
 }
-.HomeContent .Boxes__box .Boxes__icon .Boxes__text{
+
+.HomeContent .Boxes__box .Boxes__icon .Boxes__text {
 	font-size: 15px;
 }
 
@@ -592,7 +627,7 @@ main {
 
 .HomeContent .Boxes__box .Boxes__iconCart {
 	display: inline-block;
-	font-size: 32px;
+	font-size: 30px;
 	height: 50px;
 	width: 50px;
 	background: #cce5ff;
@@ -600,18 +635,16 @@ main {
 	text-align: center;
 	color: #66b0ff;
 	border-radius: 15px;
-	margin: -15px 0 0 6px;
+	margin: -15px 0 0 5px;
 }
 
-
-.HomeContent .Boxes__box .Boxes__iconSales ion-icon{
-
+.HomeContent .Boxes__box .Boxes__iconSales ion-icon {
 	margin-top: 10px;
 }
 
 .HomeContent .Boxes__box .Boxes__iconSales {
 	display: inline-block;
-	font-size: 32px;
+	font-size: 30px;
 	height: 50px;
 	width: 50px;
 	background: #C0F2D8;
@@ -619,17 +652,16 @@ main {
 	text-align: center;
 	color: #2BD47D;
 	border-radius: 15px;
-	margin: -15px 0 0 6px;
+	margin: -15px 0 0 5px;
 }
 
-
-.HomeContent .Boxes__box .Boxes__iconProfit ion-icon{
+.HomeContent .Boxes__box .Boxes__iconProfit ion-icon {
 	margin-top: 10px;
 }
 
 .HomeContent .Boxes__box .Boxes__iconProfit {
 	display: inline-block;
-	font-size: 32px;
+	font-size: 30px;
 	height: 50px;
 	width: 50px;
 	background: #ffe8b3;
@@ -637,17 +669,16 @@ main {
 	text-align: center;
 	color: #ffc233;
 	border-radius: 15px;
-	margin: -15px 0 0 6px;
+	margin: -15px 0 0 5px;
 }
 
-
-.HomeContent .Boxes__box .Boxes__iconCustomer ion-icon{
+.HomeContent .Boxes__box .Boxes__iconCustomer ion-icon {
 	margin-top: 10px;
 }
 
 .HomeContent .Boxes__box .Boxes__iconCustomer {
 	display: inline-block;
-	font-size: 32px;
+	font-size: 30px;
 	height: 50px;
 	width: 50px;
 	background: #f7d4d7;
@@ -658,12 +689,12 @@ main {
 	margin: -15px 0 0 6px;
 }
 
-.HomeContent .total-order{
+.HomeContent .total-order {
 	font-size: 20px;
 	font-weight: 500;
 }
 
-.SupplyTable{
+.SupplyTable {
 	display: flex;
 	flex-wrap: wrap;
 	grid-gap: 25px;
@@ -672,10 +703,10 @@ main {
 	color: var(--dark);
 }
 
-.SupplyTable > div{
+.SupplyTable>div {
 	border-radius: 20px;
 	background: var(--light);
-	padding: 24px;
+	padding: 25px;
 	overflow-x: auto;
 }
 
@@ -688,7 +719,7 @@ main {
 	width: 60%;
 	margin: 10px auto 0 auto;
 	overflow-y: scroll;
-	
+
 }
 
 .SupplyTable__stock table {
@@ -697,24 +728,36 @@ main {
 }
 
 .SupplyTable__stock th {
-	padding-bottom: 12px;
-	font-size: 13px;
-	text-align: left;
+	padding-bottom: 10px;
+	font-size: 15px;
+	text-align: center;
 	border-bottom: 1px solid #808080;
 }
 
-.SupplyTable__stock table td{
-	padding: 16px 0;
+.SupplyTable__stock table tbody tr td {
+	padding: 15px 0;
+	text-align: center;
 }
 
-.SupplyTable__stock table tr td:first-child{
-	display: flex;
+.SupplyTable__body tr td ion-icon {
+	display: inline-block;
+	font-size: 30px;
+	color: #000000;
+	border-radius: 10px;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin: -10px auto 0 auto;
+}
+
+.SupplyTable__stock table tr td:first-child {
 	align-items: center;
-	grid-gap: 12px;
-	padding-left: 6px;
+	grid-gap: 15px;
+	padding-left: 5px;
 }
 
-.SupplyTable__stock table tbody tr:hover{
+.SupplyTable__stock table tbody tr:hover {
 	background: #808080;
 }
 
@@ -724,14 +767,14 @@ main {
 	flex-basis: 300px;
 }
 
-.todo__title{
+.todo__title {
 	display: inline-block;
 	font-size: 30px;
 	font-weight: 600;
-	
+
 }
 
-.todo__TopIcon{
+.todo__TopIcon {
 	align-items: center;
 	display: flex;
 	font-size: 25px;
@@ -740,7 +783,7 @@ main {
 	line-height: 50px;
 }
 
-.todo__top{
+.todo__top {
 	display: flex;
 	justify-content: space-between;
 }
@@ -763,18 +806,149 @@ main {
 .todo .todo__list li.todo__Completed {
 	border-left: 10px solid #2525ff
 }
+
 .todo .todo__list li.todo__NotCompleted {
 	border-left: 10px solid #ffa500;
 }
+
 .todo .todo__list li:last-child {
 	margin-bottom: 0;
 }
 
+.addSupply {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 40px;
+	background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
 
+.addSupply__container {
+	max-width: 800px;
+	background: #fff;
+	width: 800px;
+	height: 75vh;
+	padding: 25px 40px 10px 40px;
+	box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
 
+.addSupply__header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.addSupply__container .addSupply__header {
+	text-align: center;
+	font-size: 35px;
+	font-weight: 600;
+	background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
+.addSupply__container .addSupply__form {
+	padding: 30px 0 0 0;
+}
 
+.addSupply__container .addSupply__form .addSupply__form-row {
+	display: flex;
+	margin: 32px 0;
+}
+
+.addSupply__form .addSupply__form-row .addSupply-form__input-data {
+	width: 100%;
+	height: 40px;
+	margin: 0 20px;
+	position: relative;
+}
+
+.addSupply-form__input-data input {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	font-size: 17px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.addSupply-form__input-data input:focus~label,
+.addSupply-form__input-data input:valid~label {
+	transform: translateY(-30px);
+	font-size: 14px;
+	color: #3498db;
+}
+
+.addSupply-form__input-data label {
+	position: absolute;
+	pointer-events: none;
+	bottom: 10px;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+
+.addSupply-form__input-data .addSupply--underline {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+}
+
+.addSupply-form__input-data .addSupply--underline:before {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: #3498db;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+.addSupply-form__input-data input:focus~.addSupply--underline:before,
+.addSupply-form__input-data input:valid~.addSupply--underline:before {
+	transform: scale(1);
+}
+
+.addSupply__submit-btn .addSupply-form__input-data {
+	overflow: hidden;
+	height: 45px !important;
+	width: 25% !important;
+}
+
+.addSupply__submit-btn .addSupply-form__input-data .addSupplyinner {
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+	transition: all 0.4s;
+}
+
+.addSupply__submit-btn .addSupply-form__input-data:hover .addSupplyinner {
+	left: 0;
+}
+
+.addSupply__submit-btn .addSupply-form__input-data input {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#addSupply__submit-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 /* Raynaldy's section end */
@@ -790,6 +964,7 @@ main {
 .invoiceInfoBox {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 	justify-content: center;
 	margin: 64px 6px;
 	gap: 24px;
@@ -797,7 +972,6 @@ main {
 
 .invoiceInfoBox__RecentlyBox {
 	display: flex;
-	text-align: center;
 	align-items: center;
 	background-color: #59d859;
 	border-radius: 16px;
@@ -824,72 +998,45 @@ main {
 	font-size: 36px;
 }
 
-.invoiceInfoBox__AllBox {
+.invoiceInfoBox__TotalBox {
+	display: flex;
+	align-items: center;
+	background-color: #59d859;
+	border-radius: 16px;
+	width: 450px;
+	height: 200px;
+	justify-content: space-around;
+	gap: 12px
+}
+
+.invoiceInfoBox__TotalBoxIcon {
+	font-size: 96px;
+}
+
+.invoiceInfoBox__TotalBoxText {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 24px;
 	text-align: center;
-	background-color: #ffa500;
-	border-radius: 16px;
-	width: 450px;
-	height: 200px;
-}
-
-.invoiceInfoBox__AllBoxNumber {
-	font-size: 96px;
-}
-
-.invoiceInfoBox__AllBoxText {
 	font-size: 24px;
+}
+
+.invoiceInfoBox__TotalBoxTextTitle {
+	font-size: 36px;
 }
 
 .invoiceInfoBox__Button {
 	display: flex;
-	flex-direction: column;
-	gap: 24px;
-}
-
-.invoiceInfoBox__Button--Add {
-	background-color: #008000;
-	border-radius: 12px;
-	width: 100px;
+	align-items: center;
+	background-color: #0000bd;
+	color: #ffffff;
+	border-radius: 16px;
+	margin: auto;
+	width: 200px;
 	height: 50px;
-	text-align: center;
-}
-
-.invoiceInfoBox__Button--Add button {
-	background-color: #008000;
-	border: none;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	border-radius: 12px;
-	width: 100px;
-	height: 50px;
-	cursor: pointer;
-}
-
-.invoiceInfoBox__Button--Edit {
-	background-color: #96e637;
-	border-radius: 12px;
-	width: 100px;
-	height: 50px;
-	text-align: center;
-}
-
-.invoiceInfoBox__Button--Edit button {
-	background-color: #96e637;
-	border: none;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	border-radius: 12px;
-	width: 100px;
-	height: 50px;
-	cursor: pointer;
+	justify-content: center;
+	gap: 12px
 }
 
 .invoiceBoxRecently {
@@ -915,11 +1062,16 @@ main {
 }
 
 .invoiceBoxRecently__table--button button {
-
-	padding: 8px 12px;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 16px;
+	color: white;
+	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 8px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
 	cursor: pointer;
 }
 
@@ -957,11 +1109,16 @@ main {
 }
 
 .invoiceBoxAll__table--button button {
-
-	padding: 8px 12px;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 16px;
+	color: white;
+	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 8px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
 	cursor: pointer;
 }
 
@@ -1121,18 +1278,6 @@ nav>h3 {
 	bottom: 0;
 	background-color: #000000bb;
 	display: none;
-}
-
-.addsales_form_container_active {
-	display: block;
-}
-
-.addsales_form_container>div {
-	width: 100%;
-	margin: 20% auto;
-	background-color: #ffffff;
-	padding: 2rem;
-	border-radius: 1rem;
 }
 
 .addsales_form>div {

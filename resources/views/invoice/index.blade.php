@@ -26,22 +26,25 @@
                     </div>
                 </div>
 
-                <div class="invoiceInfoBox__AllBox">
-                    <div class="invoiceInfoBox__AllBoxNumber">
-                        <h6>6</h6>
+                <div class="invoiceInfoBox__TotalBox" >
+                    <div class="invoiceInfoBox__TotalBoxIcon">
+                        <ion-icon name="file-tray-full"></ion-icon>
                     </div>
-                    <div class="invoiceInfoBox__AllBoxText">
-                        <p>Total Invoice</p>
+                    <div class="invoiceInfoBox__TotalBoxText">
+                        <div class="invoiceInfoBox__TotalBoxTextTitle">
+                            <h2>6</h2>
+                        </div>
+                        <div>
+                            <p>Total Invoice</p>
+                        </div>
                     </div>
                 </div>
+            </section>
 
+            <section>
                 <div class="invoiceInfoBox__Button">
-                    <div class="invoiceInfoBox__Button--Add">
-                        <Button>Add Invoice</Button>
-                    </div>
-                    <div class="invoiceInfoBox__Button--Edit">
-                        <Button>Edit Invoice</Button>
-                    </div>
+                    <ion-icon name="add-circle"></ion-icon>
+                    <a href="">Add Invoice</a>
                 </div>
             </section>
 
@@ -49,8 +52,8 @@
                 <div class="invoiceBoxRecently__title">
                     <h6>Recently Added Invoice</h6>
                 </div>
-                <div class="invoiceBoxRecently__table" class="invoiceBoxRecently__table--button">
-                    <table>
+                <div class="invoiceBoxRecently__table">
+                    <table class="invoiceBoxRecently__table--button">
                         <thead>
                             <tr>
                                 <th>Date</th>
@@ -70,7 +73,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
@@ -82,7 +85,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
@@ -94,7 +97,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
@@ -110,8 +113,8 @@
                         <h6>All Invoices</h6>
                     </div>
                 </div>
-                <div class="invoiceBoxAll__table" class="invoiceBoxAll__table--button">
-                    <table>
+                <div class="invoiceBoxAll__table">
+                    <table class="invoiceBoxAll__table--button">
                         <thead>
                             <tr>
                                 <th>Date</th>
@@ -131,7 +134,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
@@ -143,7 +146,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
@@ -155,7 +158,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
@@ -167,7 +170,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
@@ -179,7 +182,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
@@ -191,7 +194,7 @@
                                 <td>Paid</td>
                                 <td>
                                     <div>
-                                        <button>View</button>
+                                        <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
