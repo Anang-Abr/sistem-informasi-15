@@ -31,7 +31,6 @@
                 <tr>
                     <th>No.</th>
                     <th>Nama</th>
-                    <th>Email</th>
                     <th>Nomor Telepon</th>
                     <th>Alamat</th>
                 </tr>
@@ -40,21 +39,18 @@
                 <tr>
                     <td>1</td>
                     <td>Ahmad</td>
-                    <td>ahmad@gmail.com</td>
                     <td>08958765421</td>
                     <td>Jl. Kelapa</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Budi</td>
-                    <td>budi@gmail.com</td>
                     <td>089572361763</td>
                     <td>Jl. Merpati</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>Johan</td>
-                    <td>johan@gmail.com</td>
                     <td>089772635213</td>
                     <td>Jl. Index</td>
                 </tr>

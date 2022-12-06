@@ -20,11 +20,6 @@
                 <div class="addCustomer-form__input-data">
                     <input class="Customer-data" type="text" required>
                     <div class="addCustomer--underline"></div>
-                    <label for="">Email Address</label>
-                </div>
-                <div class="addCustomer-form__input-data">
-                    <input class="addCustomer-data" type="text" required>
-                    <div class="addCustomer--underline"></div>
                     <label for="">Phone Number</label>
                 </div>
             </div>
