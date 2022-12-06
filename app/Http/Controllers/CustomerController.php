@@ -45,7 +45,7 @@ class CustomerController extends Controller
         ]);
         $validData['no_telp'] = (int)$validData['no_telp'];
         $dataInput = array(
-            'nama' => $validData['first_name'].$validData['last_name'],
+            'nama' => $validData['first_name']." ".$validData['last_name'],
             'alamat' => $validData['alamat'],
             'no_telp' => $validData['no_telp'],
         );

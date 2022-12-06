@@ -1070,8 +1070,8 @@ main {
 }
 
 .invoiceBoxRecently__title {
-	padding-bottom: 20px;
-	margin-left: 105px;
+	display: flex;
+	margin-left: 90px;
 	font-size: 24px;
 }
 

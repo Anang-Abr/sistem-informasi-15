@@ -17,7 +17,8 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        $invoices = Invoice::get();  
+        $invoices = Invoice::with(['supply', 'customer'])->get();  
+        // dd($invoices);
         return view('invoice.index', array('invoices' => $invoices));
     }
 
@@ -30,7 +31,6 @@ class InvoiceController extends Controller
     {   
         $allSupply = Supply::all();
         $customerData = session()->get('customerData');
-
         return view('invoice.create',array('customerData' => $customerData, 'supplies' => $allSupply));
     }
 
@@ -66,11 +66,12 @@ class InvoiceController extends Controller
         Invoice::create($inputData);
         $supplyData->update(['stock' => $supplyData->stock - $jumlah]);
 
-        return response()->json([
-            'invoices' => $inputData,
-            'supply' => $supplyData,
-            'customer' => $customerData,
-        ]);
+        // return response()->json([
+        //     'invoices' => $inputData,
+        //     'supply' => $supplyData,
+        //     'customer' => $customerData,
+        // ]);
+        return redirect('/invoice');
     }
 
     /**

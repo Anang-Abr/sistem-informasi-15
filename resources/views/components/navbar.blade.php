@@ -7,7 +7,13 @@
             </span>
         </h3>
         <ul class="nav__account_menu">
-            <li><a href="#">Log Out</a href="#"></li>
+            <form action="/logout" method="post">
+                @method('delete')
+                @csrf
+                <li>
+                    <input type="submit" value="Log Out">
+                </li>
+            </form>
         </ul>
     </div>
 </nav>

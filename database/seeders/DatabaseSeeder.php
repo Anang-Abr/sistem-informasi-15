@@ -9,6 +9,7 @@ use App\Models\Supply;
 use App\Models\Invoice;
 use App\Models\Customer;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -26,13 +27,10 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $supplyUuid = 'supplyunique';
-        $invoiceUuid = 'invoiceunique';
-        $customerUuid = 'customerunique';
-
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'kelompok 15',
+            'email' => 'kelompok15@demo.com',
+            'password' => Hash::make('password')
         ]);
 
         Supply::factory()->create([

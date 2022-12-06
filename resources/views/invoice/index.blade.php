@@ -32,7 +32,7 @@
                     </div>
                     <div class="invoiceInfoBox__TotalBoxText">
                         <div class="invoiceInfoBox__TotalBoxTextTitle">
-                            <h2>6</h2>
+                            <h2>3</h2>
                         </div>
                         <div>
                             <p>Total Invoice</p>
@@ -66,47 +66,22 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <div class="body">
-                                <tr>
-                                    <td>18-November-2022</td>
-                                    <td>Martin Router King</td>
-                                    <td>Indomie Cabe Ijo</td>
-                                    <td>3</td>
-                                    <td>Rp. 12.000,00</td>
-                                    <td>Paid</td>
-                                    <td>
-                                        <div>
-                                            <button>Edit</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>18-November-2022</td>
-                                    <td>Martin Router King</td>
-                                    <td>Indomie Cabe Ijo</td>
-                                    <td>3</td>
-                                    <td>Rp. 12.000,00</td>
-                                    <td>Paid</td>
-                                    <td>
-                                        <div>
-                                            <button>Edit</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>18-November-2022</td>
-                                    <td>Martin Router King</td>
-                                    <td>Indomie Cabe Ijo</td>
-                                    <td>3</td>
-                                    <td>Rp. 12.000,00</td>
-                                    <td>Paid</td>
-                                    <td>
-                                        <div>
-                                            <button>Edit</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </div>
+                            @foreach ($invoices->take(3) as $invoice)
+                            <tr>
+                                <td>{{ $invoice->tanggal }}</td>
+                                <td>{{ $invoice->customer->nama }}</td>
+                                <td>{{  $invoice->supply->nama  }}</td>
+                                <td>{{  $invoice->jumlah  }}</td>
+                                <td>Rp. {{  $invoice->total  }}</td>
+                                <td>{{  $invoice->status  }}</td>
+                                <td>
+                                    <div>
+                                        <button>Edit</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            @endforeach
+
                         </tbody>
                     </table>
                 </div>
@@ -133,84 +108,21 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach ($invoices as $invoice)
                             <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
+                                <td>{{ $invoice->tanggal }}</td>
+                                <td>{{ $invoice->customer->nama }}</td>
+                                <td>{{  $invoice->supply->nama  }}</td>
+                                <td>{{  $invoice->jumlah  }}</td>
+                                <td>Rp. {{  $invoice->total  }}</td>
+                                <td>{{  $invoice->status  }}</td>
                                 <td>
                                     <div>
                                         <button>Edit</button>
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
-                                <td>
-                                    <div>
-                                        <button>Edit</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
-                                <td>
-                                    <div>
-                                        <button>Edit</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
-                                <td>
-                                    <div>
-                                        <button>Edit</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
-                                <td>
-                                    <div>
-                                        <button>Edit</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>18-November-2022</td>
-                                <td>Martin Router King</td>
-                                <td>Indomie Cabe Ijo</td>
-                                <td>3</td>
-                                <td>Rp. 12.000,00</td>
-                                <td>Paid</td>
-                                <td>
-                                    <div>
-                                        <button>Edit</button>
-                                    </div>
-                                </td>
-                            </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
