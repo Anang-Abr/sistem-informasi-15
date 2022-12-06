@@ -96,7 +96,7 @@
               <div class="SupplyTable__Button">
                 <div class="container">
                   <div class="icon">
-                    <ion-icon id="icon" name="add-circle"></ion-icon>
+                    <a href="{{url("supply/create")}}"><ion-icon id="icon" name="add-circle"></ion-icon></a>
                   </div>
                 </div>
               </div>
