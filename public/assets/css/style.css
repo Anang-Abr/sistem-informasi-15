@@ -924,35 +924,78 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	justify-content: center;
 	margin: 64px 6px;
+	gap: 24px;
 }
 
 .invoiceInfoBox__RecentlyBox {
 	display: flex;
-	text-align: center;
-	background-color: #ffa500;
-	border-radius: 6px;
+	align-items: center;
+	background-color: #59d859;
+	border-radius: 16px;
+	width: 450px;
+	height: 200px;
+	justify-content: space-around;
+	gap: 12px
+}
+
+.invoiceInfoBox__RecentlyBoxIcon {
+	font-size: 96px;
 }
 
 .invoiceInfoBox__RecentlyBoxText {
-
-	align-items: center;
-}
-
-.invoiceInfoBox__AllBox {
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
 	text-align: center;
-	background-color: #ffa500;
-	border-radius: 6px;
-}
-
-.invoiceInfoBox__AllBoxNumber {
-	font-size: 64px;
-}
-
-.invoiceInfoBox__AllBoxText {
 	font-size: 24px;
+}
+
+.invoiceInfoBox__RecentlyBoxTextTitle {
+	font-size: 36px;
+}
+
+.invoiceInfoBox__TotalBox {
+	display: flex;
+	align-items: center;
+	background-color: #59d859;
+	border-radius: 16px;
+	width: 450px;
+	height: 200px;
+	justify-content: space-around;
+	gap: 12px
+}
+
+.invoiceInfoBox__TotalBoxIcon {
+	font-size: 96px;
+}
+
+.invoiceInfoBox__TotalBoxText {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.invoiceInfoBox__TotalBoxTextTitle {
+	font-size: 36px;
+}
+
+.invoiceInfoBox__Button {
+	display: flex;
+	align-items: center;
+	background-color: #0000bd;
+	color: #ffffff;
+	border-radius: 16px;
+	margin: auto;
+	width: 200px;
+	height: 50px;
+	justify-content: center;
+	gap: 12px
 }
 
 .invoiceBoxRecently {
@@ -978,11 +1021,16 @@ main {
 }
 
 .invoiceBoxRecently__table--button button {
-	
-	padding: 8px 12px;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 16px;
+	color: white;
+	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 8px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
 	cursor: pointer;
 }
 
@@ -1020,11 +1068,16 @@ main {
 }
 
 .invoiceBoxAll__table--button button {
-	
-	padding: 8px 12px;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 16px;
+	color: white;
+	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 8px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
 	cursor: pointer;
 }
 
