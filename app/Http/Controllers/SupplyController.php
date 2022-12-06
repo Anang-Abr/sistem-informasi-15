@@ -41,7 +41,7 @@ class SupplyController extends Controller
             'harga' => 'required | max:512',
             'stock' => 'required | max:15',
         ]);
-
+        
 
         $ret = Supply::create($validData);
         return redirect('/supply');
