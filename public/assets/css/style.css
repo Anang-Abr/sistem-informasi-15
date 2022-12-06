@@ -1071,8 +1071,9 @@ main {
 
 .invoiceBoxRecently__title {
 	display: flex;
-	margin-left: 90px;
+	margin-left: 105px;
 	font-size: 24px;
+	padding-bottom: 20px
 }
 
 .invoiceBoxRecently__table {
