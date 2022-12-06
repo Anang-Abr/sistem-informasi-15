@@ -1135,6 +1135,36 @@ main {
 	color: #ffffff;
 }
 
+
+.invoiceAdd__title {
+	text-align: center;
+	font-size: 18px;
+	margin: 48px 36px;
+	padding: 0px 24px;
+}
+
+.invoiceAdd__body {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	background-color: #191970;
+	color: #ffffff;
+	border-radius: 16px;
+	width: 50%;
+}
+
+.invoiceAdd__table {
+	font-size: 18px;
+}
+
+.invoiceAdd__table td {
+	padding: 16px 32px;
+	text-align: left;
+}
+
+.invoiceAdd__table button {
+
+}
 /* Firman's section end */
 
 /* Anang's section start */

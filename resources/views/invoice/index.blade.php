@@ -44,7 +44,7 @@
             <section>
                 <div class="invoiceInfoBox__Button">
                     <ion-icon name="add-circle"></ion-icon>
-                    <a href="">Add Invoice</a>
+                    <a href="{{ url('invoice/create') }}">Add Invoice</a>
                 </div>
             </section>
 
@@ -59,6 +59,7 @@
                                 <th>Date</th>
                                 <th>Customer Name</th>
                                 <th>Product Name</th>
+                                <th>Quantity</th>
                                 <th>Total</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -70,6 +71,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
@@ -82,6 +84,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
@@ -94,6 +97,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
@@ -120,6 +124,7 @@
                                 <th>Date</th>
                                 <th>Customer Name</th>
                                 <th>Product Name</th>
+                                <th>Quantity</th>
                                 <th>Total</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -131,6 +136,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
@@ -143,6 +149,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
@@ -155,6 +162,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
@@ -167,6 +175,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
@@ -179,6 +188,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
@@ -191,6 +201,7 @@
                                 <td>Martin Router King</td>
                                 <td>Indomie Cabe Ijo</td>
                                 <td>3</td>
+                                <td>Rp. 12.000,00</td>
                                 <td>Paid</td>
                                 <td>
                                     <div>
