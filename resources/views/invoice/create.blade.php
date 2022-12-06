@@ -12,30 +12,31 @@
 
         <section class="invoiceAdd__body">
             <div>
-                <form action="">
+                <form action="{{ url('/invoice') }}" method="post">
+                    @csrf
                     <table class="invoiceAdd__table">
+                        <input type="hidden" name="customer" value="{{ $customerData->id }}">
                         <tr>
                             <td>Date</td>
-                            <td><input type="date"></td>
+                            <td><input type="date" name="tanggal"></td>
                         </tr>
                         <tr>
                             <td>Product Name</td>
-                            <td><select>
-                                <option>Indomie</option>
-                                <option>Oreo</option>
+                            <td>
+                            <select name="supply">
+                                @foreach ($supplies as $supply)
+                                    <option value="{{ $supply->id }}">{{ $supply->nama }}</option>
+                                @endforeach
                             </select>
                         </tr>
                         <tr>
                             <td>Quantity</td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>Total</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" name="jumlah"></td>
                         </tr>
                         <tr>
                             <td>Status</td>
-                            <td><select>
+                            <td>
+                                <select name="status">
                                 <option>Paid</option>
                                 <option>Unpaid</option>
                             </select>
