@@ -1,27 +1,22 @@
 @extends('components.main')
 @section('content')
-    @include('components.navbar')
-    @include('components.sidebar')
-    <main>
-    <div class="main">
-        <section class="invoiceAdd__title">
-            <div>
-                <h1>Input New Invoice</h1>
-            </div>
-        </section>
-
-        <section class="invoiceAdd__body">
+<section class="invoiceAdd__body">
+    <div class="invoiceAdd__container">
+        <div class="invoiceAdd__title">
+            <h1>Input New Invoice</h1>
+        </div>
+        <div>
             <div>
                 <form action="{{ url('/invoice') }}" method="post">
                     @csrf
                     <table class="invoiceAdd__table">
                         <input type="hidden" name="customer" value="{{ $customerData->id }}">
                         <tr>
-                            <td>Date</td>
+                            <td><label>Date</label></td>
                             <td><input type="date" name="tanggal"></td>
                         </tr>
                         <tr>
-                            <td>Product Name</td>
+                            <td><label>Product Name</label></td>
                             <td>
                             <select name="supply">
                                 @foreach ($supplies as $supply)
@@ -30,11 +25,11 @@
                             </select>
                         </tr>
                         <tr>
-                            <td>Quantity</td>
+                            <td><label>Quantity</label></td>
                             <td><input type="text" name="jumlah"></td>
                         </tr>
                         <tr>
-                            <td>Status</td>
+                            <td><label>Status</label></td>
                             <td>
                                 <select name="status">
                                 <option>Paid</option>
@@ -45,14 +40,15 @@
                         <tr>
                             <td><br></td>
                             <td>
-                                <button>
+                                <div class="invoiceAdd__tableButton">
                                     <input type="submit" value="Save">
-                                </button>
+                                </div>
                             </td>
                         </tr>
                     </table>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</section>
 @endsection
