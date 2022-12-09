@@ -1,0 +1,556 @@
+
+.supply {
+	margin-left: 30px;
+}
+
+.supply__title {
+	font-size: 25px;
+	font-weight: 1000;
+	color: #000000;
+	margin: 40px 0 10px 10px;
+}
+
+.HomeSection .HomeContent {
+	position: relative;
+	padding-top: 30px;
+}
+
+.HomeContent .Boxes {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 20px;
+	margin-bottom: 25px;
+}
+
+.Boxes .Boxes__box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% / 4 - 15px);
+	background: #fff;
+	padding: 15px 15px;
+	border-radius: 15px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Boxes .Boxes__Title {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.HomeContent .Boxes__box .Boxes__number {
+	display: inline-block;
+	font-size: 35px;
+	margin-top: -5px;
+	font-weight: 500;
+}
+
+.HomeContent .Boxes__box .Boxes__icon {
+	display: flex;
+	align-items: center;
+}
+
+.HomeContent .Boxes__box .Boxes__icon ion-icon {
+	height: 20px;
+	width: 20px;
+	background: #8FDACB;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.Boxes__box .Boxes__icon .Boxes__iconDown ion-icon {
+	background: #e87d88;
+}
+
+.HomeContent .Boxes__box .Boxes__icon .Boxes__text {
+	font-size: 15px;
+}
+
+.HomeContent .Boxes__box .Boxes__iconCart ion-icon {
+	margin-top: 10px;
+}
+
+.HomeContent .Boxes__box .Boxes__iconCart {
+	display: inline-block;
+	font-size: 30px;
+	height: 50px;
+	width: 50px;
+	background: #cce5ff;
+	line-height: 50px;
+	text-align: center;
+	color: #66b0ff;
+	border-radius: 15px;
+	margin: -15px 0 0 5px;
+}
+
+.HomeContent .Boxes__box .Boxes__iconSales ion-icon {
+	margin-top: 10px;
+}
+
+.HomeContent .Boxes__box .Boxes__iconSales {
+	display: inline-block;
+	font-size: 30px;
+	height: 50px;
+	width: 50px;
+	background: #C0F2D8;
+	line-height: 50px;
+	text-align: center;
+	color: #2BD47D;
+	border-radius: 15px;
+	margin: -15px 0 0 5px;
+}
+
+.HomeContent .Boxes__box .Boxes__iconProfit ion-icon {
+	margin-top: 10px;
+}
+
+.HomeContent .Boxes__box .Boxes__iconProfit {
+	display: inline-block;
+	font-size: 30px;
+	height: 50px;
+	width: 50px;
+	background: #ffe8b3;
+	line-height: 50px;
+	text-align: center;
+	color: #ffc233;
+	border-radius: 15px;
+	margin: -15px 0 0 5px;
+}
+
+.HomeContent .Boxes__box .Boxes__iconCustomer ion-icon {
+	margin-top: 10px;
+}
+
+.HomeContent .Boxes__box .Boxes__iconCustomer {
+	display: inline-block;
+	font-size: 30px;
+	height: 50px;
+	width: 50px;
+	background: #f7d4d7;
+	line-height: 50px;
+	text-align: center;
+	color: #e05260;
+	border-radius: 15px;
+	margin: -15px 0 0 6px;
+}
+
+.HomeContent .total-order {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.SupplyTable {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 25px;
+	margin-top: 25px;
+	width: 100%;
+	color: var(--dark);
+}
+
+.SupplyTable>div {
+	border-radius: 20px;
+	background: var(--light);
+	padding: 25px;
+	overflow-x: auto;
+}
+
+.SupplyTable__stock {
+	flex-grow: 1;
+	flex-basis: 500px;
+	box-shadow: 0 5px 10px 0 #00000033;
+	border-radius: 5px;
+	padding: 30px;
+	width: 60%;
+	margin: 10px auto 0 auto;
+	overflow-y: scroll;
+
+}
+
+.SupplyTable__stock table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.SupplyTable__stock th {
+	padding-bottom: 10px;
+	font-size: 15px;
+	text-align: center;
+	border-bottom: 1px solid #808080;
+}
+
+.SupplyTable__stock table tbody tr td {
+	padding: 15px 0;
+	text-align: center;
+}
+
+.SupplyTable__body tr td ion-icon {
+	display: inline-block;
+	font-size: 30px;
+	color: #000000;
+	border-radius: 10px;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin: -10px auto 0 auto;
+}
+
+.SupplyTable__stock table tr td:first-child {
+	align-items: center;
+	grid-gap: 15px;
+	padding-left: 5px;
+}
+
+.SupplyTable__stock table tbody tr:hover {
+	background: #808080;
+}
+
+.SupplyTable__Button {
+	padding: 30px;
+}
+
+.SupplyTable__Button .container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 2px;
+}
+
+.SupplyTable__Button .container .icon #icon {
+	font-size: 50px;
+	color: #3498db;
+}
+
+.SupplyTable__Button .container .icon #icon:hover {
+	filter: brightness(125%);
+}
+
+.todo {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+.todo__title {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 600;
+
+}
+
+.todo__TopIcon {
+	align-items: center;
+	display: flex;
+	font-size: 25px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+}
+
+.todo__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.todo .todo-list {
+	width: 100%;
+}
+
+.todo .todo__list li {
+	width: 100%;
+	margin-bottom: 16px;
+	background: #f5f5f5;
+	border-radius: 10px;
+	padding: 14px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.todo .todo__list li.todo__Completed {
+	border-left: 10px solid #2525ff
+}
+
+.todo .todo__list li.todo__NotCompleted {
+	border-left: 10px solid #ffa500;
+}
+
+.todo .todo__list li:last-child {
+	margin-bottom: 0;
+}
+
+.addSupply {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 40px;
+	background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.addSupply__container {
+	max-width: 800px;
+	background: #fff;
+	width: 800px;
+	height: 75vh;
+	padding: 25px 40px 10px 40px;
+	box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.addSupply__header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.addSupply__container .addSupply__header {
+	text-align: center;
+	font-size: 35px;
+	font-weight: 600;
+	background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.addSupply__container .addSupply__form {
+	padding: 30px 0 0 0;
+}
+
+.addSupply__container .addSupply__form .addSupply__form-row {
+	display: flex;
+	margin: 32px 0;
+}
+
+.addSupply__form .addSupply__form-row .addSupply-form__input-data {
+	width: 100%;
+	height: 40px;
+	margin: 0 20px;
+	position: relative;
+}
+
+.addSupply-form__input-data input {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	font-size: 17px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.addSupply-form__input-data input:focus~label,
+.addSupply-form__input-data input:valid~label {
+	transform: translateY(-30px);
+	font-size: 14px;
+	color: #3498db;
+}
+
+.addSupply-form__input-data label {
+	position: absolute;
+	pointer-events: none;
+	bottom: 10px;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+
+.addSupply-form__input-data .addSupply--underline {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+}
+
+.addSupply-form__input-data .addSupply--underline:before {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: #3498db;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+.addSupply-form__input-data input:focus~.addSupply--underline:before,
+.addSupply-form__input-data input:valid~.addSupply--underline:before {
+	transform: scale(1);
+}
+
+.addSupply__submit-btn .addSupply-form__input-data {
+	overflow: hidden;
+	height: 45px !important;
+	width: 25% !important;
+}
+
+.addSupply__submit-btn .addSupply-form__input-data .addSupplyinner {
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+	transition: all 0.4s;
+}
+
+.addSupply__submit-btn .addSupply-form__input-data:hover .addSupplyinner {
+	left: 0;
+}
+
+.addSupply__submit-btn .addSupply-form__input-data input {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#addSupply__submit-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.UpdateSupply {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 40px;
+	background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.UpdateSupply__container {
+	max-width: 800px;
+	background: #fff;
+	width: 800px;
+	height: 75vh;
+	padding: 25px 40px 10px 40px;
+	box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.UpdateSupply__header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.UpdateSupply__container .UpdateSupply__header {
+	text-align: center;
+	font-size: 35px;
+	font-weight: 600;
+	background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.UpdateSupply__container .UpdateSupply__form {
+	padding: 30px 0 0 0;
+}
+
+.UpdateSupply__container .UpdateSupply__form .UpdateSupply__form-row {
+	display: flex;
+	margin: 32px 0;
+}
+
+.UpdateSupply__form .UpdateSupply__form-row .UpdateSupply-form__input-data {
+	width: 100%;
+	height: 40px;
+	margin: 0 20px;
+	position: relative;
+}
+
+.UpdateSupply-form__input-data input {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	font-size: 17px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.UpdateSupply-form__input-data input:focus~label,
+.UpdateSupply-form__input-data input:valid~label {
+	transform: translateY(-30px);
+	font-size: 14px;
+	color: #3498db;
+}
+
+.UpdateSupply-form__input-data label {
+	position: absolute;
+	pointer-events: none;
+	bottom: 10px;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+
+.UpdateSupply-form__input-data .UpdateSupply--underline {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+}
+
+.UpdateSupply-form__input-data .UpdateSupply--underline:before {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: #3498db;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+.UpdateSupply-form__input-data input:focus~.UpdateSupply--underline:before,
+.UpdateSupply-form__input-data input:valid~.UpdateSupply--underline:before {
+	transform: scale(1);
+}
+
+.UpdateSupply__submit-btn .UpdateSupply-form__input-data {
+	overflow: hidden;
+	height: 45px !important;
+	width: 25% !important;
+}
+
+.UpdateSupply__submit-btn .UpdateSupply-form__input-data .UpdateSupplyinner {
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+	transition: all 0.4s;
+}
+
+.UpdateSupply__submit-btn .UpdateSupply-form__input-data:hover .UpdateSupplyinner {
+	left: 0;
+}
+
+.UpdateSupply__submit-btn .UpdateSupply-form__input-data input {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#UpdateSupply__submit-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

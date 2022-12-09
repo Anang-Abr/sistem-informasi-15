@@ -1,0 +1,248 @@
+
+.invoice__title {
+	font-size: 30px;
+	margin-left: 100px;
+	margin-top: 50px;
+	padding: 0px 24px;
+	font-weight: 800;
+}
+
+.invoiceInfoBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 64px 6px;
+	gap: 24px;
+}
+
+.invoiceInfoBox__RecentlyBox {
+	display: flex;
+	align-items: center;
+	background-color: #59d859;
+	border-radius: 16px;
+	width: 450px;
+	height: 200px;
+	justify-content: space-around;
+	gap: 12px
+}
+
+.invoiceInfoBox__RecentlyBoxIcon {
+	font-size: 96px;
+}
+
+.invoiceInfoBox__RecentlyBoxText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.invoiceInfoBox__RecentlyBoxTextTitle {
+	font-size: 36px;
+}
+
+.invoiceInfoBox__TotalBox {
+	display: flex;
+	align-items: center;
+	background: #ffe8b3;
+	border-radius: 16px;
+	width: 450px;
+	height: 200px;
+	justify-content: space-evenly;
+	gap: 5px;
+}
+
+.invoiceInfoBox__TotalBoxIcon {
+	font-size: 96px;
+}
+
+.invoiceInfoBox__TotalBoxText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.invoiceInfoBox__TotalBoxTextTitle {
+	font-size: 36px;
+}
+
+.invoiceInfoBox__Button {
+	display: flex;
+	align-items: center;
+	background-color: #4158d0;
+	color: #ffffff;
+	border-radius: 16px;
+	margin: auto;
+	width: 200px;
+	height: 50px;
+	justify-content: center;
+	gap: 12px
+}
+
+.invoiceBoxRecently {
+	margin: 64px 6px;
+}
+
+.invoiceBoxRecently__title {
+	display: flex;
+	margin-left: 105px;
+	font-size: 24px;
+	padding-bottom: 20px
+}
+
+.invoiceBoxRecently__table {
+	border-radius: 24px;
+	width: 85%;
+	margin: auto;
+}
+
+.invoiceBoxRecently__table table {
+	border-spacing: 0;
+	width: 100%;
+
+}
+
+.invoiceBoxRecently__table--button button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.invoiceBoxRecently__table th,
+.invoiceBoxRecently__table td {
+	text-align: center;
+	padding: 16px;
+}
+
+.invoiceBoxRecently__table th {
+	background-color: #4158d0;
+	color: #ffffff;
+}
+
+.invoiceBoxRecently__table--button {
+	border: 3px solid black;
+}
+
+.invoiceBoxAll__table--button {
+	border: 3px solid black;
+}
+
+.invoiceBoxAll {
+	margin: 64px 6px;
+}
+
+.invoiceBoxAll__title {
+	padding-bottom: 20px;
+	margin-left: 105px;
+	font-size: 24px;
+}
+
+.invoiceBoxAll__table {
+	border-radius: 24px;
+	width: 85%;
+	margin: auto;
+}
+
+.invoiceBoxAll__table table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+.invoiceBoxAll__table--button button {
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 16px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.invoiceBoxAll__table th,
+.invoiceBoxAll__table td {
+	text-align: center;
+	padding: 16px;
+}
+
+.invoiceBoxAll__table th {
+	background-color: #4158d0;
+	color: #ffffff;
+}
+
+
+.invoiceAdd__title {
+	text-align: center;
+	font-size: 18px;
+	margin: 36px 36px;
+	padding: 0px 24px;
+}
+
+.invoiceAdd__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 800px;
+	background: #fff;
+	width: 800px;
+	height: 67vh;
+	padding: 25px 40px 10px 40px;
+	box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.invoiceAdd__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 40px;
+	background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.invoiceAdd__table {
+	font-size: 18px;
+}
+
+.invoiceAdd__table td {
+	padding: 16px 32px;
+	text-align: left;
+}
+
+.invoiceAdd__table label {
+	font-size: 18px;
+}
+
+.invoiceAdd__table input,
+input[type="date"],
+select {
+	font-size: 18px;
+}
+
+.invoiceAdd__tableButton input[type="submit"] {
+	background-color: #04AA6D;
+	border: none;
+	border-radius: 16px;
+	color: #ffffff;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
