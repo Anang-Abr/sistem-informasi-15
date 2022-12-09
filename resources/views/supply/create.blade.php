@@ -1,5 +1,6 @@
 @extends('components.main')
 @section('content')
+    @include('components.sidebar')
 <div class="addSupply">
     <div class="addSupply__container">
         <div class="addSupply__header">Supply Addition</div>
