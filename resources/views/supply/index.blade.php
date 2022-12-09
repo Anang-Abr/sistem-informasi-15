@@ -87,7 +87,7 @@
                       <td>{{ $supply->nama }}</td>
                       <td>{{ $supply->stock }}</td>
                       <td>{{ $supply->harga }}</td>
-                      <td><a href="{{url("supply/update")}}"><ion-icon name="add-circle-outline"></ion-icon></a></td>
+                      <td><a href="{{url("supply/".$supply->id."/edit")}}"><ion-icon name="add-circle-outline"></ion-icon></a></td>
                       <td><ion-icon name="trash"></ion-icon></td>
                     </tr>
                     @endforeach 
