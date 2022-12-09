@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="{{ url("assets/css/style.css") }}">
+    {{-- <link rel="stylesheet" href="{{ url("assets/css/style.css") }}"> --}}
+    <link rel="stylesheet" href="{{ url("assets/css/main.css") }}">
+    <link rel="stylesheet" href="{{ url("assets/css/alex.css") }}">
+    <link rel="stylesheet" href="{{ url("assets/css/reynaldi.css") }}">
+    <link rel="stylesheet" href="{{ url("assets/css/firman.css") }}">
+    <link rel="stylesheet" href="{{ url("assets/css/anang.css") }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>

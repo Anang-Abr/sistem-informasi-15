@@ -1,0 +1,187 @@
+
+nav {
+	background: #f5f5f5dd;
+	box-shadow: 0px 1px 2px 1px rgb(212, 209, 209);
+	height: 6rem;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
+}
+
+nav>h3 {
+	margin-left: 100px;
+	letter-spacing: 1px;
+}
+
+.nav__account {
+	margin-right: 100px;
+	position: relative;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.nav__account:hover {
+	background-color: #eee;
+}
+
+.nav__account>h3 {
+	cursor: pointer;
+}
+
+.nav__account h3 span {
+	color: black;
+}
+
+.nav__account_menu {
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 200px;
+	padding: 10px 1px;
+}
+
+.nav__account_menu>li {
+	padding: 3px 8px;
+}
+
+/* .nav__account_menu>li:hover {
+	width: full;
+
+} */
+
+.nav__account_menu_active {
+	display: flex;
+	flex-direction: column;
+	right: 0;
+	top: 40px;
+}
+
+.dashboard {
+	padding: 2rem 2rem;
+}
+
+.dashboard__title {
+	padding: 1rem;
+	margin-left: 10px;
+}
+
+.dashboard__cards {
+	padding: 2rem 1rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.dashboard__card {
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 1rem;
+	height: 8rem;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard__cards .dashboard__card {
+	gap: 4rem;
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem;
+}
+
+.dashboard__cards>.dashboard__card>div>* {
+	text-align: right;
+	width: 80%;
+	font-weight: 600;
+}
+
+.dashboard__card ion-icon {
+	font-size: 3rem;
+}
+
+.dashboard__stats {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(5, 1fr);
+	padding: 1rem 3rem;
+}
+
+.dashboard__stats>div {
+	height: 20rem;
+}
+
+.dashboard__card>h3 {
+	margin: 0.5rem 1.5rem;
+	text-align: right;
+}
+
+.dashboard__card>p {
+	font-size: 1.5em;
+	font-weight: 500;
+	width: 15rem;
+	margin: 1.5rem;
+	text-align: right;
+}
+
+.dashboard__card_1 {
+	grid-column: span 3;
+}
+
+.dashboard__card_2 {
+	grid-column: span 2;
+}
+
+.addsales_form_container {
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000000bb;
+	display: none;
+}
+
+.form_button_container {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1rem;
+}
+
+.form_button {
+	padding: 0.5rem 1rem;
+	text-align: center;
+	width: 10rem;
+	border-radius: 20px;
+	color: #ffffff;
+}
+
+.button_cancel {
+	background-color: #8a0101;
+}
+
+.button_submit {
+	background-color: #008000;
+}
+
+.nav__account_menu form li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#logout {
+	font-size: 16px;
+	border: none;
+	background-color: white;
+}
+
+.nav__account_menu:hover {
+	filter: brightness(80%);
+}
+
