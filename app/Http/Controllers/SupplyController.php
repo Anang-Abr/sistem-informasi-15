@@ -64,9 +64,9 @@ class SupplyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Supply $supply)
     {
-        //
+        return view('supply.edit', array('supply' => $supply));
     }
 
     /**
