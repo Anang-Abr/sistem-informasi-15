@@ -47,20 +47,31 @@ nav>h3 {
 	padding: 10px 1px;
 }
 
-.nav__account_menu>li {
-	padding: 3px 8px;
+
+input[type="submit"] {
+	border: none;
+	background: none;
+	font: inherit;
 }
-
-/* .nav__account_menu>li:hover {
-	width: full;
-
-} */
 
 .nav__account_menu_active {
 	display: flex;
 	flex-direction: column;
+	justify-items: flex-start;
 	right: 0;
 	top: 40px;
+}
+.nav__account_menu__item{
+	cursor: pointer;
+	padding: 3px 8px;
+	font-size: 16px;
+	border: none;
+	background:none;
+	background-color: white;
+}
+
+.nav__account_menu__item:hover{
+	filter: brightness(80%);
 }
 
 .dashboard {
@@ -175,13 +186,4 @@ nav>h3 {
 	justify-content: center;
 }
 
-#logout {
-	font-size: 16px;
-	border: none;
-	background-color: white;
-}
-
-.nav__account_menu:hover {
-	filter: brightness(80%);
-}
 

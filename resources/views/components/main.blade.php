@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="{{ url("assets/css/reynaldi.css") }}">
     <link rel="stylesheet" href="{{ url("assets/css/firman.css") }}">
     <link rel="stylesheet" href="{{ url("assets/css/anang.css") }}">
+    <link rel="stylesheet" href="{{ url("assets/css/account.css") }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <x-head.tinymce-config/>
   </head>
   <body>
     <div >

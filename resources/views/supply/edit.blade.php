@@ -4,8 +4,9 @@
     <div class="UpdateSupply">
     <div class="UpdateSupply__container">
         <div class="UpdateSupply__header">Supply Update</div>
-        <form class="UpdateSupply__form" action="{{url('/supply')}}" method="post">
+        <form class="UpdateSupply__form" action="{{url('/supply/'.$supply->id)}}" method="post">
             @csrf
+            @method('PUT')
             <div class="UpdateSupply__form-row">
                 <div class="UpdateSupply-form__input-data">
                     <input class="UpdateSupply__data" type="text" name="nama" value="{{$supply->nama}}" required>
