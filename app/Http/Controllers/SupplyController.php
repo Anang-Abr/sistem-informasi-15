@@ -78,7 +78,14 @@ class SupplyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validData = $request->validate([
+            'nama' => 'required | max:56',
+            'harga' => 'required | max:512',
+            'stock' => 'required | max:15',
+        ]);
+        
+        $ret = Supply::find($id)->update($validData);
+        return redirect('/supply');
     }
 
     /**

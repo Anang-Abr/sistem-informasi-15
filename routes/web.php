@@ -34,3 +34,7 @@ Route::resource('/customer', CustomerController::class);
 Route::resource('/invoice', InvoiceController::class);
 Route::resource('/supply', SupplyController::class);
 Route::get('supply/search', [SupplyController::class, 'search']);
+
+Route::get('/account/settings', function () {
+    return view('account.settings');
+});
