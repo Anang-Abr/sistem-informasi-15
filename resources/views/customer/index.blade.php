@@ -18,11 +18,18 @@
     </div> -->
     <div class="sales-table">
         <div class="search-bar__container">
-            <div class="search-bar">
-                <input type="text" placeholder="Type to search.." id="text">
+            <div class="show-wrapper">
+                <span class="show-text">Show</span>
+                <input type="number" value="5" id="sales-table-show">
+                <span class="show-text">entries</span>
             </div>
-            <div class="search-icon">
-                <ion-icon id="icon" name="search"></ion-icon>
+            <div class="search-wrapper">
+                <div class="search-bar">
+                    <input type="text" placeholder="Type to search.." id="text">
+                </div>
+                <div class="search-icon">
+                    <ion-icon id="icon" name="search"></ion-icon>
+                </div>
             </div>
         </div>
         <table>
@@ -45,6 +52,28 @@
                 @endforeach
             </tbody>
         </table>
+        <div class="table-footer">
+            <div class="show-wrapper">
+                <span>Showing 1 to 5 of 30 entries</span>
+            </div>
+            <div class="customer-table-pagination">
+                <div class="prev">
+                    Previous
+                </div>
+                <div class="page-n">
+                    1
+                </div>
+                <div class="page-n">
+                    2
+                </div>
+                <div class="page-n">
+                    3
+                </div>
+                <div class="next">
+                    Next
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 @endsection
