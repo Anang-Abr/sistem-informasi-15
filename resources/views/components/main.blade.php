@@ -7,7 +7,7 @@
     {{-- <link rel="stylesheet" href="{{ url("assets/css/style.css") }}"> --}}
     <link rel="stylesheet" href="{{ url("assets/css/main.css") }}">
     <link rel="stylesheet" href="{{ url("assets/css/alex.css") }}">
-    <link rel="stylesheet" href="{{ url("assets/css/reynaldi.css") }}">
+    <link rel="stylesheet" href="{{ url("assets/css/raynaldy.css") }}">
     <link rel="stylesheet" href="{{ url("assets/css/firman.css") }}">
     <link rel="stylesheet" href="{{ url("assets/css/anang.css") }}">
     <link rel="stylesheet" href="{{ url("assets/css/account.css") }}">
