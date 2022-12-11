@@ -213,7 +213,7 @@
 }
 
 .SupplyTable__Button {
-	padding: 30px;
+	padding: 20px;
 }
 
 .SupplyTable__Button .container {
@@ -231,6 +231,32 @@
 .SupplyTable__Button .container .icon #icon:hover {
 	filter: brightness(125%);
 }
+
+.pagination__container{
+	margin-top: 20px;
+}
+
+.pagination__body {
+	display: flex;
+  }
+  
+  .pagination__body a {
+	color: #000000;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+  }
+  
+  .pagination__body a.active {
+	background-color: #3498db;
+	color: #ffffff;
+	border-radius: 5px;
+  }
+  
+  .pagination__body a:hover:not(.active) {
+	background-color: #ddd;
+	border-radius: 5px;
+  }
 
 .todo {
 	flex-grow: 1;
@@ -554,3 +580,4 @@
 	align-items: center;
 	justify-content: center;
 }
+
