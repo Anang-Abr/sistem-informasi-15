@@ -1,3 +1,10 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+	opacity: 1;
+
+}
+
 .sidebar {
 	position: fixed;
 	top: 0;
@@ -199,9 +206,17 @@ main {
 	color: #ffffff;
 }
 
-.sales-table tr:nth-child(even) {
-	background-color: #d2d2d2;
+.sales-table__body tr:hover {
+	background-color: #d6defa;
 }
+
+.sales-table__body tr {
+	border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+/* .sales-table tr:nth-child(even) {
+	background-color: #d2d2d2;
+} */
 
 .sales-table .search-bar__container {
 	display: flex;
