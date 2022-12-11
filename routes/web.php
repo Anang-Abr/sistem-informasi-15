@@ -26,15 +26,14 @@ Route::get('/login', function () {
 })->name('login')->middleware('guest');
 Route::get('/', function () {
     return view('index');
-});
-Route::delete('/logout', [AuthController::class, 'logout']);
+})->middleware('auth');
+Route::delete('/logout', [AuthController::class, 'logout'])->middleware('auth');
 Route::post('/register',[AuthController::class, 'register'])->middleware('guest');
 Route::post('/login', [AuthController::class, 'login'])->middleware('guest');
-Route::resource('/customer', CustomerController::class);
-Route::resource('/invoice', InvoiceController::class);
-Route::resource('/supply', SupplyController::class);
-Route::get('supply/search', [SupplyController::class, 'search']);
-
+Route::resource('/customer', CustomerController::class)->middleware('auth');
+Route::resource('/invoice', InvoiceController::class)->middleware('auth');
+Route::resource('/supply', SupplyController::class)->middleware('auth');
+Route::get('supply/search', [SupplyController::class, 'search'])->middleware('auth');
 Route::get('/account/settings', function () {
     return view('account.settings');
-});
+})->middleware('auth');
