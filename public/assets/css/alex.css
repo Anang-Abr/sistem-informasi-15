@@ -229,6 +229,7 @@ main {
 
 .sales-table .search-bar__container .search-icon #icon {
 	font-size: 20px;
+	cursor: pointer;
 }
 
 .sales-table .search-bar__container .search-icon #icon:hover {
@@ -252,6 +253,10 @@ main {
 	justify-content: space-between;
 }
 
+.show-wrapper .entry {
+	font-size: 14px;
+}
+
 .customer-table-pagination {
 	display: flex;
 	align-items: center;
@@ -260,20 +265,19 @@ main {
 .customer-table-pagination .prev,
 .customer-table-pagination .page-n,
 .customer-table-pagination .next {
-	border: 1px solid #c1e2ea;
+	border-radius: 5px;
 	padding: 5px 10px 5px 10px;
-	color: #6f8efc;
 	cursor: pointer;
 }
 
 .customer-table-pagination .prev:hover,
 .customer-table-pagination .page-n:hover,
 .customer-table-pagination .next:hover {
-	background: #18d2f2;
+	background: #ddd;
 }
 
-.customer-table-pagination .prev {
-	color: rgb(148, 144, 144);
+.page-active {
+	background-color: #3498db;
 }
 
 .login__body {
