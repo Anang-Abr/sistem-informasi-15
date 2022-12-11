@@ -6,11 +6,16 @@
         <section class="accountSettings">
             <h1 class="accountSettings__title">Account Settings</h1>
             <div class="accountSettings__content">
-            <div class="accountSettings__profilePicture">
-                <img src="" alt="">
+            <div class="">
+                <img src="{{ url('assets/img/default.jpg') }}" alt="{{ Auth::user()->name }}" class="accountSettings__profilePicture">
             </div>
             <div class="accountSettings__profileData">
-                <form action="" class="accountSettings__form">
+                <form action="" class="accountSettings__form" enctype="multipart/form-data">
+                    <div class="accountSettings__formElement">
+                        <label for="profile_picture" class="accountSettings__formLabel accountSettings__changgPfpButton">Change Profile Picture</label>
+                        <span class="accountSettings__formColon"></span>
+                        <input type="file" name="profile_picture" id="profile_picture" class="accountSettings__formTextInput">
+                    </div>
                     <div class="accountSettings__formElement">
                         <label for="name" class="accountSettings__formLabel">Name</label>
                         <span class="accountSettings__formColon">:</span>
