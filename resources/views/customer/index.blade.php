@@ -54,13 +54,13 @@
         </table>
         <div class="table-footer">
             <div class="show-wrapper">
-                <span>Showing 1 to 5 of 30 entries</span>
+                <span class="entry">Showing 1 to 5 of 30 entries</span>
             </div>
             <div class="customer-table-pagination">
                 <div class="prev">
-                    Previous
+                    &laquo;
                 </div>
-                <div class="page-n">
+                <div class="page-n page-active">
                     1
                 </div>
                 <div class="page-n">
@@ -70,7 +70,7 @@
                     3
                 </div>
                 <div class="next">
-                    Next
+                    &raquo;
                 </div>
             </div>
         </div>
