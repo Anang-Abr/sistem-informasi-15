@@ -93,6 +93,18 @@
                     @endforeach 
                   </tbody>
               </table>
+              <div class="pagination__container">
+                <div class="pagination__body">
+                  <a href="#">&laquo;</a>
+                  <a href="#" class="active">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">&raquo;</a>
+                </div>
+              </div>
               <div class="SupplyTable__Button">
                 <div class="container">
                   <div class="icon">
@@ -100,6 +112,8 @@
                   </div>
                 </div>
               </div>
+              
+
           </div>
           <div class="todo">
             <div class="todo__top">
